@@ -16,5 +16,13 @@ namespace QuanLysKhachSan
         {
             InitializeComponent();
         }
+
+        private void FormMain_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Bạn có muốn đóng màn hình chính?", "Thông báo!", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }
