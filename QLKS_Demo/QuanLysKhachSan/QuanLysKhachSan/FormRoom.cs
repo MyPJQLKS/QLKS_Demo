@@ -101,17 +101,22 @@ namespace QuanLysKhachSan
 
             KindRoom kindroom = new KindRoom();
 
-            if (txbIDKind.Text != "" & txbPrice.Text != "" & txbDescription.Text != "")
+            if (txbIDKind.Text != "" )
             {
                 kindroom.Maloaiphong = txbIDKind.Text;
-                kindroom.Dongia = Convert.ToDecimal(txbPrice.Text);
+                kindroom.Dongia = 0;
+                try
+                {
+                    kindroom.Dongia = Convert.ToDecimal(txbPrice.Text);
+                }
+                catch { }
                 kindroom.Mota = txbDescription.Text;
             }
             else 
             {
                 if (dtgvKind.DataSource == null)
                 {
-                    MessageBox.Show("Không Thể Sửa Khi Chưa Có Đủ Liệu!");
+                    MessageBox.Show("Không Thể Sửa Khi Chưa Có Đủ Dữ Liệu!");
                 }
                 else
                 {
@@ -120,6 +125,9 @@ namespace QuanLysKhachSan
                     kindroom.Dongia = (decimal)row.Cells["dongia"].Value;
                     kindroom.Mota = row.Cells["mota"].Value.ToString();
                 }
+                txbIDKind.Text = "";
+                txbPrice.Text = "";
+                txbDescription.Text = "";
             }
            
             object[] para = new object[] { kindroom.Mota, kindroom.Dongia, kindroom.Maloaiphong };
@@ -150,6 +158,11 @@ namespace QuanLysKhachSan
             }
             else
             {
+                if(dtgvKind.DataSource == null)
+                {
+                    MessageBox.Show("Thêm Dữ Liệu Vào Bảng Dữ Liệu Hoặc Thêm Dữ Liệu Vào Text");
+                    return;
+                }
                 DataGridViewRow row = dtgvKind.SelectedCells[0].OwningRow;
 
                 kindroom.Maloaiphong = row.Cells["maloaiphong"].Value.ToString();
@@ -160,6 +173,7 @@ namespace QuanLysKhachSan
                 else kindroom.Dongia = (decimal)row.Cells["dongia"].Value;
                 kindroom.Mota = row.Cells["mota"].Value.ToString();
             }
+            
             object[] para = new object[] { kindroom.Maloaiphong, kindroom.Dongia, kindroom.Mota };
             if (ExecuteNonQuery(query, para) > 0)
             {
@@ -168,6 +182,9 @@ namespace QuanLysKhachSan
             }
             else
                 MessageBox.Show("Thêm Không Thành Công!");
+            txbIDKind.Text = "";
+            txbPrice.Text = "";
+            txbDescription.Text = "";
         }
 
         private void btnDeleteK_Click(object sender, EventArgs e)
@@ -237,11 +254,58 @@ namespace QuanLysKhachSan
             }
             else
                 MessageBox.Show("Sửa Không Thành Công!");
+            txbIDRoom.Text = "";
+            txbNameRoom.Text = "";
+            cbStatus.Text = "Trống";
         }
 
         private void btnAddR_Click(object sender, EventArgs e)
         {
+            string query = "Insert into Phong values( @maphong , @tenphong , @maloaiphong , @trangthai )";
 
+            Room room = new Room();
+            if (txbIDRoom.Text != "")
+            {
+                room.Maphong = txbIDRoom.Text;
+                if (cbStatus.Text == "Trống")
+                {
+                    room.Trangthai = false;
+                }
+                else room.Trangthai = true;
+                room.Tenphong = txbNameRoom.Text;
+                room.Maloaiphong = cbIDKind.Text;
+            }
+            else
+            {
+                if (dtgvRoom.DataSource == null)
+                {
+                    MessageBox.Show("Thêm Dữ Liệu Vào Bảng Dữ Liệu Hoặc Thêm Dữ Liệu Vào Text");
+                    return;
+                }
+                DataGridViewRow row = dtgvRoom.SelectedCells[0].OwningRow;
+                room.Maphong = row.Cells["maphong"].Value.ToString();
+                room.Tenphong = row.Cells["tenphong"].Value.ToString();
+                room.Maloaiphong = row.Cells["maloaiphong"].Value.ToString();
+                room.Trangthai = false;
+                try
+                {
+                    room.Trangthai = (bool)row.Cells["trangthai"].Value;
+                }
+                catch { }
+
+            }
+            
+            object[] para = new object[] { room.Maphong, room.Tenphong, room.Maloaiphong, room.Trangthai };
+            if (ExecuteNonQuery(query, para) > 0)
+            {
+                MessageBox.Show("Thêm Thành Công!");
+                btnShowR_Click(sender, e);
+            }
+            else
+                MessageBox.Show("Thêm Không Thành Công!");
+            txbIDRoom.Text = "";
+            txbNameRoom.Text = "";
+            cbStatus.Text = "Trống";
         }
 
         private void btnDeleteR_Click(object sender, EventArgs e)
