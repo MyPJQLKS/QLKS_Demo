@@ -88,21 +88,21 @@ namespace QuanLysKhachSan
             // 
             // textBox_maphong
             // 
-            this.textBox_maphong.Location = new System.Drawing.Point(136, 40);
+            this.textBox_maphong.Location = new System.Drawing.Point(177, 30);
             this.textBox_maphong.Name = "textBox_maphong";
             this.textBox_maphong.Size = new System.Drawing.Size(232, 22);
             this.textBox_maphong.TabIndex = 4;
             // 
             // textBox_tenphong
             // 
-            this.textBox_tenphong.Location = new System.Drawing.Point(136, 87);
+            this.textBox_tenphong.Location = new System.Drawing.Point(177, 77);
             this.textBox_tenphong.Name = "textBox_tenphong";
             this.textBox_tenphong.Size = new System.Drawing.Size(232, 22);
             this.textBox_tenphong.TabIndex = 5;
             // 
             // textBox_mlphong
             // 
-            this.textBox_mlphong.Location = new System.Drawing.Point(136, 131);
+            this.textBox_mlphong.Location = new System.Drawing.Point(177, 121);
             this.textBox_mlphong.Name = "textBox_mlphong";
             this.textBox_mlphong.Size = new System.Drawing.Size(232, 22);
             this.textBox_mlphong.TabIndex = 6;
@@ -110,7 +110,7 @@ namespace QuanLysKhachSan
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(49, 45);
+            this.label1.Location = new System.Drawing.Point(90, 35);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(75, 17);
             this.label1.TabIndex = 7;
@@ -119,7 +119,7 @@ namespace QuanLysKhachSan
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(43, 87);
+            this.label2.Location = new System.Drawing.Point(84, 77);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 17);
             this.label2.TabIndex = 8;
@@ -128,7 +128,7 @@ namespace QuanLysKhachSan
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(23, 134);
+            this.label3.Location = new System.Drawing.Point(64, 124);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(101, 17);
             this.label3.TabIndex = 9;
