@@ -70,11 +70,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< HEAD
     <Compile Include="Room.cs" />
-=======
-    <Compile Include="SqlString.cs" />
->>>>>>> fb2e5e432c4e413222c24ddce8561edfa513d96b
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
