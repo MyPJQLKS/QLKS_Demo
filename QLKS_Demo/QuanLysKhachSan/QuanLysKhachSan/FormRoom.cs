@@ -13,6 +13,7 @@ namespace QuanLysKhachSan
 {
     public partial class FormRoom : Form
     {
+        public int a;
         string connectionString = @"Data Source=localhost\SQLEXPRESS;Initial Catalog=QLKS_Demo;Integrated Security=True";
         public FormRoom()
         {
@@ -91,7 +92,7 @@ namespace QuanLysKhachSan
         }
         private void btnShowK_Click(object sender, EventArgs e)
         {
-            string query = "SELECT * FROM LoaiPhong";
+            string query = "SELECT maloaiphong as N'Mã Loại Phòng', dongia as N'Đơn Giá', mota as N'Mô Tả' FROM LoaiPhong";
             dtgvKind.DataSource = ExecuteQuery(query);
         }
 
@@ -121,13 +122,11 @@ namespace QuanLysKhachSan
                 else
                 {
                     DataGridViewRow row = dtgvKind.SelectedCells[0].OwningRow;
-                    kindroom.Maloaiphong = row.Cells["maloaiphong"].Value.ToString();
-                    kindroom.Dongia = (decimal)row.Cells["dongia"].Value;
-                    kindroom.Mota = row.Cells["mota"].Value.ToString();
+                    kindroom.Maloaiphong = row.Cells["Mã Loại Phòng"].Value.ToString();
+                    kindroom.Dongia = (decimal)row.Cells["Đơn Giá"].Value;
+                    kindroom.Mota = row.Cells["Mô Tả"].Value.ToString();
                 }
-                txbIDKind.Text = "";
-                txbPrice.Text = "";
-                txbDescription.Text = "";
+
             }
            
             object[] para = new object[] { kindroom.Mota, kindroom.Dongia, kindroom.Maloaiphong };
@@ -135,6 +134,9 @@ namespace QuanLysKhachSan
             if (ExecuteNonQuery(query, para) > 0)
             {
                 MessageBox.Show("Sửa Thành Công!");
+                txbIDKind.Text = "";
+                txbPrice.Text = "";
+                txbDescription.Text = "";
                 btnShowK_Click(sender, e);
             }
             else
@@ -165,26 +167,27 @@ namespace QuanLysKhachSan
                 }
                 DataGridViewRow row = dtgvKind.SelectedCells[0].OwningRow;
 
-                kindroom.Maloaiphong = row.Cells["maloaiphong"].Value.ToString();
-                if (row.Cells["dongia"].Value.ToString() == "")
+                kindroom.Maloaiphong = row.Cells["Mã Loại Phòng"].Value.ToString();
+                if (row.Cells["Đơn Giá"].Value.ToString() == "")
                 {
                     kindroom.Dongia = 0;
                 }
-                else kindroom.Dongia = (decimal)row.Cells["dongia"].Value;
-                kindroom.Mota = row.Cells["mota"].Value.ToString();
+                else kindroom.Dongia = (decimal)row.Cells["Đơn Giá"].Value;
+                kindroom.Mota = row.Cells["Mô Tả"].Value.ToString();
             }
             
             object[] para = new object[] { kindroom.Maloaiphong, kindroom.Dongia, kindroom.Mota };
             if (ExecuteNonQuery(query, para) > 0)
             {
                 MessageBox.Show("Thêm Thành Công!");
+                txbIDKind.Text = "";
+                txbPrice.Text = "";
+                txbDescription.Text = "";
                 btnShowK_Click(sender, e);
             }
             else
                 MessageBox.Show("Thêm Không Thành Công!");
-            txbIDKind.Text = "";
-            txbPrice.Text = "";
-            txbDescription.Text = "";
+            
         }
 
         private void btnDeleteK_Click(object sender, EventArgs e)
@@ -195,7 +198,7 @@ namespace QuanLysKhachSan
             }
             else
             {
-                string ID = dtgvKind.SelectedCells[0].OwningRow.Cells["maloaiphong"].Value.ToString();
+                string ID = dtgvKind.SelectedCells[0].OwningRow.Cells["Mã Loại Phòng"].Value.ToString();
                 object[] para = new object[] { ID };
                 string query = "exec xoa1LoaiPhong @ID";
                 if (ExecuteNonQuery(query, para) > 0)
@@ -211,7 +214,7 @@ namespace QuanLysKhachSan
 
         private void btnShowR_Click(object sender, EventArgs e)
         {
-            string query = "SELECT * FROM Phong";
+            string query = "SELECT maphong as N'Mã Phòng', tenphong as N'Tên Phòng', maloaiphong as N'Mã Loại Phòng', trangthai as N'Trạng Thái' FROM Phong";
             dtgvRoom.DataSource = ExecuteQuery(query);
         }
 
@@ -238,10 +241,10 @@ namespace QuanLysKhachSan
                 else
                 {
                     DataGridViewRow row = dtgvRoom.SelectedCells[0].OwningRow;
-                    room.Maphong = row.Cells["maphong"].Value.ToString();
-                    room.Tenphong = row.Cells["tenphong"].Value.ToString();
-                    room.Maloaiphong = row.Cells["maloaiphong"].Value.ToString();
-                    room.Trangthai = (bool)row.Cells["trangthai"].Value;
+                    room.Maphong = row.Cells["Mã Phòng"].Value.ToString();
+                    room.Tenphong = row.Cells["Tên Phòng"].Value.ToString();
+                    room.Maloaiphong = row.Cells["Mã Loại Phòng"].Value.ToString();
+                    room.Trangthai = (bool)row.Cells["Trạng Thái"].Value;
                 }
             }
            
@@ -250,13 +253,14 @@ namespace QuanLysKhachSan
             if (ExecuteNonQuery(query, para) > 0)
             {
                 MessageBox.Show("Sửa Thành Công!");
+                txbIDRoom.Text = "";
+                txbNameRoom.Text = "";
+                cbStatus.Text = "Trống";
                 btnShowR_Click(sender, e);
             }
             else
                 MessageBox.Show("Sửa Không Thành Công!");
-            txbIDRoom.Text = "";
-            txbNameRoom.Text = "";
-            cbStatus.Text = "Trống";
+            
         }
 
         private void btnAddR_Click(object sender, EventArgs e)
@@ -283,13 +287,13 @@ namespace QuanLysKhachSan
                     return;
                 }
                 DataGridViewRow row = dtgvRoom.SelectedCells[0].OwningRow;
-                room.Maphong = row.Cells["maphong"].Value.ToString();
-                room.Tenphong = row.Cells["tenphong"].Value.ToString();
-                room.Maloaiphong = row.Cells["maloaiphong"].Value.ToString();
+                room.Maphong = row.Cells["Mã Phòng"].Value.ToString();
+                room.Tenphong = row.Cells["Tên Phòng"].Value.ToString();
+                room.Maloaiphong = row.Cells["Mã Loại Phòng"].Value.ToString();
                 room.Trangthai = false;
                 try
                 {
-                    room.Trangthai = (bool)row.Cells["trangthai"].Value;
+                    room.Trangthai = (bool)row.Cells["Trạng Thái"].Value;
                 }
                 catch { }
 
@@ -299,13 +303,14 @@ namespace QuanLysKhachSan
             if (ExecuteNonQuery(query, para) > 0)
             {
                 MessageBox.Show("Thêm Thành Công!");
+                txbIDRoom.Text = "";
+                txbNameRoom.Text = "";
+                cbStatus.Text = "Trống";
                 btnShowR_Click(sender, e);
             }
             else
                 MessageBox.Show("Thêm Không Thành Công!");
-            txbIDRoom.Text = "";
-            txbNameRoom.Text = "";
-            cbStatus.Text = "Trống";
+            
         }
 
         private void btnDeleteR_Click(object sender, EventArgs e)
@@ -316,7 +321,7 @@ namespace QuanLysKhachSan
             }
             else
             {
-                string ID = dtgvRoom.SelectedCells[0].OwningRow.Cells["maphong"].Value.ToString();
+                string ID = dtgvRoom.SelectedCells[0].OwningRow.Cells["Mã Phòng"].Value.ToString();
                 object[] para = new object[] { ID };
                 string query = "exec xoa1Phong @ID";
                 if (ExecuteNonQuery(query, para) > 0)
@@ -331,6 +336,7 @@ namespace QuanLysKhachSan
 
         private void FormRoom_Load(object sender, EventArgs e)
         {
+            tabControl1.SelectedIndex = a;
             string query = "SELECT * FROM LoaiPhong";
             cbIDKind.DataSource = ExecuteQuery(query);
             cbIDKind.DisplayMember = "maloaiphong";
