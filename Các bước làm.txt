@@ -60,3 +60,6 @@
     ->Module bao gồm: -Dòng text hướng dẫn sử dụng (chi tiết theo từng mục menu)
                       -Một image để hướng dẫn với từng mục đích
     -> Thời gian làm:      /đã làm <xong?>
+
+Hurry up
+
