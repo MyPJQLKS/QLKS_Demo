@@ -16,5 +16,10 @@ namespace QuanLysKhachSan
         {
             InitializeComponent();
         }
+        //Data Source=localhost\SQLEXPRESS;Initial Catalog=QLKS_Demo;Integrated Security=True
+        private void button_update_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
