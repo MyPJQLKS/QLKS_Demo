@@ -17,6 +17,7 @@ namespace QuanLysKhachSan
             InitializeComponent();
         }
 
+<<<<<<< HEAD
         private void danhSáchPhòngToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormRoom formroom = new FormRoom();
@@ -33,6 +34,14 @@ namespace QuanLysKhachSan
         {
             FormRoom form = new FormRoom();
             form.ShowDialog();
+=======
+        private void FormMain_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Bạn có muốn đóng màn hình chính?", "Thông báo!", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)
+            {
+                e.Cancel = true;
+            }
+>>>>>>> fb2e5e432c4e413222c24ddce8561edfa513d96b
         }
     }
 }

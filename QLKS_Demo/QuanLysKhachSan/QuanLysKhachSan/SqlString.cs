@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace QuanLysKhachSan
 {
-    class SqlStringConnect
+    class SqlString
     {
-        public static string stringConnect = @"Data Source=localhost\SQLEXPRESS;Initial Catalog=QLKS_Demo;Integrated Security=True"; 
+        public static string str = @"Data Source=localhost\SQLEXPRESS;Initial Catalog=QLKS_Demo;Integrated Security=True";
     }
+    
 }
