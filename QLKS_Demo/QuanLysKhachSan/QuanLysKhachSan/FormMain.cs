@@ -16,5 +16,23 @@ namespace QuanLysKhachSan
         {
             InitializeComponent();
         }
+
+        private void danhSáchPhòngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormRoom formroom = new FormRoom();
+            formroom.ShowDialog();
+        }
+
+        private void thôngTinPhòngThuêToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormRoom form = new FormRoom();
+            form.ShowDialog();
+        }
+
+        private void thôngTinLoạiPhòngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormRoom form = new FormRoom();
+            form.ShowDialog();
+        }
     }
 }
