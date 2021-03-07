@@ -95,6 +95,7 @@
             this.tạoThẻPhòngThuêToolStripMenuItem.Name = "tạoThẻPhòngThuêToolStripMenuItem";
             this.tạoThẻPhòngThuêToolStripMenuItem.Size = new System.Drawing.Size(236, 26);
             this.tạoThẻPhòngThuêToolStripMenuItem.Text = "Tạo thẻ phòng thuê";
+            this.tạoThẻPhòngThuêToolStripMenuItem.Click += new System.EventHandler(this.tạoThẻPhòngThuêToolStripMenuItem_Click);
             // 
             // thêmDịchVuMớiToolStripMenuItem
             // 
