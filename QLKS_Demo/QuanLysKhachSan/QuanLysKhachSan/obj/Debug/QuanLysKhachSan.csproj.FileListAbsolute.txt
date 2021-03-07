@@ -121,3 +121,4 @@ G:\Thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\De
 G:\Thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.csproj.CopyComplete
 G:\Thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.exe
 G:\Thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.pdb
+C:\Users\LOCALBOI\Source\Repos\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.frmQLDichVu.resources

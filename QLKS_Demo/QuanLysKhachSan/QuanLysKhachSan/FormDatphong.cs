@@ -129,7 +129,8 @@ namespace QuanLysKhachSan
                 textBox_manv.Text = row.Cells[2].Value.ToString();
                 textBox_tenkh.Text = row.Cells[3].Value.ToString();
                 textBox_cmt.Text = row.Cells[4].Value.ToString();
-                dateTimePicker_ngaydat.Value = DateTime.ParseExact(row.Cells[4].Value.ToString(), "dd-mm-yyyy", CultureInfo.InvariantCulture);
+                DateTime dt= DateTime.ParseExact(row.Cells[5].Value.ToString(), "dd-mm-yyyy", CultureInfo.InvariantCulture);
+                dateTimePicker_ngaydat.Value = dt;
             }    
         }
     }
