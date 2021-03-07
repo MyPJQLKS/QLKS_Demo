@@ -203,12 +203,13 @@ namespace QuanLysKhachSan
             // button_update
             // 
             this.button_update.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_update.Location = new System.Drawing.Point(677, 18);
+            this.button_update.Location = new System.Drawing.Point(655, 18);
             this.button_update.Name = "button_update";
-            this.button_update.Size = new System.Drawing.Size(84, 40);
+            this.button_update.Size = new System.Drawing.Size(106, 40);
             this.button_update.TabIndex = 12;
             this.button_update.Text = "Cập nhật";
             this.button_update.UseVisualStyleBackColor = true;
+            this.button_update.Click += new System.EventHandler(this.button_update_Click);
             // 
             // dataGridView_check
             // 
@@ -220,6 +221,7 @@ namespace QuanLysKhachSan
             this.dataGridView_check.RowTemplate.Height = 24;
             this.dataGridView_check.Size = new System.Drawing.Size(755, 269);
             this.dataGridView_check.TabIndex = 11;
+            this.dataGridView_check.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_datphong_CellContentClick);
             // 
             // textBox1
             // 
@@ -262,7 +264,7 @@ namespace QuanLysKhachSan
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker1.Location = new System.Drawing.Point(561, 22);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(112, 27);
+            this.dateTimePicker1.Size = new System.Drawing.Size(130, 27);
             this.dateTimePicker1.TabIndex = 5;
             // 
             // dateTimePicker2
@@ -271,7 +273,7 @@ namespace QuanLysKhachSan
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker2.Location = new System.Drawing.Point(561, 55);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(112, 27);
+            this.dateTimePicker2.Size = new System.Drawing.Size(130, 27);
             this.dateTimePicker2.TabIndex = 6;
             // 
             // label5
