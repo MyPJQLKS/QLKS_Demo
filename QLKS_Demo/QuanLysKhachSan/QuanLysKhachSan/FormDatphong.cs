@@ -70,7 +70,7 @@ namespace QuanLysKhachSan
                 using (SqlConnection sqlcon = new SqlConnection(ConnectionString))
                 {
                     sqlcon.Open();
-                    SqlCommand command = new SqlCommand("Select Count(*) from Phong where maphong= " + textBox_maphong.Text, sqlcon);
+                    SqlCommand command = new SqlCommand("Select Count(*) from Phong where maphong= '" + textBox_maphong.Text+"'", sqlcon);
                     //SqlDataAdapter sqlData = new SqlDataAdapter();
                     if((int)command.ExecuteScalar() !=0)
                     {
@@ -85,7 +85,7 @@ namespace QuanLysKhachSan
             if(radioButton_dathue.Checked == true)
             {
                 MessageBox.Show("Phòng đang được dùng, mời chọn phòng khác", "Cảnh báo", MessageBoxButtons.OK);
-            }    
+            }
         }
     }
 }
