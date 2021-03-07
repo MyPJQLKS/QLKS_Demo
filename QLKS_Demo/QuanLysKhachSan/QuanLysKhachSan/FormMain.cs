@@ -40,7 +40,6 @@ namespace QuanLysKhachSan
 
         private void tạoThẻPhòngThuêToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //FormCheck form = new FormCheck();
             FormDatphong form = new FormDatphong();
             form.ShowDialog();
         }
