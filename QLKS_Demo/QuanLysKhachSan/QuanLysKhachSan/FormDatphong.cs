@@ -26,7 +26,7 @@ namespace QuanLysKhachSan
                 SqlDataAdapter sqlData = new SqlDataAdapter("Select * from Phong where trangthai = 'false'", sqlcon);
                 DataTable table = new DataTable();
                 sqlData.Fill(table);
-                dataGridView_datphong.DataSource = table;
+                dataGridView_check.DataSource = table;
             }
     }
 
