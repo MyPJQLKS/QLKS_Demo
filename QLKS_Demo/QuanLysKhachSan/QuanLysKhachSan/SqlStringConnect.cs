@@ -7,7 +7,7 @@ using System.Data;
 using System.Data.SqlClient;
 namespace QuanLysKhachSan
 {
-    class SqlStringConnect
+    public class SqlStringConnect
     {
         public static string stringConnect = @"Data Source=localhost\SQLEXPRESS;Initial Catalog=QLKS_Demo;Integrated Security=True"; 
     }
