@@ -29,5 +29,13 @@ namespace QuanLysKhachSan
                 dataGridView_datphong.DataSource = table;
             }
     }
+
+        private void dataGridView_datphong_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex >=0)
+            {
+
+            }
+        }
     }
 }
