@@ -69,3 +69,19 @@ C:\Users\LOCALBOI\source\repos\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachS
 C:\Users\LOCALBOI\source\repos\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.csproj.CopyComplete
 C:\Users\LOCALBOI\source\repos\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.exe
 C:\Users\LOCALBOI\source\repos\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.pdb
+C:\Users\huyho\OneDrive\Desktop\New folder\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\bin\Debug\QuanLysKhachSan.exe.config
+C:\Users\huyho\OneDrive\Desktop\New folder\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\bin\Debug\QuanLysKhachSan.exe
+C:\Users\huyho\OneDrive\Desktop\New folder\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\bin\Debug\QuanLysKhachSan.pdb
+C:\Users\huyho\OneDrive\Desktop\New folder\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\bin\Debug\System.Windows.Forms.Ribbon.dll
+C:\Users\huyho\OneDrive\Desktop\New folder\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.csprojAssemblyReference.cache
+C:\Users\huyho\OneDrive\Desktop\New folder\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.FormDatphong.resources
+C:\Users\huyho\OneDrive\Desktop\New folder\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.FormHelp.resources
+C:\Users\huyho\OneDrive\Desktop\New folder\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.FormMain.resources
+C:\Users\huyho\OneDrive\Desktop\New folder\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.FormRoom.resources
+C:\Users\huyho\OneDrive\Desktop\New folder\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.Login.resources
+C:\Users\huyho\OneDrive\Desktop\New folder\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.Properties.Resources.resources
+C:\Users\huyho\OneDrive\Desktop\New folder\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.csproj.GenerateResource.cache
+C:\Users\huyho\OneDrive\Desktop\New folder\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.csproj.CoreCompileInputs.cache
+C:\Users\huyho\OneDrive\Desktop\New folder\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.csproj.CopyComplete
+C:\Users\huyho\OneDrive\Desktop\New folder\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.exe
+C:\Users\huyho\OneDrive\Desktop\New folder\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.pdb
