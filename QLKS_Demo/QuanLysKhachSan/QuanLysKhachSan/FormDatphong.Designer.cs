@@ -43,8 +43,16 @@ namespace QuanLysKhachSan
             this.radioButton_dathue = new System.Windows.Forms.RadioButton();
             this.button_update = new System.Windows.Forms.Button();
             this.dataGridView_datphong = new System.Windows.Forms.DataGridView();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.tabControl1.SuspendLayout();
             this.tabPage_check.SuspendLayout();
+            this.tabPage_confirm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_datphong)).BeginInit();
             this.SuspendLayout();
             // 
@@ -81,6 +89,13 @@ namespace QuanLysKhachSan
             // 
             // tabPage_confirm
             // 
+            this.tabPage_confirm.Controls.Add(this.dateTimePicker2);
+            this.tabPage_confirm.Controls.Add(this.dateTimePicker1);
+            this.tabPage_confirm.Controls.Add(this.textBox5);
+            this.tabPage_confirm.Controls.Add(this.textBox4);
+            this.tabPage_confirm.Controls.Add(this.textBox3);
+            this.tabPage_confirm.Controls.Add(this.textBox2);
+            this.tabPage_confirm.Controls.Add(this.textBox1);
             this.tabPage_confirm.Location = new System.Drawing.Point(4, 25);
             this.tabPage_confirm.Name = "tabPage_confirm";
             this.tabPage_confirm.Padding = new System.Windows.Forms.Padding(3);
@@ -188,6 +203,59 @@ namespace QuanLysKhachSan
             this.dataGridView_datphong.Size = new System.Drawing.Size(755, 269);
             this.dataGridView_datphong.TabIndex = 11;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(159, 40);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(198, 22);
+            this.textBox1.TabIndex = 0;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(482, 139);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(198, 22);
+            this.textBox2.TabIndex = 1;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(482, 97);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(198, 22);
+            this.textBox3.TabIndex = 2;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(159, 123);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(198, 22);
+            this.textBox4.TabIndex = 3;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(159, 79);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(198, 22);
+            this.textBox5.TabIndex = 4;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(471, 22);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(112, 27);
+            this.dateTimePicker1.TabIndex = 5;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker2.Location = new System.Drawing.Point(471, 55);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(112, 27);
+            this.dateTimePicker2.TabIndex = 6;
+            // 
             // FormDatphong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -199,6 +267,8 @@ namespace QuanLysKhachSan
             this.tabControl1.ResumeLayout(false);
             this.tabPage_check.ResumeLayout(false);
             this.tabPage_check.PerformLayout();
+            this.tabPage_confirm.ResumeLayout(false);
+            this.tabPage_confirm.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_datphong)).EndInit();
             this.ResumeLayout(false);
 
@@ -220,5 +290,12 @@ namespace QuanLysKhachSan
         private System.Windows.Forms.Button button_update;
         private System.Windows.Forms.DataGridView dataGridView_datphong;
         private System.Windows.Forms.TabPage tabPage_confirm;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
