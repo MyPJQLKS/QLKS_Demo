@@ -209,6 +209,7 @@ namespace QuanLysKhachSan
             this.dataGridView_confirm.RowTemplate.Height = 24;
             this.dataGridView_confirm.Size = new System.Drawing.Size(1040, 254);
             this.dataGridView_confirm.TabIndex = 14;
+            this.dataGridView_confirm.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_confirm_CellClick);
             // 
             // button1
             // 

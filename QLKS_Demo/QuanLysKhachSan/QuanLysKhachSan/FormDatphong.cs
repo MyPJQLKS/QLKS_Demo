@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+//using System.
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
@@ -115,6 +116,20 @@ namespace QuanLysKhachSan
                 sqlData.Fill(table);
                 dataGridView_confirm.DataSource = table;
             }
-        }    
+        }
+
+        private void dataGridView_confirm_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex>=0)
+            {
+                DataGridViewRow row = this.dataGridView_confirm.Rows[e.RowIndex];
+                textBox_mathe.Text= row.Cells[0].Value.ToString();
+                textBox_maphong.Text = row.Cells[1].Value.ToString();
+                textBox_manv.Text = row.Cells[2].Value.ToString();
+                textBox_tenkh.Text = row.Cells[3].Value.ToString();
+                textBox_cmt.Text = row.Cells[4].Value.ToString();
+                dateTimePicker_ngaydat.Value = Convert.ToDateTime(row.Cells[4].Value);
+            }    
+        }
     }
 }
