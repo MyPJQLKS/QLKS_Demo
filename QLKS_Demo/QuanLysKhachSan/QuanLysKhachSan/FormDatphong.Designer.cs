@@ -63,6 +63,9 @@ namespace QuanLysKhachSan
             this.radioButton_searchchuathue = new System.Windows.Forms.RadioButton();
             this.radioButton_searchdathue = new System.Windows.Forms.RadioButton();
             this.label12 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage_check.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_check)).BeginInit();
@@ -78,7 +81,7 @@ namespace QuanLysKhachSan
             this.tabControl1.Location = new System.Drawing.Point(13, 13);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(775, 486);
+            this.tabControl1.Size = new System.Drawing.Size(775, 523);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage_check
@@ -99,7 +102,7 @@ namespace QuanLysKhachSan
             this.tabPage_check.Location = new System.Drawing.Point(4, 25);
             this.tabPage_check.Name = "tabPage_check";
             this.tabPage_check.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_check.Size = new System.Drawing.Size(767, 457);
+            this.tabPage_check.Size = new System.Drawing.Size(767, 494);
             this.tabPage_check.TabIndex = 0;
             this.tabPage_check.Text = "KIểm tra";
             this.tabPage_check.UseVisualStyleBackColor = true;
@@ -208,7 +211,7 @@ namespace QuanLysKhachSan
             // dataGridView_check
             // 
             this.dataGridView_check.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_check.Location = new System.Drawing.Point(6, 182);
+            this.dataGridView_check.Location = new System.Drawing.Point(6, 219);
             this.dataGridView_check.Name = "dataGridView_check";
             this.dataGridView_check.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridView_check.RowHeadersWidth = 51;
@@ -220,6 +223,9 @@ namespace QuanLysKhachSan
             // 
             // tabPage_confirm
             // 
+            this.tabPage_confirm.Controls.Add(this.button3);
+            this.tabPage_confirm.Controls.Add(this.button2);
+            this.tabPage_confirm.Controls.Add(this.button1);
             this.tabPage_confirm.Controls.Add(this.dataGridView_confirm);
             this.tabPage_confirm.Controls.Add(this.label11);
             this.tabPage_confirm.Controls.Add(this.label10);
@@ -238,7 +244,7 @@ namespace QuanLysKhachSan
             this.tabPage_confirm.Location = new System.Drawing.Point(4, 25);
             this.tabPage_confirm.Name = "tabPage_confirm";
             this.tabPage_confirm.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_confirm.Size = new System.Drawing.Size(767, 457);
+            this.tabPage_confirm.Size = new System.Drawing.Size(767, 494);
             this.tabPage_confirm.TabIndex = 1;
             this.tabPage_confirm.Text = "Đặt phòng";
             this.tabPage_confirm.UseVisualStyleBackColor = true;
@@ -247,11 +253,11 @@ namespace QuanLysKhachSan
             // dataGridView_confirm
             // 
             this.dataGridView_confirm.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_confirm.Location = new System.Drawing.Point(7, 216);
+            this.dataGridView_confirm.Location = new System.Drawing.Point(7, 234);
             this.dataGridView_confirm.Name = "dataGridView_confirm";
             this.dataGridView_confirm.RowHeadersWidth = 51;
             this.dataGridView_confirm.RowTemplate.Height = 24;
-            this.dataGridView_confirm.Size = new System.Drawing.Size(754, 235);
+            this.dataGridView_confirm.Size = new System.Drawing.Size(754, 254);
             this.dataGridView_confirm.TabIndex = 14;
             // 
             // label11
@@ -413,11 +419,41 @@ namespace QuanLysKhachSan
             this.label12.TabIndex = 28;
             this.label12.Text = "Cập nhật theo:";
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(121, 183);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(140, 32);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Thêm thẻ phòng";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(297, 183);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(142, 32);
+            this.button2.TabIndex = 16;
+            this.button2.Text = "Sửa thẻ phòng";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(475, 183);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(142, 32);
+            this.button3.TabIndex = 17;
+            this.button3.Text = "Xóa thẻ phòng";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
             // FormDatphong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 511);
+            this.ClientSize = new System.Drawing.Size(800, 548);
             this.Controls.Add(this.tabControl1);
             this.Name = "FormDatphong";
             this.Text = "Đặt phòng khách sạn";
@@ -470,5 +506,8 @@ namespace QuanLysKhachSan
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.RadioButton radioButton_searchchuathue;
         private System.Windows.Forms.RadioButton radioButton_searchdathue;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }
