@@ -117,26 +117,24 @@ return @tongTienHD
 end
 go
 
+--7/3/2021
+create proc kiemtrathongtin(@ma_phong nvarchar(10), @ten_phong nvarchar(20), @ma_loai_phong nvarchar(10))
 
-----------thủ tục danh sách khách đang thuê-------------
-CREATE OR ALTER PROC Customer_List_On
-AS
-BEGIN
-SELECT tenkhachhang as N'Tên khách hàng', socmt as 'Số CMT', max(ngaythue) as N'Ngày thuê' ,count(socmt) as N'Số lần thuê' 
-FROM thephongthue,Phong
-WHERE ThePhongThue.maphong = PHONG.maphong
-AND PHONG.trangthai = 'True'
-GROUP BY tenkhachhang,socmt
-HAVING DAY(GETDATE()) - DAY(MAX(ngaydukientra))>=0
-END
+as
+begin
+	
+	select count(*) from Phong where maphong = @ma_phong and tenphong = @ten_phong and maloaiphong=@ma_loai_phong
+	
+end
+go
 
-------Thủ tục danh sách khách-------
-CREATE OR ALTER PROC Customer_List
-AS
-BEGIN
-SELECT tenkhachhang as N'Tên khách hàng', socmt as 'Số CMT', max(ngaythue) as N'Ngày thuê' ,count(socmt) as N'Số lần thuê' 
-FROM thephongthue
-group by tenkhachhang,socmt
-END
+--execute kiemtrathongtin 'P0001', 'PG.101', 'LP001'
 
+--select count(*) from Phong where maphong = 'P00001' and tenphong = 'PG.101' and maloaiphong= 'LP001'
 
+create proc kiemtrathongtin_the(@ma_phong nvarchar(10))
+as
+select mathe from ThePhongThue where maphong = @ma_phong
+go
+
+--execute kiemtrathongtin_the 'P0002'
