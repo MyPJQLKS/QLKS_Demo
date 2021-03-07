@@ -34,7 +34,19 @@ namespace QuanLysKhachSan
         {
             if(e.RowIndex >=0)
             {
-
+                DataGridViewRow row = this.dataGridView_check.Rows[e.RowIndex];
+                textBox_maphong.Text = row.Cells[0].Value.ToString();
+                textBox_tenphong.Text = row.Cells[1].Value.ToString();
+                textBox_mlphong.Text = row.Cells[2].Value.ToString();
+                string tt = row.Cells[3].Value.ToString();
+                if(tt== "false")
+                {
+                    radioButton_chuathue.Checked = true;
+                }
+                else if( tt == "true")
+                {
+                    radioButton_dathue.Checked = false;
+                }
             }
         }
     }
