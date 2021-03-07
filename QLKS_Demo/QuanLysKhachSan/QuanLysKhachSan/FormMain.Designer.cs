@@ -152,6 +152,7 @@
             this.thôngTinThẻPhòngThuêToolStripMenuItem.Name = "thôngTinThẻPhòngThuêToolStripMenuItem";
             this.thôngTinThẻPhòngThuêToolStripMenuItem.Size = new System.Drawing.Size(260, 26);
             this.thôngTinThẻPhòngThuêToolStripMenuItem.Text = "Thông tin thẻ phòng thuê";
+            this.thôngTinThẻPhòngThuêToolStripMenuItem.Click += new System.EventHandler(this.thôngTinThẻPhòngThuêToolStripMenuItem_Click);
             // 
             // tàiKhoảnToolStripMenuItem
             // 
