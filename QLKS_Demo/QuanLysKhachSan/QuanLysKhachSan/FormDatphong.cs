@@ -67,7 +67,24 @@ namespace QuanLysKhachSan
             }
             else
             {
-
+                using (SqlConnection sqlcon = new SqlConnection(ConnectionString))
+                {
+                    sqlcon.Open();
+                    SqlCommand command = new SqlCommand("Select Count(*) from Phong where maphong= " + textBox_maphong.Text, sqlcon);
+                    //SqlDataAdapter sqlData = new SqlDataAdapter();
+                    if((int)command.ExecuteScalar() !=0)
+                    {
+                        tabControl1.SelectTab(tabPage_confirm);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Không có mã phòng này", "Cảnh báo", MessageBoxButtons.OK);
+                    }    
+                }
+            }
+            if(radioButton_dathue.Checked == true)
+            {
+                MessageBox("Phòng đang được dùng, mời chọn phòng khác", "Cảnh báo", MessageBoxButtons.OK);
             }    
         }
     }
