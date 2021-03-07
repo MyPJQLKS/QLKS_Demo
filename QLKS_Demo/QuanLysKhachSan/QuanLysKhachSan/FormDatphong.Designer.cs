@@ -43,13 +43,13 @@ namespace QuanLysKhachSan
             this.radioButton_dathue = new System.Windows.Forms.RadioButton();
             this.button_update = new System.Windows.Forms.Button();
             this.dataGridView_check = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.textBox_tenkh = new System.Windows.Forms.TextBox();
+            this.textBox_mathe = new System.Windows.Forms.TextBox();
+            this.textBox_manv = new System.Windows.Forms.TextBox();
+            this.textBox_maphong_fk = new System.Windows.Forms.TextBox();
+            this.textBox_cmt = new System.Windows.Forms.TextBox();
+            this.dateTimePicker_ngaydat = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker_ngaytra = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -58,7 +58,7 @@ namespace QuanLysKhachSan
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.dataGridView_confirm = new System.Windows.Forms.DataGridView();
-            this.label12 = new System.Windows.Forms.Label();
+            this.button_datphong_check = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage_check.SuspendLayout();
             this.tabPage_confirm.SuspendLayout();
@@ -78,7 +78,7 @@ namespace QuanLysKhachSan
             // 
             // tabPage_check
             // 
-            this.tabPage_check.Controls.Add(this.label12);
+            this.tabPage_check.Controls.Add(this.button_datphong_check);
             this.tabPage_check.Controls.Add(this.label4);
             this.tabPage_check.Controls.Add(this.label3);
             this.tabPage_check.Controls.Add(this.label2);
@@ -108,13 +108,13 @@ namespace QuanLysKhachSan
             this.tabPage_confirm.Controls.Add(this.label7);
             this.tabPage_confirm.Controls.Add(this.label6);
             this.tabPage_confirm.Controls.Add(this.label5);
-            this.tabPage_confirm.Controls.Add(this.dateTimePicker2);
-            this.tabPage_confirm.Controls.Add(this.dateTimePicker1);
-            this.tabPage_confirm.Controls.Add(this.textBox5);
-            this.tabPage_confirm.Controls.Add(this.textBox4);
-            this.tabPage_confirm.Controls.Add(this.textBox3);
-            this.tabPage_confirm.Controls.Add(this.textBox2);
-            this.tabPage_confirm.Controls.Add(this.textBox1);
+            this.tabPage_confirm.Controls.Add(this.dateTimePicker_ngaytra);
+            this.tabPage_confirm.Controls.Add(this.dateTimePicker_ngaydat);
+            this.tabPage_confirm.Controls.Add(this.textBox_cmt);
+            this.tabPage_confirm.Controls.Add(this.textBox_maphong_fk);
+            this.tabPage_confirm.Controls.Add(this.textBox_manv);
+            this.tabPage_confirm.Controls.Add(this.textBox_mathe);
+            this.tabPage_confirm.Controls.Add(this.textBox_tenkh);
             this.tabPage_confirm.Location = new System.Drawing.Point(4, 25);
             this.tabPage_confirm.Name = "tabPage_confirm";
             this.tabPage_confirm.Padding = new System.Windows.Forms.Padding(3);
@@ -122,6 +122,7 @@ namespace QuanLysKhachSan
             this.tabPage_confirm.TabIndex = 1;
             this.tabPage_confirm.Text = "Đặt phòng";
             this.tabPage_confirm.UseVisualStyleBackColor = true;
+            this.tabPage_confirm.Click += new System.EventHandler(this.tabPage_confirm_Click);
             // 
             // label4
             // 
@@ -226,58 +227,58 @@ namespace QuanLysKhachSan
             this.dataGridView_check.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_datphong_CellContentClick);
             this.dataGridView_check.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_datphong_CellContentClick);
             // 
-            // textBox1
+            // textBox_tenkh
             // 
-            this.textBox1.Location = new System.Drawing.Point(159, 40);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(198, 22);
-            this.textBox1.TabIndex = 0;
+            this.textBox_tenkh.Location = new System.Drawing.Point(159, 40);
+            this.textBox_tenkh.Name = "textBox_tenkh";
+            this.textBox_tenkh.Size = new System.Drawing.Size(198, 22);
+            this.textBox_tenkh.TabIndex = 0;
             // 
-            // textBox2
+            // textBox_mathe
             // 
-            this.textBox2.Location = new System.Drawing.Point(510, 139);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(198, 22);
-            this.textBox2.TabIndex = 1;
+            this.textBox_mathe.Location = new System.Drawing.Point(510, 139);
+            this.textBox_mathe.Name = "textBox_mathe";
+            this.textBox_mathe.Size = new System.Drawing.Size(198, 22);
+            this.textBox_mathe.TabIndex = 1;
             // 
-            // textBox3
+            // textBox_manv
             // 
-            this.textBox3.Location = new System.Drawing.Point(510, 97);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(198, 22);
-            this.textBox3.TabIndex = 2;
+            this.textBox_manv.Location = new System.Drawing.Point(510, 97);
+            this.textBox_manv.Name = "textBox_manv";
+            this.textBox_manv.Size = new System.Drawing.Size(198, 22);
+            this.textBox_manv.TabIndex = 2;
             // 
-            // textBox4
+            // textBox_maphong_fk
             // 
-            this.textBox4.Location = new System.Drawing.Point(159, 123);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(198, 22);
-            this.textBox4.TabIndex = 3;
+            this.textBox_maphong_fk.Location = new System.Drawing.Point(159, 123);
+            this.textBox_maphong_fk.Name = "textBox_maphong_fk";
+            this.textBox_maphong_fk.Size = new System.Drawing.Size(198, 22);
+            this.textBox_maphong_fk.TabIndex = 3;
             // 
-            // textBox5
+            // textBox_cmt
             // 
-            this.textBox5.Location = new System.Drawing.Point(159, 79);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(198, 22);
-            this.textBox5.TabIndex = 4;
+            this.textBox_cmt.Location = new System.Drawing.Point(159, 79);
+            this.textBox_cmt.Name = "textBox_cmt";
+            this.textBox_cmt.Size = new System.Drawing.Size(198, 22);
+            this.textBox_cmt.TabIndex = 4;
             // 
-            // dateTimePicker1
+            // dateTimePicker_ngaydat
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(561, 22);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(130, 27);
-            this.dateTimePicker1.TabIndex = 5;
+            this.dateTimePicker_ngaydat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker_ngaydat.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker_ngaydat.Location = new System.Drawing.Point(561, 22);
+            this.dateTimePicker_ngaydat.Name = "dateTimePicker_ngaydat";
+            this.dateTimePicker_ngaydat.Size = new System.Drawing.Size(130, 27);
+            this.dateTimePicker_ngaydat.TabIndex = 5;
             // 
-            // dateTimePicker2
+            // dateTimePicker_ngaytra
             // 
-            this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(561, 55);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(130, 27);
-            this.dateTimePicker2.TabIndex = 6;
+            this.dateTimePicker_ngaytra.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker_ngaytra.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker_ngaytra.Location = new System.Drawing.Point(561, 55);
+            this.dateTimePicker_ngaytra.Name = "dateTimePicker_ngaytra";
+            this.dateTimePicker_ngaytra.Size = new System.Drawing.Size(130, 27);
+            this.dateTimePicker_ngaytra.TabIndex = 6;
             // 
             // label5
             // 
@@ -352,14 +353,16 @@ namespace QuanLysKhachSan
             this.dataGridView_confirm.Size = new System.Drawing.Size(754, 235);
             this.dataGridView_confirm.TabIndex = 14;
             // 
-            // label12
+            // button_datphong_check
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(450, 121);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(54, 17);
-            this.label12.TabIndex = 22;
-            this.label12.Text = "label12";
+            this.button_datphong_check.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_datphong_check.Location = new System.Drawing.Point(655, 66);
+            this.button_datphong_check.Name = "button_datphong_check";
+            this.button_datphong_check.Size = new System.Drawing.Size(106, 40);
+            this.button_datphong_check.TabIndex = 23;
+            this.button_datphong_check.Text = "Đặt phòng";
+            this.button_datphong_check.UseVisualStyleBackColor = true;
+            this.button_datphong_check.Click += new System.EventHandler(this.button_datphong_check_Click);
             // 
             // FormDatphong
             // 
@@ -396,13 +399,13 @@ namespace QuanLysKhachSan
         private System.Windows.Forms.Button button_update;
         private System.Windows.Forms.DataGridView dataGridView_check;
         private System.Windows.Forms.TabPage tabPage_confirm;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker_ngaytra;
+        private System.Windows.Forms.DateTimePicker dateTimePicker_ngaydat;
+        private System.Windows.Forms.TextBox textBox_cmt;
+        private System.Windows.Forms.TextBox textBox_maphong_fk;
+        private System.Windows.Forms.TextBox textBox_manv;
+        private System.Windows.Forms.TextBox textBox_mathe;
+        private System.Windows.Forms.TextBox textBox_tenkh;
         private System.Windows.Forms.DataGridView dataGridView_confirm;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
@@ -411,6 +414,6 @@ namespace QuanLysKhachSan
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button button_datphong_check;
     }
 }

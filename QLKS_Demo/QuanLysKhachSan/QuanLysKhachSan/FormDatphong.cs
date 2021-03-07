@@ -39,7 +39,7 @@ namespace QuanLysKhachSan
                 textBox_tenphong.Text = row.Cells[1].Value.ToString();
                 textBox_mlphong.Text = row.Cells[2].Value.ToString();
                 string tt = row.Cells[3].Value.ToString();
-                label12.Text = tt;
+                //label12.Text = tt;
                 if(tt== "False")
                 {
                     radioButton_chuathue.Checked = true;
@@ -50,7 +50,25 @@ namespace QuanLysKhachSan
                     radioButton_dathue.Checked = true;
                     radioButton_chuathue.Checked = false;
                 }
+                textBox_maphong_fk.Text = textBox_maphong.Text;
             }
+        }
+
+        private void tabPage_confirm_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_datphong_check_Click(object sender, EventArgs e)
+        {
+            if(textBox_maphong.Text=="")
+            {
+                MessageBox.Show("Chưa chọn phòng", "Cảnh báo", MessageBoxButtons.OK);
+            }
+            else
+            {
+
+            }    
         }
     }
 }
