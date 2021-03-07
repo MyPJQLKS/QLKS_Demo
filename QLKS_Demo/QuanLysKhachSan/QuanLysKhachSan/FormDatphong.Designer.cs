@@ -128,8 +128,9 @@ namespace QuanLysKhachSan
             // 
             // dateTimePicker_ngaydat
             // 
+            this.dateTimePicker_ngaydat.CustomFormat = "yyyy-mm-dd";
             this.dateTimePicker_ngaydat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker_ngaydat.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker_ngaydat.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker_ngaydat.Location = new System.Drawing.Point(674, 22);
             this.dateTimePicker_ngaydat.Name = "dateTimePicker_ngaydat";
             this.dateTimePicker_ngaydat.Size = new System.Drawing.Size(130, 27);
@@ -137,8 +138,9 @@ namespace QuanLysKhachSan
             // 
             // dateTimePicker_ngaytra
             // 
+            this.dateTimePicker_ngaytra.CustomFormat = "yyyy-mm-dd";
             this.dateTimePicker_ngaytra.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker_ngaytra.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker_ngaytra.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker_ngaytra.Location = new System.Drawing.Point(674, 55);
             this.dateTimePicker_ngaytra.Name = "dateTimePicker_ngaytra";
             this.dateTimePicker_ngaytra.Size = new System.Drawing.Size(130, 27);

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 //using System.
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Globalization;
 
 namespace QuanLysKhachSan
 {
@@ -128,7 +129,7 @@ namespace QuanLysKhachSan
                 textBox_manv.Text = row.Cells[2].Value.ToString();
                 textBox_tenkh.Text = row.Cells[3].Value.ToString();
                 textBox_cmt.Text = row.Cells[4].Value.ToString();
-                dateTimePicker_ngaydat.Value = Convert.ToDateTime(row.Cells[4].Value);
+                dateTimePicker_ngaydat.Value = DateTime.ParseExact(row.Cells[4].Value.ToString(), , CultureInfo.InvariantCulture);
             }    
         }
     }
