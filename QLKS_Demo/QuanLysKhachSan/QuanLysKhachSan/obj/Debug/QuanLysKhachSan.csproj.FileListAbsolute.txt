@@ -9,6 +9,20 @@ D:\Kì 2 năm 3\Thức tập nhóm\MyPJ\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSa
 D:\Kì 2 năm 3\Thức tập nhóm\MyPJ\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.exe
 D:\Kì 2 năm 3\Thức tập nhóm\MyPJ\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.pdb
 D:\Kì 2 năm 3\Thức tập nhóm\MyPJ\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.FormMain.resources
+<<<<<<< HEAD
+D:\thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\bin\Debug\QuanLysKhachSan.exe.config
+D:\thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\bin\Debug\QuanLysKhachSan.exe
+D:\thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\bin\Debug\QuanLysKhachSan.pdb
+D:\thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.csprojAssemblyReference.cache
+D:\thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.Form1.resources
+D:\thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.FormMain.resources
+D:\thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.Login.resources
+D:\thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.Properties.Resources.resources
+D:\thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.csproj.GenerateResource.cache
+D:\thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.csproj.CoreCompileInputs.cache
+D:\thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.exe
+D:\thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.pdb
+=======
 C:\Users\huyho\OneDrive\Desktop\TT Nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\bin\Debug\QuanLysKhachSan.exe.config
 C:\Users\huyho\OneDrive\Desktop\TT Nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\bin\Debug\QuanLysKhachSan.exe
 C:\Users\huyho\OneDrive\Desktop\TT Nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\bin\Debug\QuanLysKhachSan.pdb
@@ -69,3 +83,4 @@ C:\Users\LOCALBOI\source\repos\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachS
 C:\Users\LOCALBOI\source\repos\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.csproj.CopyComplete
 C:\Users\LOCALBOI\source\repos\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.exe
 C:\Users\LOCALBOI\source\repos\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.pdb
+>>>>>>> a01644e684c75b9025c7c5361abe92e7f183859a

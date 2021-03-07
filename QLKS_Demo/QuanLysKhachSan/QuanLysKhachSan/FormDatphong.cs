@@ -29,5 +29,28 @@ namespace QuanLysKhachSan
                 dataGridView_datphong.DataSource = table;
             }
     }
+
+        private void dataGridView_datphong_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex>=0)
+            {
+                DataGridViewRow row = this.dataGridView_datphong.Rows[e.RowIndex];
+                textBox_maphong.Text = row.Cells[0].Value.ToString();
+                textBox_tenphong.Text = row.Cells[1].Value.ToString();
+                textBox_mlphong.Text = row.Cells[2].Value.ToString();
+                string trangthai = row.Cells[3].Value.ToString();
+                if ( trangthai == "false")
+                {
+                    radioButton_dathue.Checked = true;
+                    radioButton_chuathue.Checked = false;
+                }
+                else
+                {
+                    radioButton_dathue.Checked = false;
+                    radioButton_chuathue.Checked = true;
+                    
+                }
+            }
+        }
     }
 }
