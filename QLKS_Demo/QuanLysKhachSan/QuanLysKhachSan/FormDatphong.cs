@@ -84,7 +84,7 @@ namespace QuanLysKhachSan
             }
             if(radioButton_dathue.Checked == true)
             {
-                MessageBox("Phòng đang được dùng, mời chọn phòng khác", "Cảnh báo", MessageBoxButtons.OK);
+                MessageBox.Show("Phòng đang được dùng, mời chọn phòng khác", "Cảnh báo", MessageBoxButtons.OK);
             }    
         }
     }
