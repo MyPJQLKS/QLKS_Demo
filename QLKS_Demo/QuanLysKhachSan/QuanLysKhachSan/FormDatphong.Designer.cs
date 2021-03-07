@@ -31,7 +31,7 @@ namespace QuanLysKhachSan
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage_check = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage_confirm = new System.Windows.Forms.TabPage();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -51,7 +51,7 @@ namespace QuanLysKhachSan
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage_check);
-            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage_confirm);
             this.tabControl1.Location = new System.Drawing.Point(13, 13);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -76,18 +76,18 @@ namespace QuanLysKhachSan
             this.tabPage_check.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage_check.Size = new System.Drawing.Size(767, 457);
             this.tabPage_check.TabIndex = 0;
-            this.tabPage_check.Text = "tabPage1";
+            this.tabPage_check.Text = "KIểm tra";
             this.tabPage_check.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // tabPage_confirm
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(192, 71);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPage_confirm.Location = new System.Drawing.Point(4, 25);
+            this.tabPage_confirm.Name = "tabPage_confirm";
+            this.tabPage_confirm.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage_confirm.Size = new System.Drawing.Size(767, 457);
+            this.tabPage_confirm.TabIndex = 1;
+            this.tabPage_confirm.Text = "Đặt phòng";
+            this.tabPage_confirm.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
@@ -219,6 +219,6 @@ namespace QuanLysKhachSan
         private System.Windows.Forms.RadioButton radioButton_dathue;
         private System.Windows.Forms.Button button_update;
         private System.Windows.Forms.DataGridView dataGridView_datphong;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPage_confirm;
     }
 }
