@@ -39,13 +39,16 @@ namespace QuanLysKhachSan
                 textBox_tenphong.Text = row.Cells[1].Value.ToString();
                 textBox_mlphong.Text = row.Cells[2].Value.ToString();
                 string tt = row.Cells[3].Value.ToString();
-                if(tt== "false")
+                label12.Text = tt;
+                if(tt== "False")
                 {
                     radioButton_chuathue.Checked = true;
-                }
-                else if( tt == "true")
-                {
                     radioButton_dathue.Checked = false;
+                }
+                else if( tt == "True")
+                {
+                    radioButton_dathue.Checked = true;
+                    radioButton_chuathue.Checked = false;
                 }
             }
         }

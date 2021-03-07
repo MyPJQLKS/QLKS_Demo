@@ -58,6 +58,7 @@ namespace QuanLysKhachSan
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.dataGridView_confirm = new System.Windows.Forms.DataGridView();
+            this.label12 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage_check.SuspendLayout();
             this.tabPage_confirm.SuspendLayout();
@@ -77,6 +78,7 @@ namespace QuanLysKhachSan
             // 
             // tabPage_check
             // 
+            this.tabPage_check.Controls.Add(this.label12);
             this.tabPage_check.Controls.Add(this.label4);
             this.tabPage_check.Controls.Add(this.label3);
             this.tabPage_check.Controls.Add(this.label2);
@@ -221,6 +223,7 @@ namespace QuanLysKhachSan
             this.dataGridView_check.RowTemplate.Height = 24;
             this.dataGridView_check.Size = new System.Drawing.Size(755, 269);
             this.dataGridView_check.TabIndex = 11;
+            this.dataGridView_check.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_datphong_CellContentClick);
             this.dataGridView_check.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_datphong_CellContentClick);
             // 
             // textBox1
@@ -349,6 +352,15 @@ namespace QuanLysKhachSan
             this.dataGridView_confirm.Size = new System.Drawing.Size(754, 235);
             this.dataGridView_confirm.TabIndex = 14;
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(450, 121);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(54, 17);
+            this.label12.TabIndex = 22;
+            this.label12.Text = "label12";
+            // 
             // FormDatphong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -399,5 +411,6 @@ namespace QuanLysKhachSan
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label12;
     }
 }
