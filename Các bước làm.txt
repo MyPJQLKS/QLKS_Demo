@@ -1,3 +1,4 @@
+
 - 3 ngày 1/3-3/3 
 
 +, Cài đặt cơ sở dữ liệu theo file "data.bak" bằng cách restore
@@ -6,3 +7,57 @@
 +, Nhìn qua bảng quan hệ dữ liệu file "Quan hệ dữ liêu.png"
 -->(?) Nếu có thắc mắc về cơ sở dữ liệu, không cài đặt được hỏi qua mess
 
+- 4 ngày 4/3 - 7/3:
+
++++++, Yêu cầu: -> làm hết nội dung của form và chức năng của form được giao
+            -> có thể không phải làm theo trên mà làm tùy ý miễn sử dụng được
+            -> pull trước khi push để đồng bộ dữ liệu
+            -> Ai làm xong thì ghi xong sau nhiệm vụ trong file text này
+            -> (?) thắc mắc thì cứ hỏi
+
++, <Công việc> <Phân công>
+
+  * Xây dựng module quản lý phòng và quản lý vật dụng trong phòng                   ---------------------------Hoàng Anh
+    -> Module gồm: - danh sách phòng có trong data
+                   - một ô text hiện thị thông tin của phòng khi click chuột
+                   - thông tin "mota" chính là nơi lưu các vật dụng và số lượng người có thể ở
+                   - sửa đổi (khi có nhu cầu), thêm phòng, thêm loại phòng
+    -> Thời gian làm:     / đã làm <xong?> 
+
+
+  * Xây dựng module quản lý khách:                                                   ---------------------------Trí Thanh
+    -> Module gồm: -Danh sách tên khách hàng, số chứng minh, ngày gần nhất, số lần thuê (count mã thẻ phòng thuê)
+                    ( dữ liệu khách hàng nằm luôn trong trường thẻ phòng thuê "ThePhongThue")  
+                   - để lọc Khách hàng đang thuê(những khách hàng đang sử dụng phòng)
+
+////
+    -> Thời gian làm:    / đã làm <xong?>
+                       
+  * Xây dựng module quản lý thuê phòng:                                             ----------------------------Minh Thành
+    -> Module gồm:- Một list phòng đã thuê (trangthai=true)
+                  - Một list các phòng chưa được thuê (trangthai=false)
+                  - Một ô text hiện thị thông tin của thẻ phòng thuê
+                  - Thêm thẻ thuê phòng(phòng được thuê phải có trạng thái 'true' sau khi thuê),  
+                  - Sửa thông tin thẻ phòng thuê
+                  - Xóa thẻ phòng thuê
+    -> Thời gian làm:     /đã làm <xong?>
+
+  * Xây dựng module quản lý sử dụng dịch vụ:                                        ----------------------------Vũ Quang
+    -> Module bao gồm: -Một list hiện thị thông tin các loại dịch vụ và các dịch vụ củ thể
+                       (có thể sử dụng combobox để hiện thị các loại dịch vụ)
+                       -Một list hiện thị thông tin các thẻ dịch vụ đang được sử dụng
+                       -Thêm một dịch vụ mới, cập nhật và xóa một dịch vụ và loại dịch vụ
+                      
+    -> Thời gian làm:      /đã làm <xong?>                   
+            
+  * Xây module thanh toán hóa đơn:                                                  ----------------------------Quang Anh 
+    ->Module gồm:- một ô text để hiện thị tổng quan thông tin hóa đơn qua mã thẻ thuê phòng
+                  (tổng tiền có thể sử dụng hàm tinhTienHD trong sql)
+                 - Xuất hóa đơn (In/thông báo cho người dùng biết, sau khi thanh toán thì phòng thuê cũng phải trả lại trạng thái 'false')
+    -> Thời gian làm:      /đã làm <xong?>
+                    
+      
+  * Xây dựng module hướng dẫn sử dụng phần mềm:                                     -----------------------------Thịnh
+    ->Module bao gồm: -Dòng text hướng dẫn sử dụng (chi tiết theo từng mục menu)
+                      -Một image để hướng dẫn với từng mục đích
+    -> Thời gian làm:      /đã làm <xong?>

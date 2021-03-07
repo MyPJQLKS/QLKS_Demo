@@ -1,0 +1,1 @@
+ae mở sql chạy file xoa1loaiphong.sql để thêm cursor nhá
