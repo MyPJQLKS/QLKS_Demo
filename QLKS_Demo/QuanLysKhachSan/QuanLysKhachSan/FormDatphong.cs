@@ -23,10 +23,21 @@ namespace QuanLysKhachSan
             using (SqlConnection sqlcon = new SqlConnection(ConnectionString))
             {
                 sqlcon.Open();
-                SqlDataAdapter sqlData = new SqlDataAdapter("Select * from Phong where trangthai = 'false'", sqlcon);
-                DataTable table = new DataTable();
-                sqlData.Fill(table);
-                dataGridView_check.DataSource = table;
+                if (radioButton_searchchuathue.Checked == true)
+                {
+                    SqlDataAdapter sqlData = new SqlDataAdapter("Select * from Phong where trangthai = 'false'", sqlcon);
+                    DataTable table = new DataTable();
+                    sqlData.Fill(table);
+                    dataGridView_check.DataSource = table;
+                }
+                else if (radioButton_searchdathue.Checked==true)
+                {
+                    SqlDataAdapter sqlData = new SqlDataAdapter("Select * from Phong where trangthai = 'true'", sqlcon);
+                    DataTable table = new DataTable();
+                    sqlData.Fill(table);
+                    dataGridView_check.DataSource = table;
+                }
+                
             }
     }
 
