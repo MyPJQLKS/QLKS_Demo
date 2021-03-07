@@ -51,6 +51,11 @@ namespace QuanLysKhachSan
                     radioButton_chuathue.Checked = false;
                 }
                 textBox_maphong_fk.Text = textBox_maphong.Text;
+                using (SqlConnection sqlcon = new SqlConnection(ConnectionString))
+                {
+                    sqlcon.Open();
+                    SqlCommand command = new SqlCommand("execute thontin_the '" + textBox_maphong + "'", sqlcon);
+                }
             }
         }
 
@@ -71,7 +76,7 @@ namespace QuanLysKhachSan
                 {
                     sqlcon.Open();
                     SqlCommand command = new SqlCommand("Select Count(*) from Phong where maphong= '" + textBox_maphong.Text+"'", sqlcon);
-                    //SqlDataAdapter sqlData = new SqlDataAdapter();
+                    //command = new SqlCommand("")
                     if((int)command.ExecuteScalar() !=0)
                     {
                         tabControl1.SelectTab(tabPage_confirm);
