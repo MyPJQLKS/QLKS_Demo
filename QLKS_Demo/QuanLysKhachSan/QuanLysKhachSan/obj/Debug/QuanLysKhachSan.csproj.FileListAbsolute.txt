@@ -51,3 +51,5 @@ C:\Users\huyho\OneDrive\Desktop\QLKS\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLys
 C:\Users\huyho\OneDrive\Desktop\QLKS\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.csproj.CopyComplete
 C:\Users\huyho\OneDrive\Desktop\QLKS\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.exe
 C:\Users\huyho\OneDrive\Desktop\QLKS\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.pdb
+D:\TTNhom\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.FormDatphong.resources
+D:\TTNhom\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.FormHelp.resources
