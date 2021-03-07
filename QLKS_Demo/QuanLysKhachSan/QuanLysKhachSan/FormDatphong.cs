@@ -104,5 +104,17 @@ namespace QuanLysKhachSan
                 MessageBox.Show("Phòng đang được dùng, mời chọn phòng khác", "Cảnh báo", MessageBoxButtons.OK);
             }
         }
+
+        private void FormDatphong_Load(object sender, EventArgs e)
+        {
+            using (SqlConnection sqlcon = new SqlConnection(ConnectionString))
+            {
+                sqlcon.Open();
+                SqlDataAdapter sqlData = new SqlDataAdapter("Select * from ThePhongThue", sqlcon);
+                DataTable table = new DataTable();
+                sqlData.Fill(table);
+                dataGridView_confirm.DataSource = table;
+            }
+        }    
     }
 }
