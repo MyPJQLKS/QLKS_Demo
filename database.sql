@@ -151,5 +151,25 @@ create proc nhapdulieu(@mathe nvarchar(10), @maphong nvarchar (10), @manv nvarch
 as
 insert into ThePhongThue(mathe, maphong, manv, tenkhachhang, socmt, ngaythue, ngaydukientra) values (@mathe, @maphong,@manv,@ten,@cmt,@dat,@tra)
 
-execute nhapdulieu N'TH003', N'P0001', N'NV002', N'Lê Lôi', N'123456789','1-1-2021','1-2-2021'
-select * from ThePhongThue
+--execute nhapdulieu N'TH003', N'P0001', N'NV002', N'Lê Lôi', N'123456789','1-1-2021','1-2-2021'
+--select * from ThePhongThue
+create or alter proc checktofix(@mathe nvarchar(10), @maphong nvarchar (10), @manv nvarchar(10), @ten nvarchar(50), @cmt nvarchar(20), @dat date, @tra date)
+as
+begin
+declare @temp int
+select @temp=count(*) from ThePhongThue where mathe = @mathe
+--if(@temp=0)
+--	select N'Đã tồn tại thẻ này trong  CSDL'
+--else 
+if(@temp=1)
+	begin
+	delete ThePhongThue where mathe=@mathe;
+	execute nhapdulieu @mathe , @maphong , @manv , @ten , @cmt , @dat , @tra;
+	end
+end
+/*
+declare @temp int
+select @temp = count(*) from Phong
+print @temp
+*/
+execute checktofix N'TH004',N'P0006',N'NV002',N'',N'','1-1-2021','2-1-2021'

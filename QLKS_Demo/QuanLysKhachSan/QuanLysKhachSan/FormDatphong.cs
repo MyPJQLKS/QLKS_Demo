@@ -197,8 +197,14 @@ namespace QuanLysKhachSan
             }    
         }
 
+        //private bool checkvalue()
+        //{
+        //    if(textBox_cmt.)
+        //}
+
         private void button2_Click(object sender, EventArgs e)
         {
+            //if(textBox_cmt.Va)
             try
             {
                 using (SqlConnection sqlcon = new SqlConnection(ConnectionString))
