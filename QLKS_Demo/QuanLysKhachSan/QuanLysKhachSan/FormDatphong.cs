@@ -139,20 +139,27 @@ namespace QuanLysKhachSan
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(textBox_cmt.Text==""||textBox_manv.Text==""||textBox_maphong_fk.Text==""||
-                textBox_mathe.Text == "" || textBox_tenkh.Text == "")
+            try
             {
-                MessageBox.Show("Chưa đủ thông tin", "Cảnh báo", MessageBoxButtons.OK);
-            }
-            else 
-            { 
-            using (SqlConnection sqlcon = new SqlConnection(ConnectionString))
-            {
-                sqlcon.Open();
-                    SqlCommand command = new SqlCommand(
-                        "execute nhapdulieu N'" + textBox_mathe.Text + "', N'"+textBox_maphong_fk+"', N'"+textBox_manv.Text+"', N'"+textBox_tenkh.Text+"', N'"+textBox_cmt.Text+"', N'"+dateTimePicker_ngaydat.Value.ToString()+"', N'"+ dateTimePicker_ngaytra.Value.ToString()+"'", sqlcon);
-                    command.ExecuteNonQuery();
+                if (textBox_cmt.Text == "" || textBox_manv.Text == "" || textBox_maphong_fk.Text == "" ||
+                    textBox_mathe.Text == "" || textBox_tenkh.Text == "")
+                {
+                    MessageBox.Show("Chưa đủ thông tin", "Cảnh báo", MessageBoxButtons.OK);
                 }
+                else
+                {
+                    using (SqlConnection sqlcon = new SqlConnection(ConnectionString))
+                    {
+                        sqlcon.Open();
+                        SqlCommand command = new SqlCommand(
+                            "execute nhapdulieu N'" + textBox_mathe.Text + "', N'" + textBox_maphong_fk.Text + "', N'" + textBox_manv.Text + "', N'" + textBox_tenkh.Text + "', N'" + textBox_cmt.Text + "', '" + dateTimePicker_ngaydat.Value.ToString() + "', '" + dateTimePicker_ngaytra.Value.ToString() + "'", sqlcon);
+                        command.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Lỗi");
             }
         }
 
@@ -184,10 +191,27 @@ namespace QuanLysKhachSan
                     { 
                     sqlcon.Open();
                     SqlCommand sqlData = new SqlCommand("delete from ThePhongThue where mathe = '"+textBox_mathe.Text+"'", sqlcon);
-                        sqlData.ExecuteNonQuery();
+                    sqlData.ExecuteNonQuery();
                     }
                 }    
             }    
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (SqlConnection sqlcon = new SqlConnection(ConnectionString))
+                {
+                    sqlcon.Open();
+                    SqlCommand sqlData = new SqlCommand("execute checktofix N'"+textBox_mathe.Text+"',N'"+textBox_maphong_fk.Text+"',N'"+textBox_manv.Text+"',N'"+textBox_tenkh.Text+"',N'"+textBox_cmt.Text+"','"+dateTimePicker_ngaydat.Value.ToString()+"','"+dateTimePicker_ngaytra.Value.ToString()+"'", sqlcon);
+                    sqlData.ExecuteNonQuery();
+                }    
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

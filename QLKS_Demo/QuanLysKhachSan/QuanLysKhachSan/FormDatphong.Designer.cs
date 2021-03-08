@@ -31,6 +31,7 @@ namespace QuanLysKhachSan
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage_confirm = new System.Windows.Forms.TabPage();
+            this.button4 = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -73,7 +74,6 @@ namespace QuanLysKhachSan
             this.radioButton_dathue = new System.Windows.Forms.RadioButton();
             this.button_update = new System.Windows.Forms.Button();
             this.dataGridView_check = new System.Windows.Forms.DataGridView();
-            this.button4 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage_confirm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_confirm)).BeginInit();
@@ -128,6 +128,17 @@ namespace QuanLysKhachSan
             this.tabPage_confirm.Text = "Đặt phòng";
             this.tabPage_confirm.UseVisualStyleBackColor = true;
             this.tabPage_confirm.Click += new System.EventHandler(this.tabPage_confirm_Click);
+            // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(41, 183);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(140, 32);
+            this.button4.TabIndex = 25;
+            this.button4.Text = "Cập nhật";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label19
             // 
@@ -212,6 +223,7 @@ namespace QuanLysKhachSan
             this.button2.TabIndex = 16;
             this.button2.Text = "Sửa thẻ phòng";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -525,17 +537,6 @@ namespace QuanLysKhachSan
             this.dataGridView_check.TabIndex = 25;
             this.dataGridView_check.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_datphong_CellContentClick);
             this.dataGridView_check.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_datphong_CellContentClick);
-            // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(41, 183);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(140, 32);
-            this.button4.TabIndex = 25;
-            this.button4.Text = "Cập nhật";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // FormDatphong
             // 
