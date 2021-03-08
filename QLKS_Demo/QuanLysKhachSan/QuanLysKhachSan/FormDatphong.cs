@@ -125,13 +125,36 @@ namespace QuanLysKhachSan
             {
                 DataGridViewRow row = this.dataGridView_confirm.Rows[e.RowIndex];
                 textBox_mathe.Text= row.Cells[0].Value.ToString();
-                textBox_maphong.Text = row.Cells[1].Value.ToString();
+                textBox_maphong_fk.Text = row.Cells[1].Value.ToString();
                 textBox_manv.Text = row.Cells[2].Value.ToString();
                 textBox_tenkh.Text = row.Cells[3].Value.ToString();
                 textBox_cmt.Text = row.Cells[4].Value.ToString();
-                DateTime dt= DateTime.ParseExact(row.Cells[5].Value.ToString(), "dd-mm-yyyy", CultureInfo.InvariantCulture);
-                dateTimePicker_ngaydat.Value = dt;
+                dateTimePicker_ngaydat.Value = Convert.ToDateTime(row.Cells[5].Value);
+                dateTimePicker_ngaytra.Value = Convert.ToDateTime(row.Cells[6].Value);
+                 
             }    
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(textBox_cmt.Text==""||textBox_manv.Text==""||textBox_maphong_fk.Text==""||
+                textBox_mathe.Text == "" || textBox_tenkh.Text == "")
+            {
+                MessageBox.Show("Chưa đủ thông tin", "Cảnh báo", MessageBoxButtons.OK);
+            }
+            else 
+            { 
+            using (SqlConnection sqlcon = new SqlConnection(ConnectionString))
+            {
+                sqlcon.Open();
+                    SqlCommand command = new SqlCommand(
+                        "insert into ThePhongThue select(mathe, maphong, manv, tenkhachhang, socmt, ngaydat, ngaydukientra) values('" + textBox_mathe.Text + "', '"+textBox_maphong_fk+"', '"+textBox_manv.Text+"', '"+textBox_tenkh.Text+"', '"+textBox_cmt.Text+"', '"+dateTimePicker_ngaydat.Value.ToString()+"', '"+ dateTimePicker_ngaytra.Value.ToString()+"'", sqlcon);
+                    SqlDataAdapter sqlData = new SqlDataAdapter("Select * from ThePhongThue", sqlcon);
+                    DataTable table = new DataTable();
+                    sqlData.Fill(table);
+                    dataGridView_confirm.DataSource = table;
+                }
+            }
         }
     }
 }

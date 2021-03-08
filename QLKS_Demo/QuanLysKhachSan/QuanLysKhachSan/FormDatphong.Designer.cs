@@ -30,25 +30,32 @@ namespace QuanLysKhachSan
         private void InitializeComponent()
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.textBox_tenkh = new System.Windows.Forms.TextBox();
-            this.textBox_mathe = new System.Windows.Forms.TextBox();
-            this.textBox_manv = new System.Windows.Forms.TextBox();
-            this.textBox_maphong_fk = new System.Windows.Forms.TextBox();
-            this.textBox_cmt = new System.Windows.Forms.TextBox();
-            this.dateTimePicker_ngaydat = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker_ngaytra = new System.Windows.Forms.DateTimePicker();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.dataGridView_confirm = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.tabPage_confirm = new System.Windows.Forms.TabPage();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.dataGridView_confirm = new System.Windows.Forms.DataGridView();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.dateTimePicker_ngaytra = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker_ngaydat = new System.Windows.Forms.DateTimePicker();
+            this.textBox_cmt = new System.Windows.Forms.TextBox();
+            this.textBox_maphong_fk = new System.Windows.Forms.TextBox();
+            this.textBox_manv = new System.Windows.Forms.TextBox();
+            this.textBox_mathe = new System.Windows.Forms.TextBox();
+            this.textBox_tenkh = new System.Windows.Forms.TextBox();
             this.tabPage_check = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
@@ -66,16 +73,9 @@ namespace QuanLysKhachSan
             this.radioButton_dathue = new System.Windows.Forms.RadioButton();
             this.button_update = new System.Windows.Forms.Button();
             this.dataGridView_check = new System.Windows.Forms.DataGridView();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_confirm)).BeginInit();
             this.tabPage_confirm.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_confirm)).BeginInit();
             this.tabPage_check.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_check)).BeginInit();
@@ -90,158 +90,6 @@ namespace QuanLysKhachSan
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1058, 523);
             this.tabControl1.TabIndex = 0;
-            // 
-            // textBox_tenkh
-            // 
-            this.textBox_tenkh.Location = new System.Drawing.Point(272, 40);
-            this.textBox_tenkh.Name = "textBox_tenkh";
-            this.textBox_tenkh.Size = new System.Drawing.Size(198, 22);
-            this.textBox_tenkh.TabIndex = 0;
-            // 
-            // textBox_mathe
-            // 
-            this.textBox_mathe.Location = new System.Drawing.Point(623, 139);
-            this.textBox_mathe.Name = "textBox_mathe";
-            this.textBox_mathe.Size = new System.Drawing.Size(198, 22);
-            this.textBox_mathe.TabIndex = 1;
-            // 
-            // textBox_manv
-            // 
-            this.textBox_manv.Location = new System.Drawing.Point(623, 97);
-            this.textBox_manv.Name = "textBox_manv";
-            this.textBox_manv.Size = new System.Drawing.Size(198, 22);
-            this.textBox_manv.TabIndex = 2;
-            // 
-            // textBox_maphong_fk
-            // 
-            this.textBox_maphong_fk.Location = new System.Drawing.Point(272, 123);
-            this.textBox_maphong_fk.Name = "textBox_maphong_fk";
-            this.textBox_maphong_fk.Size = new System.Drawing.Size(198, 22);
-            this.textBox_maphong_fk.TabIndex = 3;
-            // 
-            // textBox_cmt
-            // 
-            this.textBox_cmt.Location = new System.Drawing.Point(272, 79);
-            this.textBox_cmt.Name = "textBox_cmt";
-            this.textBox_cmt.Size = new System.Drawing.Size(198, 22);
-            this.textBox_cmt.TabIndex = 4;
-            // 
-            // dateTimePicker_ngaydat
-            // 
-            this.dateTimePicker_ngaydat.CustomFormat = "yyyy-mm-dd";
-            this.dateTimePicker_ngaydat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker_ngaydat.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker_ngaydat.Location = new System.Drawing.Point(674, 22);
-            this.dateTimePicker_ngaydat.Name = "dateTimePicker_ngaydat";
-            this.dateTimePicker_ngaydat.Size = new System.Drawing.Size(130, 27);
-            this.dateTimePicker_ngaydat.TabIndex = 5;
-            // 
-            // dateTimePicker_ngaytra
-            // 
-            this.dateTimePicker_ngaytra.CustomFormat = "yyyy-mm-dd";
-            this.dateTimePicker_ngaytra.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker_ngaytra.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker_ngaytra.Location = new System.Drawing.Point(674, 55);
-            this.dateTimePicker_ngaytra.Name = "dateTimePicker_ngaytra";
-            this.dateTimePicker_ngaytra.Size = new System.Drawing.Size(130, 27);
-            this.dateTimePicker_ngaytra.TabIndex = 6;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(23, 43);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 17);
-            this.label5.TabIndex = 7;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(56, 126);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(0, 17);
-            this.label6.TabIndex = 8;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(38, 82);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(0, 17);
-            this.label7.TabIndex = 9;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(520, 100);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(0, 17);
-            this.label8.TabIndex = 10;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(562, 139);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(0, 17);
-            this.label9.TabIndex = 11;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(540, 30);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(0, 17);
-            this.label10.TabIndex = 12;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(493, 63);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(0, 17);
-            this.label11.TabIndex = 13;
-            // 
-            // dataGridView_confirm
-            // 
-            this.dataGridView_confirm.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_confirm.Location = new System.Drawing.Point(7, 234);
-            this.dataGridView_confirm.Name = "dataGridView_confirm";
-            this.dataGridView_confirm.RowHeadersWidth = 51;
-            this.dataGridView_confirm.RowTemplate.Height = 24;
-            this.dataGridView_confirm.Size = new System.Drawing.Size(1040, 254);
-            this.dataGridView_confirm.TabIndex = 14;
-            this.dataGridView_confirm.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_confirm_CellClick);
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(234, 183);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(140, 32);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Thêm thẻ phòng";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(410, 183);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(142, 32);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "Sửa thẻ phòng";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(588, 183);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(142, 32);
-            this.button3.TabIndex = 17;
-            this.button3.Text = "Xóa thẻ phòng";
-            this.button3.UseVisualStyleBackColor = true;
             // 
             // tabPage_confirm
             // 
@@ -278,6 +126,222 @@ namespace QuanLysKhachSan
             this.tabPage_confirm.Text = "Đặt phòng";
             this.tabPage_confirm.UseVisualStyleBackColor = true;
             this.tabPage_confirm.Click += new System.EventHandler(this.tabPage_confirm_Click);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(560, 142);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(55, 17);
+            this.label19.TabIndex = 24;
+            this.label19.Text = "Mã thẻ:";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(190, 128);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(75, 17);
+            this.label18.TabIndex = 23;
+            this.label18.Text = "Mã phòng:";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(549, 63);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(110, 17);
+            this.label17.TabIndex = 22;
+            this.label17.Text = "Ngày trả phòng:";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(546, 30);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(113, 17);
+            this.label16.TabIndex = 21;
+            this.label16.Text = "Ngày đặt phòng:";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(518, 100);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(97, 17);
+            this.label15.TabIndex = 20;
+            this.label15.Text = "Mã nhân viên:";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(172, 82);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(93, 17);
+            this.label14.TabIndex = 19;
+            this.label14.Text = "CMND/CCCD:";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(149, 43);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(117, 17);
+            this.label13.TabIndex = 18;
+            this.label13.Text = "Tên Khách hàng:";
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(588, 183);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(142, 32);
+            this.button3.TabIndex = 17;
+            this.button3.Text = "Xóa thẻ phòng";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(410, 183);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(142, 32);
+            this.button2.TabIndex = 16;
+            this.button2.Text = "Sửa thẻ phòng";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(234, 183);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(140, 32);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Thêm thẻ phòng";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // dataGridView_confirm
+            // 
+            this.dataGridView_confirm.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_confirm.Location = new System.Drawing.Point(7, 234);
+            this.dataGridView_confirm.Name = "dataGridView_confirm";
+            this.dataGridView_confirm.RowHeadersWidth = 51;
+            this.dataGridView_confirm.RowTemplate.Height = 24;
+            this.dataGridView_confirm.Size = new System.Drawing.Size(1040, 254);
+            this.dataGridView_confirm.TabIndex = 14;
+            this.dataGridView_confirm.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_confirm_CellClick);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(493, 63);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(0, 17);
+            this.label11.TabIndex = 13;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(540, 30);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(0, 17);
+            this.label10.TabIndex = 12;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(562, 139);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(0, 17);
+            this.label9.TabIndex = 11;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(520, 100);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(0, 17);
+            this.label8.TabIndex = 10;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(38, 82);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(0, 17);
+            this.label7.TabIndex = 9;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(56, 126);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(0, 17);
+            this.label6.TabIndex = 8;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(23, 43);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(0, 17);
+            this.label5.TabIndex = 7;
+            // 
+            // dateTimePicker_ngaytra
+            // 
+            this.dateTimePicker_ngaytra.CustomFormat = "dd-MM-yyyy";
+            this.dateTimePicker_ngaytra.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker_ngaytra.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker_ngaytra.Location = new System.Drawing.Point(674, 55);
+            this.dateTimePicker_ngaytra.Name = "dateTimePicker_ngaytra";
+            this.dateTimePicker_ngaytra.Size = new System.Drawing.Size(130, 27);
+            this.dateTimePicker_ngaytra.TabIndex = 6;
+            // 
+            // dateTimePicker_ngaydat
+            // 
+            this.dateTimePicker_ngaydat.CustomFormat = "dd-MM-yyyy";
+            this.dateTimePicker_ngaydat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker_ngaydat.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker_ngaydat.Location = new System.Drawing.Point(674, 22);
+            this.dateTimePicker_ngaydat.Name = "dateTimePicker_ngaydat";
+            this.dateTimePicker_ngaydat.Size = new System.Drawing.Size(130, 27);
+            this.dateTimePicker_ngaydat.TabIndex = 5;
+            // 
+            // textBox_cmt
+            // 
+            this.textBox_cmt.Location = new System.Drawing.Point(272, 79);
+            this.textBox_cmt.Name = "textBox_cmt";
+            this.textBox_cmt.Size = new System.Drawing.Size(198, 22);
+            this.textBox_cmt.TabIndex = 4;
+            // 
+            // textBox_maphong_fk
+            // 
+            this.textBox_maphong_fk.Location = new System.Drawing.Point(272, 123);
+            this.textBox_maphong_fk.Name = "textBox_maphong_fk";
+            this.textBox_maphong_fk.Size = new System.Drawing.Size(198, 22);
+            this.textBox_maphong_fk.TabIndex = 3;
+            // 
+            // textBox_manv
+            // 
+            this.textBox_manv.Location = new System.Drawing.Point(623, 97);
+            this.textBox_manv.Name = "textBox_manv";
+            this.textBox_manv.Size = new System.Drawing.Size(198, 22);
+            this.textBox_manv.TabIndex = 2;
+            // 
+            // textBox_mathe
+            // 
+            this.textBox_mathe.Location = new System.Drawing.Point(623, 139);
+            this.textBox_mathe.Name = "textBox_mathe";
+            this.textBox_mathe.Size = new System.Drawing.Size(198, 22);
+            this.textBox_mathe.TabIndex = 1;
+            // 
+            // textBox_tenkh
+            // 
+            this.textBox_tenkh.Location = new System.Drawing.Point(272, 40);
+            this.textBox_tenkh.Name = "textBox_tenkh";
+            this.textBox_tenkh.Size = new System.Drawing.Size(198, 22);
+            this.textBox_tenkh.TabIndex = 0;
             // 
             // tabPage_check
             // 
@@ -458,69 +522,6 @@ namespace QuanLysKhachSan
             this.dataGridView_check.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_datphong_CellContentClick);
             this.dataGridView_check.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_datphong_CellContentClick);
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(149, 43);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(117, 17);
-            this.label13.TabIndex = 18;
-            this.label13.Text = "Tên Khách hàng:";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(172, 82);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(93, 17);
-            this.label14.TabIndex = 19;
-            this.label14.Text = "CMND/CCCD:";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(518, 100);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(97, 17);
-            this.label15.TabIndex = 20;
-            this.label15.Text = "Mã nhân viên:";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(546, 30);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(113, 17);
-            this.label16.TabIndex = 21;
-            this.label16.Text = "Ngày đặt phòng:";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(549, 63);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(110, 17);
-            this.label17.TabIndex = 22;
-            this.label17.Text = "Ngày trả phòng:";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(190, 128);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(75, 17);
-            this.label18.TabIndex = 23;
-            this.label18.Text = "Mã phòng:";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(560, 142);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(55, 17);
-            this.label19.TabIndex = 24;
-            this.label19.Text = "Mã thẻ:";
-            // 
             // FormDatphong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -531,9 +532,9 @@ namespace QuanLysKhachSan
             this.Text = "Đặt phòng khách sạn";
             this.Load += new System.EventHandler(this.FormDatphong_Load);
             this.tabControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_confirm)).EndInit();
             this.tabPage_confirm.ResumeLayout(false);
             this.tabPage_confirm.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_confirm)).EndInit();
             this.tabPage_check.ResumeLayout(false);
             this.tabPage_check.PerformLayout();
             this.panel1.ResumeLayout(false);
