@@ -132,9 +132,9 @@ go
 
 --select count(*) from Phong where maphong = 'P00001' and tenphong = 'PG.101' and maloaiphong= 'LP001'
 
-create proc kiemtrathongtin_the(@ma_phong nvarchar(10))
+create proc thongtin_the(@ma_phong nvarchar(10))
 as
 select mathe from ThePhongThue where maphong = @ma_phong
 go
 
---execute kiemtrathongtin_the 'P0002'
+--drop proc kiemtrathongtin_the 'P0002'
