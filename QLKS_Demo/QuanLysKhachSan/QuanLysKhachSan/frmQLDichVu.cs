@@ -111,5 +111,27 @@ namespace QuanLysKhachSan
                 }
             }
         }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (conn.State == ConnectionState.Closed)
+                    conn.Open();
+                SqlCommand cmd = new SqlCommand("DELETE FROM DichVu WHERE madv = '" + txtMaDV.Text + "'", conn);
+                cmd.ExecuteNonQuery();
+                if (conn.State == ConnectionState.Open)
+                    conn.Close();
+                frmQLDichVu_Load(sender, e);
+                XoaText();
+            }
+            catch (Exception e1)
+            {
+                if (txtMaDV.Equals(""))
+                {
+                    MessageBox.Show(e1.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
     }
 }
