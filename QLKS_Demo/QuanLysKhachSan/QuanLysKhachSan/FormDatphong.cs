@@ -164,5 +164,26 @@ namespace QuanLysKhachSan
                 dataGridView_confirm.DataSource = table;
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if(textBox_mathe.Text=="")
+            {
+                MessageBox.Show("Chưa có thông tin về mã thẻ của phòng cần xóa!", "Cảnh báo", MessageBoxButtons.OK);
+
+            }
+            else
+            {
+                DialogResult result = MessageBox.Show("Bạn có muốn xóa thẻ có mã " + textBox_mathe.Text + " ?", "Cảnh báo", MessageBoxButtons.YesNo);
+                if(result == DialogResult.Yes)
+                {
+                    using (SqlConnection sqlcon = new SqlConnection(ConnectionString))
+                    { 
+                    sqlcon.Open();
+                    SqlCommand sqlData = new SqlCommand("delete * from ThePhongThue where mathe = '"+textBox_mathe.Text+"'", sqlcon);
+                    }
+                }    
+            }    
+        }
     }
 }
