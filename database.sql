@@ -134,7 +134,22 @@ go
 
 create proc thongtin_the(@ma_phong nvarchar(10))
 as
-select mathe from ThePhongThue where maphong = @ma_phong
+select count(mathe) from ThePhongThue where maphong = @ma_phong
 go
 
---drop proc kiemtrathongtin_the 'P0002'
+--drop proc kiemtra execute proc thongtin_the'P0002'
+
+create proc kiemtramathe(@ma_the nvarchar(10))
+as
+begin
+select count(mathe) from ThePhongThue where mathe =@ma_the
+end
+go
+
+--kiemtra_mathe'TH001'
+create proc nhapdulieu(@mathe nvarchar(10), @maphong nvarchar (10), @manv nvarchar(10), @ten nvarchar(50), @cmt nvarchar(20), @dat date, @tra date)
+as
+insert into ThePhongThue(mathe, maphong, manv, tenkhachhang, socmt, ngaythue, ngaydukientra) values (@mathe, @maphong,@manv,@ten,@cmt,@dat,@tra)
+
+execute nhapdulieu N'TH003', N'P0001', N'NV002', N'Lê Lôi', N'123456789','1-1-2021','1-2-2021'
+select * from ThePhongThue
