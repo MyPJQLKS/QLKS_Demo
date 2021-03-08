@@ -118,6 +118,7 @@ end
 go
 
 --7/3/2021
+--kiểm tra thông tin mã phòng
 create proc kiemtrathongtin(@ma_phong nvarchar(10), @ten_phong nvarchar(20), @ma_loai_phong nvarchar(10))
 
 as
@@ -128,17 +129,15 @@ begin
 end
 go
 
---execute kiemtrathongtin 'P0001', 'PG.101', 'LP001'
 
---select count(*) from Phong where maphong = 'P00001' and tenphong = 'PG.101' and maloaiphong= 'LP001'
-
+--kiểm tra thông tin mã phòng
 create proc thongtin_the(@ma_phong nvarchar(10))
 as
 select count(mathe) from ThePhongThue where maphong = @ma_phong
 go
 
---drop proc kiemtra execute proc thongtin_the'P0002'
 
+--kiểm tra thông tin mã thẻ
 create proc kiemtramathe(@ma_the nvarchar(10))
 as
 begin
@@ -146,31 +145,20 @@ select count(mathe) from ThePhongThue where mathe =@ma_the
 end
 go
 
---kiemtra_mathe'TH001'
+--nhập dữ liệu
 create proc nhapdulieu(@mathe nvarchar(10), @maphong nvarchar (10), @manv nvarchar(10), @ten nvarchar(50), @cmt nvarchar(20), @dat date, @tra date)
 as
 insert into ThePhongThue(mathe, maphong, manv, tenkhachhang, socmt, ngaythue, ngaydukientra) values (@mathe, @maphong,@manv,@ten,@cmt,@dat,@tra)
 
---execute nhapdulieu N'TH003', N'P0001', N'NV002', N'Lê Lôi', N'123456789','1-1-2021','1-2-2021'
---select * from ThePhongThue
-create or alter proc checktofix(@mathe nvarchar(10), @maphong nvarchar (10), @manv nvarchar(10), @ten nvarchar(50), @cmt nvarchar(20), @dat date, @tra date)
+--kiểm tra và nhập dữ liệu
+create proc checktofix(@mathe nvarchar(10), @maphong nvarchar (10), @manv nvarchar(10), @ten nvarchar(50), @cmt nvarchar(20), @dat date, @tra date)
 as
 begin
 declare @temp int
 select @temp=count(*) from ThePhongThue where mathe = @mathe
---if(@temp=0)
---	select N'Đã tồn tại thẻ này trong  CSDL'
---else 
 if(@temp=1)
 	begin
 	delete ThePhongThue where mathe=@mathe;
 	execute nhapdulieu @mathe , @maphong , @manv , @ten , @cmt , @dat , @tra;
 	end
 end
-/*
-declare @temp int
-select @temp = count(*) from Phong
-print @temp
-*/
-execute checktofix N'TH004',N'P0006',N'NV002',N'',N'','1-1-2021','2-1-2021'
-Print 'anhyeuem'
