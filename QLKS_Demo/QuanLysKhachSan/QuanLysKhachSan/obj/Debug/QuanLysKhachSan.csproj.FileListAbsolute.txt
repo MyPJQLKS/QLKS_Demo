@@ -125,3 +125,4 @@ C:\Users\LOCALBOI\Source\Repos\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachS
 D:\TTNhom\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.FormCustomer.resources
 D:\TTNhom\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.frmQLDichVu.resources
 D:\TTNhom\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.frmTheDV.resources
+C:\Users\LOCALBOI\Source\Repos\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.frmTheDV.resources
