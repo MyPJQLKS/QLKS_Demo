@@ -64,12 +64,13 @@ namespace QuanLysKhachSan
                     radioButton_chuathue.Checked = false;
                 }
                 textBox_maphong_fk.Text = textBox_maphong.Text;
-                using (SqlConnection sqlcon = new SqlConnection(ConnectionString))
-                {
-                    sqlcon.Open();
-                    SqlCommand command = new SqlCommand("execute thongtin_the '" + textBox_maphong + "'", sqlcon);
-                    textBox_mathe.Text = (string)command.ExecuteScalar();
-                }
+                //using (SqlConnection sqlcon = new SqlConnection(ConnectionString))
+                //{
+                //    sqlcon.Open();
+                //    SqlCommand command = new SqlCommand("execute thongtin_the '" + textBox_maphong + "'", sqlcon);
+                //    command.ExecuteNonQuery();
+                //    textBox_mathe.Text = (string)command.ExecuteScalar();
+                //}
             }
         }
 
