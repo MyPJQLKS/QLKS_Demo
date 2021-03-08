@@ -19,6 +19,8 @@ namespace QuanLysKhachSan
         {
             InitializeComponent();
         }
+
+        //đưa ra dữ liệu về các phòng đã/chưa được thuê
         string ConnectionString =@"Data Source=localhost\SQLEXPRESS;Initial Catalog=QLKS_Demo;Integrated Security=True";
         private void button_update_Click(object sender, EventArgs e)
         {
@@ -42,7 +44,7 @@ namespace QuanLysKhachSan
                 
             }
     }
-
+        //đưa dữ liệu từ cell trong data grid view lên các toolbox
         private void dataGridView_datphong_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if(e.RowIndex >=0)
@@ -108,7 +110,7 @@ namespace QuanLysKhachSan
                 MessageBox.Show("Phòng đang được dùng, mời chọn phòng khác", "Cảnh báo", MessageBoxButtons.OK);
             }
         }
-
+        //Load csdl khi mở form
         private void FormDatphong_Load(object sender, EventArgs e)
         {
             using (SqlConnection sqlcon = new SqlConnection(ConnectionString))
@@ -121,6 +123,7 @@ namespace QuanLysKhachSan
             }
         }
 
+        //đưa dữ liệu từ cell trong data grid view lên các toolbox
         private void dataGridView_confirm_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if(e.RowIndex>=0)
@@ -137,6 +140,7 @@ namespace QuanLysKhachSan
             }    
         }
 
+        //event cho button nhập dữ liệu
         private void button1_Click(object sender, EventArgs e)
         {
             try
@@ -162,7 +166,7 @@ namespace QuanLysKhachSan
                 MessageBox.Show(ex.Message, "Lỗi");
             }
         }
-
+        //event cho button cập nhật dữ liệu
         private void button4_Click(object sender, EventArgs e)
         {
             using (SqlConnection sqlcon = new SqlConnection(ConnectionString))
@@ -174,7 +178,7 @@ namespace QuanLysKhachSan
                 dataGridView_confirm.DataSource = table;
             }
         }
-
+        //event cho button xóa dữ liệu được nhập trong textbox
         private void button3_Click(object sender, EventArgs e)
         {
             if(textBox_mathe.Text=="")
@@ -201,7 +205,7 @@ namespace QuanLysKhachSan
         //{
         //    if(textBox_cmt.)
         //}
-
+        //event cho button sửa dữ liệu được nhập trong textbox
         private void button2_Click(object sender, EventArgs e)
         {
             //if(textBox_cmt.Va)
