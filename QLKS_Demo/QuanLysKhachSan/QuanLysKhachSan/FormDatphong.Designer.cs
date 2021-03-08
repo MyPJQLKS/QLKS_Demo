@@ -421,6 +421,7 @@ namespace QuanLysKhachSan
             this.button_datphong_check.TabIndex = 36;
             this.button_datphong_check.Text = "Đặt phòng";
             this.button_datphong_check.UseVisualStyleBackColor = true;
+            this.button_datphong_check.Click += new System.EventHandler(this.button_datphong_check_Click);
             // 
             // label4
             // 
@@ -532,7 +533,7 @@ namespace QuanLysKhachSan
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(140, 32);
             this.button4.TabIndex = 25;
-            this.button4.Text = "Thêm thẻ phòng";
+            this.button4.Text = "Cập nhật";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 

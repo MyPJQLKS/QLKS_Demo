@@ -90,6 +90,7 @@ namespace QuanLysKhachSan
                 {
                     sqlcon.Open();
                     SqlCommand command = new SqlCommand("Select Count(*) from Phong where maphong= '" + textBox_maphong.Text+"'", sqlcon);
+                    command.ExecuteNonQuery();
                     //command = new SqlCommand("")
                     if((int)command.ExecuteScalar() !=0)
                     {
@@ -149,6 +150,7 @@ namespace QuanLysKhachSan
                 sqlcon.Open();
                     SqlCommand command = new SqlCommand(
                         "execute nhapdulieu N'" + textBox_mathe.Text + "', N'"+textBox_maphong_fk+"', N'"+textBox_manv.Text+"', N'"+textBox_tenkh.Text+"', N'"+textBox_cmt.Text+"', N'"+dateTimePicker_ngaydat.Value.ToString()+"', N'"+ dateTimePicker_ngaytra.Value.ToString()+"'", sqlcon);
+                    command.ExecuteNonQuery();
                 }
             }
         }
@@ -180,7 +182,8 @@ namespace QuanLysKhachSan
                     using (SqlConnection sqlcon = new SqlConnection(ConnectionString))
                     { 
                     sqlcon.Open();
-                    SqlCommand sqlData = new SqlCommand("delete * from ThePhongThue where mathe = '"+textBox_mathe.Text+"'", sqlcon);
+                    SqlCommand sqlData = new SqlCommand("delete from ThePhongThue where mathe = '"+textBox_mathe.Text+"'", sqlcon);
+                        sqlData.ExecuteNonQuery();
                     }
                 }    
             }    
