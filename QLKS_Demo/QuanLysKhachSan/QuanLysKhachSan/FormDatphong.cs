@@ -148,12 +148,20 @@ namespace QuanLysKhachSan
             {
                 sqlcon.Open();
                     SqlCommand command = new SqlCommand(
-                        "insert into ThePhongThue select(mathe, maphong, manv, tenkhachhang, socmt, ngaydat, ngaydukientra) values('" + textBox_mathe.Text + "', '"+textBox_maphong_fk+"', '"+textBox_manv.Text+"', '"+textBox_tenkh.Text+"', '"+textBox_cmt.Text+"', '"+dateTimePicker_ngaydat.Value.ToString()+"', '"+ dateTimePicker_ngaytra.Value.ToString()+"'", sqlcon);
-                    SqlDataAdapter sqlData = new SqlDataAdapter("Select * from ThePhongThue", sqlcon);
-                    DataTable table = new DataTable();
-                    sqlData.Fill(table);
-                    dataGridView_confirm.DataSource = table;
+                        "execute nhapdulieu N'" + textBox_mathe.Text + "', N'"+textBox_maphong_fk+"', N'"+textBox_manv.Text+"', N'"+textBox_tenkh.Text+"', N'"+textBox_cmt.Text+"', N'"+dateTimePicker_ngaydat.Value.ToString()+"', N'"+ dateTimePicker_ngaytra.Value.ToString()+"'", sqlcon);
                 }
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            using (SqlConnection sqlcon = new SqlConnection(ConnectionString))
+            {
+                sqlcon.Open();
+                SqlDataAdapter sqlData = new SqlDataAdapter("Select * from ThePhongThue", sqlcon);
+                DataTable table = new DataTable();
+                sqlData.Fill(table);
+                dataGridView_confirm.DataSource = table;
             }
         }
     }

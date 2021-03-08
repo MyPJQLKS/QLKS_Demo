@@ -73,6 +73,7 @@ namespace QuanLysKhachSan
             this.radioButton_dathue = new System.Windows.Forms.RadioButton();
             this.button_update = new System.Windows.Forms.Button();
             this.dataGridView_check = new System.Windows.Forms.DataGridView();
+            this.button4 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage_confirm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_confirm)).BeginInit();
@@ -93,6 +94,7 @@ namespace QuanLysKhachSan
             // 
             // tabPage_confirm
             // 
+            this.tabPage_confirm.Controls.Add(this.button4);
             this.tabPage_confirm.Controls.Add(this.label19);
             this.tabPage_confirm.Controls.Add(this.label18);
             this.tabPage_confirm.Controls.Add(this.label17);
@@ -522,6 +524,17 @@ namespace QuanLysKhachSan
             this.dataGridView_check.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_datphong_CellContentClick);
             this.dataGridView_check.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_datphong_CellContentClick);
             // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(41, 183);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(140, 32);
+            this.button4.TabIndex = 25;
+            this.button4.Text = "Thêm thẻ phòng";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // FormDatphong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -590,5 +603,6 @@ namespace QuanLysKhachSan
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button button4;
     }
 }
