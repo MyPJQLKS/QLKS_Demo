@@ -173,3 +173,4 @@ select @temp = count(*) from Phong
 print @temp
 */
 execute checktofix N'TH004',N'P0006',N'NV002',N'',N'','1-1-2021','2-1-2021'
+Print 'anhyeuem'
