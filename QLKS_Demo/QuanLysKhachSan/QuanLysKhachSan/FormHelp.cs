@@ -49,16 +49,10 @@ namespace QuanLysKhachSan
         private void treeview_ItemList_AfterSelect(object sender, TreeViewEventArgs e)
         {
             //MessageBox.Show(e.Node.Text);
-            OpenFileDialog input = new OpenFileDialog();
-            //richtextbox_Display.Text = File.ReadAllText(input.FileName);
-            //Globals.notes = richtextbox_Display.Text;
-
-            if (input.ShowDialog() == DialogResult.OK)
-            {
-                System.IO.StreamReader sr = new System.IO.StreamReader(input.FileName);
-                richtextbox_Display.Text = sr.ReadToEnd();
-                sr.Close();
-            }
+            //DirectoryInfo dir = new DirectoryInfo(@"D:\TTNhom\QLKS_Demo\Mô tả chức năng và hình ảnh vào đây pls");
+            string text = File.ReadAllText(@"D:\TTNhom\QLKS_Demo\Mô tả chức năng và hình ảnh vào đây pls\help test.txt");
+            //Console.WriteLine(text);
+            richtextbox_Display.Text = text;
         }
     }
 }
