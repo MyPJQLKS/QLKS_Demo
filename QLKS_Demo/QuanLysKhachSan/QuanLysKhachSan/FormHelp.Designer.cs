@@ -40,6 +40,7 @@
             this.treeview_ItemList.Name = "treeview_ItemList";
             this.treeview_ItemList.Size = new System.Drawing.Size(259, 513);
             this.treeview_ItemList.TabIndex = 0;
+            this.treeview_ItemList.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeview_ItemList_AfterSelect);
             // 
             // richtextbox_Display
             // 

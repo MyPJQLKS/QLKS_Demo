@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.IO;
 
 namespace QuanLysKhachSan
 {
@@ -42,6 +44,21 @@ namespace QuanLysKhachSan
             treeview_ItemList.Nodes["Security"].Nodes.Add("Thông tin nhân viên");
             treeview_ItemList.Nodes["Security"].Nodes.Add("Đổi mật khẩu tài khoản");
 
+        }
+
+        private void treeview_ItemList_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+            //MessageBox.Show(e.Node.Text);
+            OpenFileDialog input = new OpenFileDialog();
+            //richtextbox_Display.Text = File.ReadAllText(input.FileName);
+            //Globals.notes = richtextbox_Display.Text;
+
+            if (input.ShowDialog() == DialogResult.OK)
+            {
+                System.IO.StreamReader sr = new System.IO.StreamReader(input.FileName);
+                richtextbox_Display.Text = sr.ReadToEnd();
+                sr.Close();
+            }
         }
     }
 }
