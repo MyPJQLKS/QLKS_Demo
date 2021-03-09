@@ -44,7 +44,9 @@
             // 
             // richtextbox_Display
             // 
+            this.richtextbox_Display.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.richtextbox_Display.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richtextbox_Display.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richtextbox_Display.Location = new System.Drawing.Point(259, 0);
             this.richtextbox_Display.Name = "richtextbox_Display";
             this.richtextbox_Display.ReadOnly = true;

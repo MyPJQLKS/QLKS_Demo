@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
-using System.IO;
 
 namespace QuanLysKhachSan
 {
@@ -39,7 +38,7 @@ namespace QuanLysKhachSan
             treeview_ItemList.Nodes["Services Manag"].Nodes.Add("Tạo/Thêm thẻ dịch vụ");
             treeview_ItemList.Nodes["Services Manag"].Nodes.Add("Thêm dịch vụ mới");
             treeview_ItemList.Nodes["Services Manag"].Nodes.Add("Thông tin dịch vụ");
-           
+
             treeview_ItemList.Nodes.Add("Security", "Tài khoản và bảo mật");
             treeview_ItemList.Nodes["Security"].Nodes.Add("Thông tin nhân viên");
             treeview_ItemList.Nodes["Security"].Nodes.Add("Đổi mật khẩu tài khoản");
@@ -50,9 +49,13 @@ namespace QuanLysKhachSan
         {
             //MessageBox.Show(e.Node.Text);
             //DirectoryInfo dir = new DirectoryInfo(@"D:\TTNhom\QLKS_Demo\Mô tả chức năng và hình ảnh vào đây pls");
-            string text = File.ReadAllText(@"D:\TTNhom\QLKS_Demo\Mô tả chức năng và hình ảnh vào đây pls\help test.txt");
-            //Console.WriteLine(text);
-            richtextbox_Display.Text = text;
+            //string text = File.ReadAllText(@"D:\TTNhom\QLKS_Demo\Mô tả chức năng và hình ảnh vào đây pls\help test.txt");
+            //richtextbox_Display.Text = text;
+
+            Image image = Image.FromFile(@"D:\TTNhom\QLKS_Demo\Mô tả chức năng và hình ảnh vào đây pls\test img.jpg");
+            Clipboard.SetImage(image);
+            richtextbox_Display.Paste();
+
         }
     }
 }
