@@ -1,2 +1,0 @@
-﻿
-Chức năng này sẽ hiển thị danh sách toàn bộ các thẻ dịch vụ

@@ -49,12 +49,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormCustomer.cs">
+<<<<<<< HEAD
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormCustomer.designer.cs">
-      <DependentUpon>FormCustomer.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+=======
     <Compile Include="FormDatphong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +77,7 @@
     </Compile>
     <Compile Include="FormHelp.Designer.cs">
       <DependentUpon>FormHelp.cs</DependentUpon>
+>>>>>>> a01644e684c75b9025c7c5361abe92e7f183859a
     </Compile>
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
@@ -79,18 +91,6 @@
     <Compile Include="FormRoom.Designer.cs">
       <DependentUpon>FormRoom.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmQLDichVu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmQLDichVu.Designer.cs">
-      <DependentUpon>frmQLDichVu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmTheDV.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmTheDV.Designer.cs">
-      <DependentUpon>frmTheDV.cs</DependentUpon>
-    </Compile>
     <Compile Include="KindRoom.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -100,28 +100,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+=======
     <Compile Include="Room.cs" />
     <Compile Include="SqlStringConnect.cs" />
-    <EmbeddedResource Include="FormCustomer.resx">
-      <DependentUpon>FormCustomer.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormDatphong.resx">
       <DependentUpon>FormDatphong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormHelp.resx">
       <DependentUpon>FormHelp.cs</DependentUpon>
+>>>>>>> a01644e684c75b9025c7c5361abe92e7f183859a
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormRoom.resx">
       <DependentUpon>FormRoom.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmQLDichVu.resx">
-      <DependentUpon>frmQLDichVu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmTheDV.resx">
-      <DependentUpon>frmTheDV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -135,7 +131,32 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+=======
     <None Include="packages.config" />
+>>>>>>> a01644e684c75b9025c7c5361abe92e7f183859a
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -30,6 +30,7 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tpKind = new System.Windows.Forms.TabPage();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.btnDeleteK = new System.Windows.Forms.Button();
             this.btnAddK = new System.Windows.Forms.Button();
@@ -46,6 +47,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.dtgvKind = new System.Windows.Forms.DataGridView();
             this.tpRoom = new System.Windows.Forms.TabPage();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.btnDeleteR = new System.Windows.Forms.Button();
             this.btnAddR = new System.Windows.Forms.Button();
@@ -64,28 +66,22 @@
             this.txbIDRoom = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.dtgvRoom = new System.Windows.Forms.DataGridView();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.tabControl1.SuspendLayout();
             this.tpKind.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.panel12.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvKind)).BeginInit();
             this.tpRoom.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvRoom)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -95,21 +91,31 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(490, 709);
+            this.tabControl1.Size = new System.Drawing.Size(490, 611);
             this.tabControl1.TabIndex = 0;
             // 
             // tpKind
             // 
-            this.tpKind.Controls.Add(this.groupBox2);
-            this.tpKind.Controls.Add(this.groupBox1);
-            this.tpKind.Controls.Add(this.panel12);
+            this.tpKind.Controls.Add(this.panel5);
             this.tpKind.Location = new System.Drawing.Point(4, 25);
             this.tpKind.Name = "tpKind";
             this.tpKind.Padding = new System.Windows.Forms.Padding(3);
-            this.tpKind.Size = new System.Drawing.Size(482, 680);
+            this.tpKind.Size = new System.Drawing.Size(482, 582);
             this.tpKind.TabIndex = 0;
             this.tpKind.Text = "Loại Phòng";
             this.tpKind.UseVisualStyleBackColor = true;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.panel12);
+            this.panel5.Controls.Add(this.panel6);
+            this.panel5.Controls.Add(this.panel7);
+            this.panel5.Controls.Add(this.panel8);
+            this.panel5.Controls.Add(this.dtgvKind);
+            this.panel5.Location = new System.Drawing.Point(3, 3);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(477, 575);
+            this.panel5.TabIndex = 4;
             // 
             // panel12
             // 
@@ -117,7 +123,7 @@
             this.panel12.Controls.Add(this.btnAddK);
             this.panel12.Controls.Add(this.btnEditK);
             this.panel12.Controls.Add(this.btnShowK);
-            this.panel12.Location = new System.Drawing.Point(0, 281);
+            this.panel12.Location = new System.Drawing.Point(0, 240);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(473, 69);
             this.panel12.TabIndex = 10;
@@ -178,7 +184,7 @@
             // 
             this.panel6.Controls.Add(this.txbDescription);
             this.panel6.Controls.Add(this.label4);
-            this.panel6.Location = new System.Drawing.Point(3, 138);
+            this.panel6.Location = new System.Drawing.Point(3, 121);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(470, 113);
             this.panel6.TabIndex = 2;
@@ -206,7 +212,7 @@
             // 
             this.panel7.Controls.Add(this.txbPrice);
             this.panel7.Controls.Add(this.label5);
-            this.panel7.Location = new System.Drawing.Point(3, 79);
+            this.panel7.Location = new System.Drawing.Point(0, 62);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(419, 53);
             this.panel7.TabIndex = 1;
@@ -233,7 +239,7 @@
             // 
             this.panel8.Controls.Add(this.txbIDKind);
             this.panel8.Controls.Add(this.label6);
-            this.panel8.Location = new System.Drawing.Point(3, 20);
+            this.panel8.Location = new System.Drawing.Point(0, 3);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(419, 53);
             this.panel8.TabIndex = 0;
@@ -259,25 +265,36 @@
             // dtgvKind
             // 
             this.dtgvKind.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvKind.Location = new System.Drawing.Point(4, 35);
+            this.dtgvKind.Location = new System.Drawing.Point(0, 315);
             this.dtgvKind.Name = "dtgvKind";
             this.dtgvKind.RowHeadersWidth = 51;
             this.dtgvKind.RowTemplate.Height = 24;
-            this.dtgvKind.Size = new System.Drawing.Size(460, 240);
+            this.dtgvKind.Size = new System.Drawing.Size(473, 241);
             this.dtgvKind.TabIndex = 0;
             // 
             // tpRoom
             // 
-            this.tpRoom.Controls.Add(this.groupBox4);
-            this.tpRoom.Controls.Add(this.groupBox3);
-            this.tpRoom.Controls.Add(this.panel10);
+            this.tpRoom.Controls.Add(this.panel1);
             this.tpRoom.Location = new System.Drawing.Point(4, 25);
             this.tpRoom.Name = "tpRoom";
             this.tpRoom.Padding = new System.Windows.Forms.Padding(3);
-            this.tpRoom.Size = new System.Drawing.Size(482, 680);
+            this.tpRoom.Size = new System.Drawing.Size(482, 582);
             this.tpRoom.TabIndex = 1;
             this.tpRoom.Text = "Quản Lý Phòng";
             this.tpRoom.UseVisualStyleBackColor = true;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.panel10);
+            this.panel1.Controls.Add(this.panel9);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.dtgvRoom);
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(477, 575);
+            this.panel1.TabIndex = 5;
             // 
             // panel10
             // 
@@ -285,7 +302,7 @@
             this.panel10.Controls.Add(this.btnAddR);
             this.panel10.Controls.Add(this.btnEditR);
             this.panel10.Controls.Add(this.btnShowR);
-            this.panel10.Location = new System.Drawing.Point(0, 281);
+            this.panel10.Location = new System.Drawing.Point(0, 240);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(473, 69);
             this.panel10.TabIndex = 11;
@@ -346,7 +363,7 @@
             // 
             this.panel9.Controls.Add(this.cbStatus);
             this.panel9.Controls.Add(this.label7);
-            this.panel9.Location = new System.Drawing.Point(3, 197);
+            this.panel9.Location = new System.Drawing.Point(0, 180);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(424, 53);
             this.panel9.TabIndex = 8;
@@ -378,7 +395,7 @@
             // 
             this.panel2.Controls.Add(this.txbNameRoom);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(3, 79);
+            this.panel2.Location = new System.Drawing.Point(0, 121);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(424, 53);
             this.panel2.TabIndex = 7;
@@ -405,7 +422,7 @@
             // 
             this.panel3.Controls.Add(this.cbIDKind);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(3, 138);
+            this.panel3.Location = new System.Drawing.Point(0, 62);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(424, 53);
             this.panel3.TabIndex = 1;
@@ -416,7 +433,7 @@
             this.cbIDKind.FormattingEnabled = true;
             this.cbIDKind.Location = new System.Drawing.Point(145, 18);
             this.cbIDKind.Name = "cbIDKind";
-            this.cbIDKind.Size = new System.Drawing.Size(247, 26);
+            this.cbIDKind.Size = new System.Drawing.Size(247, 24);
             this.cbIDKind.TabIndex = 12;
             // 
             // label2
@@ -433,7 +450,7 @@
             // 
             this.panel4.Controls.Add(this.txbIDRoom);
             this.panel4.Controls.Add(this.label3);
-            this.panel4.Location = new System.Drawing.Point(3, 20);
+            this.panel4.Location = new System.Drawing.Point(0, 3);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(424, 53);
             this.panel4.TabIndex = 0;
@@ -459,67 +476,18 @@
             // dtgvRoom
             // 
             this.dtgvRoom.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvRoom.Location = new System.Drawing.Point(4, 35);
+            this.dtgvRoom.Location = new System.Drawing.Point(0, 315);
             this.dtgvRoom.Name = "dtgvRoom";
             this.dtgvRoom.RowHeadersWidth = 51;
             this.dtgvRoom.RowTemplate.Height = 24;
-            this.dtgvRoom.Size = new System.Drawing.Size(460, 240);
+            this.dtgvRoom.Size = new System.Drawing.Size(473, 241);
             this.dtgvRoom.TabIndex = 0;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.panel8);
-            this.groupBox1.Controls.Add(this.panel7);
-            this.groupBox1.Controls.Add(this.panel6);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.groupBox1.Location = new System.Drawing.Point(3, 5);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(470, 270);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Thông Tin Loại Phòng";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.dtgvKind);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.groupBox2.Location = new System.Drawing.Point(3, 356);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(470, 318);
-            this.groupBox2.TabIndex = 11;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Dữ Liệu Loại Phòng";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.panel4);
-            this.groupBox3.Controls.Add(this.panel2);
-            this.groupBox3.Controls.Add(this.panel3);
-            this.groupBox3.Controls.Add(this.panel9);
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.groupBox3.Location = new System.Drawing.Point(3, 5);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(470, 270);
-            this.groupBox3.TabIndex = 0;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Thông Tin Phòng";
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.dtgvRoom);
-            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.groupBox4.Location = new System.Drawing.Point(3, 356);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(470, 318);
-            this.groupBox4.TabIndex = 12;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Dữ Liệu Phòng";
             // 
             // FormRoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(490, 710);
+            this.ClientSize = new System.Drawing.Size(488, 609);
             this.Controls.Add(this.tabControl1);
             this.Name = "FormRoom";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
@@ -527,6 +495,7 @@
             this.Load += new System.EventHandler(this.FormRoom_Load);
             this.tabControl1.ResumeLayout(false);
             this.tpKind.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
             this.panel6.ResumeLayout(false);
@@ -537,6 +506,7 @@
             this.panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvKind)).EndInit();
             this.tpRoom.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             this.panel9.ResumeLayout(false);
@@ -548,10 +518,6 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvRoom)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -561,6 +527,7 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tpKind;
         private System.Windows.Forms.TabPage tpRoom;
+        private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Button btnDeleteK;
         private System.Windows.Forms.Button btnAddK;
@@ -576,6 +543,7 @@
         private System.Windows.Forms.TextBox txbIDKind;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridView dtgvKind;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Button btnDeleteR;
         private System.Windows.Forms.Button btnAddR;
@@ -594,9 +562,5 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dtgvRoom;
         private System.Windows.Forms.ComboBox cbIDKind;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.GroupBox groupBox3;
     }
 }

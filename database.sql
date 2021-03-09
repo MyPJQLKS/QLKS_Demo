@@ -117,48 +117,4 @@ return @tongTienHD
 end
 go
 
---7/3/2021
---kiểm tra thông tin mã phòng
-create proc kiemtrathongtin(@ma_phong nvarchar(10), @ten_phong nvarchar(20), @ma_loai_phong nvarchar(10))
 
-as
-begin
-	
-	select count(*) from Phong where maphong = @ma_phong and tenphong = @ten_phong and maloaiphong=@ma_loai_phong
-	
-end
-go
-
-
---kiểm tra thông tin mã phòng
-create proc thongtin_the(@ma_phong nvarchar(10))
-as
-select count(mathe) from ThePhongThue where maphong = @ma_phong
-go
-
-
---kiểm tra thông tin mã thẻ
-create proc kiemtramathe(@ma_the nvarchar(10))
-as
-begin
-select count(mathe) from ThePhongThue where mathe =@ma_the
-end
-go
-
---nhập dữ liệu
-create proc nhapdulieu(@mathe nvarchar(10), @maphong nvarchar (10), @manv nvarchar(10), @ten nvarchar(50), @cmt nvarchar(20), @dat date, @tra date)
-as
-insert into ThePhongThue(mathe, maphong, manv, tenkhachhang, socmt, ngaythue, ngaydukientra) values (@mathe, @maphong,@manv,@ten,@cmt,@dat,@tra)
-
---kiểm tra và nhập dữ liệu
-create proc checktofix(@mathe nvarchar(10), @maphong nvarchar (10), @manv nvarchar(10), @ten nvarchar(50), @cmt nvarchar(20), @dat date, @tra date)
-as
-begin
-declare @temp int
-select @temp=count(*) from ThePhongThue where mathe = @mathe
-if(@temp=1)
-	begin
-	delete ThePhongThue where mathe=@mathe;
-	execute nhapdulieu @mathe , @maphong , @manv , @ten , @cmt , @dat , @tra;
-	end
-end
