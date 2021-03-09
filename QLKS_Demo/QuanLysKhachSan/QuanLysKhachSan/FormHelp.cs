@@ -13,6 +13,23 @@ namespace QuanLysKhachSan
 {
     public partial class FormHelp : Form
     {
+        static string qlphong = File.ReadAllText(@"tester\help test.txt");
+        static string dsphong = File.ReadAllText(@"D:\TTNhom\QLKS_Demo\Mô tả chức năng và hình ảnh vào đây pls\help test.txt");
+        static string taothephong = File.ReadAllText(@"D:\TTNhom\QLKS_Demo\Mô tả chức năng và hình ảnh vào đây pls\help test.txt");
+        static string suattphong = File.ReadAllText(@"D:\TTNhom\QLKS_Demo\Mô tả chức năng và hình ảnh vào đây pls\help test.txt");
+        static string ttloaiphong = File.ReadAllText(@"D:\TTNhom\QLKS_Demo\Mô tả chức năng và hình ảnh vào đây pls\help test.txt");
+        static string ttthephong = File.ReadAllText(@"D:\TTNhom\QLKS_Demo\Mô tả chức năng và hình ảnh vào đây pls\help test.txt");
+        
+        static string qldichvu = File.ReadAllText(@"D:\TTNhom\QLKS_Demo\Mô tả chức năng và hình ảnh vào đây pls\help test.txt");
+        static string dsdichvu = File.ReadAllText(@"D:\TTNhom\QLKS_Demo\Mô tả chức năng và hình ảnh vào đây pls\help test.txt");
+        static string taothedichvu = File.ReadAllText(@"D:\TTNhom\QLKS_Demo\Mô tả chức năng và hình ảnh vào đây pls\help test.txt");
+        static string themdichvu = File.ReadAllText(@"D:\TTNhom\QLKS_Demo\Mô tả chức năng và hình ảnh vào đây pls\help test.txt");
+        static string ttdichvu = File.ReadAllText(@"D:\TTNhom\QLKS_Demo\Mô tả chức năng và hình ảnh vào đây pls\help test.txt");
+        
+        static string tkbaomat = File.ReadAllText(@"D:\TTNhom\QLKS_Demo\Mô tả chức năng và hình ảnh vào đây pls\help test.txt");
+        static string ttnhanvien = File.ReadAllText(@"D:\TTNhom\QLKS_Demo\Mô tả chức năng và hình ảnh vào đây pls\help test.txt");
+        static string doimk = File.ReadAllText(@"D:\TTNhom\QLKS_Demo\Mô tả chức năng và hình ảnh vào đây pls\help test.txt");
+
         public FormHelp()
         {
             InitializeComponent();
@@ -49,12 +66,25 @@ namespace QuanLysKhachSan
         {
             //MessageBox.Show(e.Node.Text);
             //DirectoryInfo dir = new DirectoryInfo(@"D:\TTNhom\QLKS_Demo\Mô tả chức năng và hình ảnh vào đây pls");
-            //string text = File.ReadAllText(@"D:\TTNhom\QLKS_Demo\Mô tả chức năng và hình ảnh vào đây pls\help test.txt");
-            //richtextbox_Display.Text = text;
+            switch(e.Node.Text)
+            {
+                case "Quản lý phòng":
+                    richtextbox_Display.Text = qlphong;
+                    break;
+                case "Quản lý dịch vụ":
+                    MessageBox.Show("quan ly dich vu");
+                    break;
+                default: 
+                    MessageBox.Show("exception");
+                    break;
 
-            Image image = Image.FromFile(@"D:\TTNhom\QLKS_Demo\Mô tả chức năng và hình ảnh vào đây pls\test img.jpg");
-            Clipboard.SetImage(image);
-            richtextbox_Display.Paste();
+            }
+
+
+
+            //Image image = Image.FromFile(@"D:\TTNhom\QLKS_Demo\Mô tả chức năng và hình ảnh vào đây pls\test img.jpg");
+            //Clipboard.SetImage(image);
+            //richtextbox_Display.Paste();
 
         }
     }
