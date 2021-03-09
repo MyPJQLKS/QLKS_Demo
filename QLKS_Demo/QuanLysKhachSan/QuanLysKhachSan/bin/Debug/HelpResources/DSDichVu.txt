@@ -1,0 +1,12 @@
+﻿
+1. Để mở chức năng: Chọn nút "Hệ thống" -> "Danh sách dịch vụ"
+
+2. Khi bấm vào nút "Danh sách dịch vụ" thì sẽ hiện danh sách các dịch vụ ở bảng thông tin
+
+3. Khi bấm vào 1 dịch vụ thì các thông tin của dịch vụ đó sẽ hiển thị ở mục “Thông tin dịch vụ”
+
+4. Muốn thêm 1 dịch vụ thì điền các thông tin cần thiết vào mục “Thông tin dịch vụ” rồi nhấn nút "Thêm"
+
+5. Muốn sửa 1 dịch vụ thì điền các thông tin cần sửa vào mục “Thông tin dịch vụ” rồi nhấn nút "Sửa"
+
+6. Muốn xóa 1 dịch vụ thì chỉ cần điền mã dịch vụ muốn xóa rồi nhấn nút "Xóa"

@@ -9,20 +9,6 @@ D:\Kì 2 năm 3\Thức tập nhóm\MyPJ\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSa
 D:\Kì 2 năm 3\Thức tập nhóm\MyPJ\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.exe
 D:\Kì 2 năm 3\Thức tập nhóm\MyPJ\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.pdb
 D:\Kì 2 năm 3\Thức tập nhóm\MyPJ\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.FormMain.resources
-<<<<<<< HEAD
-D:\thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\bin\Debug\QuanLysKhachSan.exe.config
-D:\thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\bin\Debug\QuanLysKhachSan.exe
-D:\thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\bin\Debug\QuanLysKhachSan.pdb
-D:\thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.csprojAssemblyReference.cache
-D:\thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.Form1.resources
-D:\thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.FormMain.resources
-D:\thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.Login.resources
-D:\thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.Properties.Resources.resources
-D:\thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.csproj.GenerateResource.cache
-D:\thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.csproj.CoreCompileInputs.cache
-D:\thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.exe
-D:\thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.pdb
-=======
 C:\Users\huyho\OneDrive\Desktop\TT Nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\bin\Debug\QuanLysKhachSan.exe.config
 C:\Users\huyho\OneDrive\Desktop\TT Nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\bin\Debug\QuanLysKhachSan.exe
 C:\Users\huyho\OneDrive\Desktop\TT Nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\bin\Debug\QuanLysKhachSan.pdb
@@ -83,4 +69,60 @@ C:\Users\LOCALBOI\source\repos\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachS
 C:\Users\LOCALBOI\source\repos\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.csproj.CopyComplete
 C:\Users\LOCALBOI\source\repos\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.exe
 C:\Users\LOCALBOI\source\repos\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.pdb
->>>>>>> a01644e684c75b9025c7c5361abe92e7f183859a
+C:\Users\huyho\OneDrive\Desktop\New folder\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\bin\Debug\QuanLysKhachSan.exe.config
+C:\Users\huyho\OneDrive\Desktop\New folder\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\bin\Debug\QuanLysKhachSan.exe
+C:\Users\huyho\OneDrive\Desktop\New folder\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\bin\Debug\QuanLysKhachSan.pdb
+C:\Users\huyho\OneDrive\Desktop\New folder\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\bin\Debug\System.Windows.Forms.Ribbon.dll
+C:\Users\huyho\OneDrive\Desktop\New folder\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.csprojAssemblyReference.cache
+C:\Users\huyho\OneDrive\Desktop\New folder\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.FormDatphong.resources
+C:\Users\huyho\OneDrive\Desktop\New folder\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.FormHelp.resources
+C:\Users\huyho\OneDrive\Desktop\New folder\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.FormMain.resources
+C:\Users\huyho\OneDrive\Desktop\New folder\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.FormRoom.resources
+C:\Users\huyho\OneDrive\Desktop\New folder\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.Login.resources
+C:\Users\huyho\OneDrive\Desktop\New folder\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.Properties.Resources.resources
+C:\Users\huyho\OneDrive\Desktop\New folder\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.csproj.GenerateResource.cache
+C:\Users\huyho\OneDrive\Desktop\New folder\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.csproj.CoreCompileInputs.cache
+C:\Users\huyho\OneDrive\Desktop\New folder\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.csproj.CopyComplete
+C:\Users\huyho\OneDrive\Desktop\New folder\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.exe
+C:\Users\huyho\OneDrive\Desktop\New folder\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.pdb
+C:\GITHUB\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\bin\Debug\QuanLysKhachSan.exe.config
+C:\GITHUB\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\bin\Debug\QuanLysKhachSan.exe
+C:\GITHUB\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\bin\Debug\QuanLysKhachSan.pdb
+C:\GITHUB\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\bin\Debug\System.Windows.Forms.Ribbon.dll
+C:\GITHUB\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.csprojAssemblyReference.cache
+C:\GITHUB\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.FormCustomer.resources
+C:\GITHUB\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.FormDatphong.resources
+C:\GITHUB\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.FormHelp.resources
+C:\GITHUB\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.FormMain.resources
+C:\GITHUB\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.FormRoom.resources
+C:\GITHUB\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.Login.resources
+C:\GITHUB\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.Properties.Resources.resources
+C:\GITHUB\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.csproj.GenerateResource.cache
+C:\GITHUB\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.csproj.CoreCompileInputs.cache
+C:\GITHUB\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.csproj.CopyComplete
+C:\GITHUB\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.exe
+C:\GITHUB\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.pdb
+C:\Users\LOCALBOI\Source\Repos\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.FormCustomer.resources
+G:\Thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\bin\Debug\QuanLysKhachSan.exe.config
+G:\Thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\bin\Debug\QuanLysKhachSan.exe
+G:\Thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\bin\Debug\QuanLysKhachSan.pdb
+G:\Thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\bin\Debug\System.Windows.Forms.Ribbon.dll
+G:\Thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.csprojAssemblyReference.cache
+G:\Thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.FormCustomer.resources
+G:\Thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.FormDatphong.resources
+G:\Thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.FormHelp.resources
+G:\Thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.FormMain.resources
+G:\Thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.FormRoom.resources
+G:\Thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.frmQLDichVu.resources
+G:\Thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.Login.resources
+G:\Thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.Properties.Resources.resources
+G:\Thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.csproj.GenerateResource.cache
+G:\Thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.csproj.CoreCompileInputs.cache
+G:\Thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.csproj.CopyComplete
+G:\Thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.exe
+G:\Thực tập nhóm\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.pdb
+C:\Users\LOCALBOI\Source\Repos\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.frmQLDichVu.resources
+D:\TTNhom\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.FormCustomer.resources
+D:\TTNhom\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.frmQLDichVu.resources
+D:\TTNhom\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.frmTheDV.resources
+C:\Users\LOCALBOI\Source\Repos\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.frmTheDV.resources

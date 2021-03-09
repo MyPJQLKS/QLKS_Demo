@@ -48,6 +48,13 @@ namespace QuanLysKhachSan
         {
             FormDatphong datphong = new FormDatphong();
             datphong.ShowDialog();
+            //TabControl1
+        }
+
+        private void danhSáchKháchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormCustomer formcustomer = new FormCustomer();
+            formcustomer.ShowDialog();
         }
     }
 }
