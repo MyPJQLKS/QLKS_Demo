@@ -152,7 +152,7 @@ namespace QuanLysKhachSan
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(190, 128);
+            this.label18.Location = new System.Drawing.Point(184, 128);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(75, 17);
             this.label18.TabIndex = 23;
@@ -188,7 +188,7 @@ namespace QuanLysKhachSan
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(172, 82);
+            this.label14.Location = new System.Drawing.Point(166, 82);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(93, 17);
             this.label14.TabIndex = 19;
@@ -197,7 +197,7 @@ namespace QuanLysKhachSan
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(149, 43);
+            this.label13.Location = new System.Drawing.Point(143, 43);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(117, 17);
             this.label13.TabIndex = 18;
