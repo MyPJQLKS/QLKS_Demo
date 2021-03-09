@@ -1,7 +1,7 @@
 ﻿
 1. Để mở chức năng: Chọn nút "Hệ thống" -> "Danh sách dịch vụ"
 
-2. Khi bấm vào nút "Danh sách dịch vụ" thì sẽ hiện danh sách các dịch vụ ở datagridview
+2. Khi bấm vào nút "Danh sách dịch vụ" thì sẽ hiện danh sách các dịch vụ ở bảng thông tin
 
 3. Khi bấm vào 1 dịch vụ thì các thông tin của dịch vụ đó sẽ hiển thị ở mục “Thông tin dịch vụ”
 

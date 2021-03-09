@@ -1,0 +1,10 @@
+﻿
+Ở tab Đặt phòng trường mã thẻ phải bắt buộc nhập để thực hiện các thao tác như thêm,sửa, xóa
+Nút "Cập nhật" để cập nhật thông tin trong bảng thông tin
+
+Tab kiểm tra phòng kiểm tra các phòng đã thuê hoặc chưa thuê được ấn định bằng cách chọn nút "Chưa thuê" hoặc "Đã thuê" trong panel “Cập nhật theo”
+
+Khi bấm vào 1 đối tượng trong bảng, ta có thể xem được thông tin chi tiết của đối tượng đó.
+Button đặt phòng có hiệu lực khi các trường trong tab này được điền đủ sẽ trả về thông tin về mã phòng ở tab đặt phòng
+
+

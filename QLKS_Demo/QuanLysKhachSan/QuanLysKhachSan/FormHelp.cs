@@ -52,7 +52,7 @@ namespace QuanLysKhachSan
             {
                 case "Danh sách phòng":
                     {
-                        richtextbox_Display.Text = File.ReadAllText(@"");
+                        richtextbox_Display.Text = File.ReadAllText(@"HelpResources\DSPhong.txt");
                         break;
                     }
                 case "Tạo thẻ phòng thuê":
@@ -77,22 +77,22 @@ namespace QuanLysKhachSan
                     }
                 case "Danh sách dịch vụ":
                     {
-                        richtextbox_Display.Text = File.ReadAllText(@"");
+                        richtextbox_Display.Text = File.ReadAllText(@"HelpResources\DSDichVu.txt");
                         break;
                     }
                 case "Tạo/Thêm thẻ dịch vụ":
                     {
-                        richtextbox_Display.Text = File.ReadAllText(@"");
+                        richtextbox_Display.Text = File.ReadAllText(@"HelpResources\");
                         break;
                     }
                 case "Thêm dịch vụ mới":
                     {
-                        richtextbox_Display.Text = File.ReadAllText(@"");
+                        richtextbox_Display.Text = File.ReadAllText(@"HelpResources\DSDichVu.txt");
                         break;
                     }
                 case "Thông tin dịch vụ":
                     {
-                        richtextbox_Display.Text = File.ReadAllText(@"");
+                        richtextbox_Display.Text = File.ReadAllText(@"HelpResources\DSDichVu.txt");
                         break;
                     }
                 case "Thông tin nhân viên":
