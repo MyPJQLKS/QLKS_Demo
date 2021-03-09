@@ -1,7 +1,7 @@
 ﻿
 Xem danh sách Loại Phòng:
-Cách 1:Chọn menu Hệ Thống->Danh Sách Phòng
-Cách 2:Chọn menu Hệ Thống->Sửa Đổi Thông Tin->Thông Tin Loại Phòng
+Cách 1:Chọn menu Hệ Thống -> Danh Sách Phòng
+Cách 2:Chọn menu Hệ Thống -> Sửa Đổi Thông Tin -> Thông Tin Loại Phòng
 
 Chức năng:
 - Xem: Hiển thị thông tin Loại Phòng lên bảng Dữ Liệu Loại Phòng

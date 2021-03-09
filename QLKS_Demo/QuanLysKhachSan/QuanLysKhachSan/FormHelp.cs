@@ -50,9 +50,10 @@ namespace QuanLysKhachSan
             //DirectoryInfo dir = new DirectoryInfo(@"D:\TTNhom\QLKS_Demo\Mô tả chức năng và hình ảnh vào đây pls");
             switch(e.Node.Text)
             {
-                case "Danh sách phòng":
+                case "Danh sách phòng":                     //done
                     {
                         richtextbox_Display.Text = File.ReadAllText(@"HelpResources\DSPhong.txt");
+                        picturebox_Display.Image = Image.FromFile(@"HelpResources\DSPhong.jpg");
                         break;
                     }
                 case "Tạo thẻ phòng thuê":
@@ -60,14 +61,16 @@ namespace QuanLysKhachSan
                         richtextbox_Display.Text = File.ReadAllText(@"");
                         break;
                     }
-                case "Sửa đổi thông tin phòng thuê":
+                case "Sửa đổi thông tin phòng thuê":        //done
                     {
-                        richtextbox_Display.Text = File.ReadAllText(@"");
+                        richtextbox_Display.Text = File.ReadAllText(@"HelpResources\DSPhong.txt");
+                        picturebox_Display.Image = Image.FromFile(@"HelpResources\DSPhong.jpg");
                         break;
                     }
-                case "Thông tin loại phòng":
+                case "Thông tin loại phòng":                //done
                     {
-                        richtextbox_Display.Text = File.ReadAllText(@"");
+                        richtextbox_Display.Text = File.ReadAllText(@"HelpResources\DSLoaiPhong.txt");
+                        picturebox_Display.Image = Image.FromFile(@"HelpResources\DSLoaiPhong.jpg");
                         break;
                     }
                 case "Thông tin thẻ phòng thuê":
@@ -75,9 +78,10 @@ namespace QuanLysKhachSan
                         richtextbox_Display.Text = File.ReadAllText(@"");
                         break;
                     }
-                case "Danh sách dịch vụ":
+                case "Danh sách dịch vụ":                   //done
                     {
                         richtextbox_Display.Text = File.ReadAllText(@"HelpResources\DSDichVu.txt");
+                        picturebox_Display.Image = Image.FromFile(@"HelpResources\DSDichVu.jpg");
                         break;
                     }
                 case "Tạo/Thêm thẻ dịch vụ":
@@ -85,14 +89,16 @@ namespace QuanLysKhachSan
                         richtextbox_Display.Text = File.ReadAllText(@"HelpResources\");
                         break;
                     }
-                case "Thêm dịch vụ mới":
+                case "Thêm dịch vụ mới":                    //done
                     {
                         richtextbox_Display.Text = File.ReadAllText(@"HelpResources\DSDichVu.txt");
+                        picturebox_Display.Image = Image.FromFile(@"HelpResources\DSDichVu.jpg");
                         break;
                     }
-                case "Thông tin dịch vụ":
+                case "Thông tin dịch vụ":                   //done
                     {
                         richtextbox_Display.Text = File.ReadAllText(@"HelpResources\DSDichVu.txt");
+                        picturebox_Display.Image = Image.FromFile(@"HelpResources\DSDichVu.jpg");
                         break;
                     }
                 case "Thông tin nhân viên":
