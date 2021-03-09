@@ -13,23 +13,6 @@ namespace QuanLysKhachSan
 {
     public partial class FormHelp : Form
     {
-        static string qlphong = File.ReadAllText(@"tester\help test.txt");
-        static string dsphong = File.ReadAllText(@"D:\TTNhom\QLKS_Demo\Mô tả chức năng và hình ảnh vào đây pls\help test.txt");
-        static string taothephong = File.ReadAllText(@"D:\TTNhom\QLKS_Demo\Mô tả chức năng và hình ảnh vào đây pls\help test.txt");
-        static string suattphong = File.ReadAllText(@"D:\TTNhom\QLKS_Demo\Mô tả chức năng và hình ảnh vào đây pls\help test.txt");
-        static string ttloaiphong = File.ReadAllText(@"D:\TTNhom\QLKS_Demo\Mô tả chức năng và hình ảnh vào đây pls\help test.txt");
-        static string ttthephong = File.ReadAllText(@"D:\TTNhom\QLKS_Demo\Mô tả chức năng và hình ảnh vào đây pls\help test.txt");
-        
-        static string qldichvu = File.ReadAllText(@"D:\TTNhom\QLKS_Demo\Mô tả chức năng và hình ảnh vào đây pls\help test.txt");
-        static string dsdichvu = File.ReadAllText(@"D:\TTNhom\QLKS_Demo\Mô tả chức năng và hình ảnh vào đây pls\help test.txt");
-        static string taothedichvu = File.ReadAllText(@"D:\TTNhom\QLKS_Demo\Mô tả chức năng và hình ảnh vào đây pls\help test.txt");
-        static string themdichvu = File.ReadAllText(@"D:\TTNhom\QLKS_Demo\Mô tả chức năng và hình ảnh vào đây pls\help test.txt");
-        static string ttdichvu = File.ReadAllText(@"D:\TTNhom\QLKS_Demo\Mô tả chức năng và hình ảnh vào đây pls\help test.txt");
-        
-        static string tkbaomat = File.ReadAllText(@"D:\TTNhom\QLKS_Demo\Mô tả chức năng và hình ảnh vào đây pls\help test.txt");
-        static string ttnhanvien = File.ReadAllText(@"D:\TTNhom\QLKS_Demo\Mô tả chức năng và hình ảnh vào đây pls\help test.txt");
-        static string doimk = File.ReadAllText(@"D:\TTNhom\QLKS_Demo\Mô tả chức năng và hình ảnh vào đây pls\help test.txt");
-
         public FormHelp()
         {
             InitializeComponent();
@@ -59,7 +42,6 @@ namespace QuanLysKhachSan
             treeview_ItemList.Nodes.Add("Security", "Tài khoản và bảo mật");
             treeview_ItemList.Nodes["Security"].Nodes.Add("Thông tin nhân viên");
             treeview_ItemList.Nodes["Security"].Nodes.Add("Đổi mật khẩu tài khoản");
-
         }
 
         private void treeview_ItemList_AfterSelect(object sender, TreeViewEventArgs e)
@@ -68,24 +50,63 @@ namespace QuanLysKhachSan
             //DirectoryInfo dir = new DirectoryInfo(@"D:\TTNhom\QLKS_Demo\Mô tả chức năng và hình ảnh vào đây pls");
             switch(e.Node.Text)
             {
-                case "Quản lý phòng":
-                    richtextbox_Display.Text = qlphong;
-                    break;
-                case "Quản lý dịch vụ":
-                    MessageBox.Show("quan ly dich vu");
-                    break;
-                default: 
-                    MessageBox.Show("exception");
-                    break;
+                case "Danh sách phòng":
+                    {
+                        richtextbox_Display.Text = File.ReadAllText(@"");
+                        break;
+                    }
+                case "Tạo thẻ phòng thuê":
+                    {
+                        richtextbox_Display.Text = File.ReadAllText(@"");
+                        break;
+                    }
+                case "Sửa đổi thông tin phòng thuê":
+                    {
+                        richtextbox_Display.Text = File.ReadAllText(@"");
+                        break;
+                    }
+                case "Thông tin loại phòng":
+                    {
+                        richtextbox_Display.Text = File.ReadAllText(@"");
+                        break;
+                    }
+                case "Thông tin thẻ phòng thuê":
+                    {
+                        richtextbox_Display.Text = File.ReadAllText(@"");
+                        break;
+                    }
+                case "Danh sách dịch vụ":
+                    {
+                        richtextbox_Display.Text = File.ReadAllText(@"");
+                        break;
+                    }
+                case "Tạo/Thêm thẻ dịch vụ":
+                    {
+                        richtextbox_Display.Text = File.ReadAllText(@"");
+                        break;
+                    }
+                case "Thêm dịch vụ mới":
+                    {
+                        richtextbox_Display.Text = File.ReadAllText(@"");
+                        break;
+                    }
+                case "Thông tin dịch vụ":
+                    {
+                        richtextbox_Display.Text = File.ReadAllText(@"");
+                        break;
+                    }
+                case "Thông tin nhân viên":
+                    {
+                        richtextbox_Display.Text = File.ReadAllText(@"");
+                        break;
+                    }
+                case "Đổi mật khẩu tài khoản":
+                    {
+                        richtextbox_Display.Text = File.ReadAllText(@"");
+                        break;
+                    }
 
             }
-
-
-
-            //Image image = Image.FromFile(@"D:\TTNhom\QLKS_Demo\Mô tả chức năng và hình ảnh vào đây pls\test img.jpg");
-            //Clipboard.SetImage(image);
-            //richtextbox_Display.Paste();
-
         }
     }
 }
