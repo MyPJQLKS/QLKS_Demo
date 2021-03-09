@@ -32,6 +32,7 @@ namespace QuanLysKhachSan
             treeview_ItemList.Nodes["Room Manag"].Nodes.Add("Sửa đổi thông tin phòng thuê");
             treeview_ItemList.Nodes["Room Manag"].Nodes.Add("Thông tin loại phòng");
             treeview_ItemList.Nodes["Room Manag"].Nodes.Add("Thông tin thẻ phòng thuê");
+            treeview_ItemList.Nodes["Room Manag"].Nodes.Add("Danh sách khách");
 
             treeview_ItemList.Nodes.Add("Services Manag", "Quản lý dịch vụ");
             treeview_ItemList.Nodes["Services Manag"].Nodes.Add("Danh sách dịch vụ");
@@ -76,6 +77,12 @@ namespace QuanLysKhachSan
                 case "Thông tin thẻ phòng thuê":
                     {
                         richtextbox_Display.Text = File.ReadAllText(@"");
+                        break;
+                    }
+                case "Danh sách khách":                     //done
+                    {
+                        richtextbox_Display.Text = File.ReadAllText(@"HelpResources\DSKhach.txt");
+                        picturebox_Display.Image = Image.FromFile(@"HelpResources\DSKhach.jpg");
                         break;
                     }
                 case "Danh sách dịch vụ":                   //done

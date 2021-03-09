@@ -1,0 +1,6 @@
+﻿
+1. Mục "Danh sách khách" hiển thị danh sách các khách đã và đang thuê phòng , thông tin bao gồm tên khách ,số cmt, số lần thuê và ngày đã từng thuê phòng cuối cùng.
+ 
+2. Mục "Danh sách khách đang thuê" hiển thị danh sách các khách đang thuê phòng , thông tin bao gồm tên khách ,số cmt, số lần thuê và ngày đã từng thuê phòng cuối cùng.
+
+Nhấn vào nút "Làm mới" để refresh lại
