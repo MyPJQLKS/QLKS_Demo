@@ -1,0 +1,11 @@
+﻿
+Xem danh sách Loại Phòng:
+Cách 1:Chọn menu Hệ Thống -> Danh Sách Phòng
+Cách 2:Chọn menu Hệ Thống -> Sửa Đổi Thông Tin -> Thông Tin Loại Phòng
+
+Chức năng:
+- Xem: Hiển thị thông tin Loại Phòng lên bảng Dữ Liệu Loại Phòng
+- Sửa: Nhập dữ liệu Thông Tin Loại Phòng. Dựa vào Mã Loại Phòng sửa thông tin Loại Phòng. Nếu không có thông tin Mã Loại Phòng sẽ dựa vào nội dung sửa trực tiếp trên Bảng Dữ Liệu Loai Phòng để sửa thông tin Loại Phòng (không thể sửa nếu thay đổi Mã Loại Phòng trong bảng dữ liệu)
+- Xóa: Chọn trực tiếp Loại Phòng cần xóa trng bảng Dữ Liệu
+- Thêm:Nhập dữ liệu Thông Tin Loại Phòng hoặc thêm dữ liệu trực tiếp trên bảng Dữ Liệu (không thể thêm Loại Phòng có trùng Mã Loại Phòng với Loại Phòng trong bảng dữ liệu)
+
