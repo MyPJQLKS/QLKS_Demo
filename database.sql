@@ -162,3 +162,22 @@ if(@temp=1)
 	execute nhapdulieu @mathe , @maphong , @manv , @ten , @cmt , @dat , @tra;
 	end
 end
+------Danh sách khách --------
+CREATE OR ALTER PROC Customer_List
+AS
+BEGIN
+SELECT tenkhachhang as N'Tên khách hàng', socmt as 'Số CMT', max(ngaythue) as N'Ngày thuê' ,count(socmt) as N'Số lần thuê' 
+FROM thephongthue
+group by tenkhachhang,socmt
+END
+------Danh sách khách đang thuê----------
+CREATE OR ALTER PROC Customer_List_On
+AS
+BEGIN
+SELECT tenkhachhang as N'Tên khách hàng', socmt as 'Số CMT', max(ngaythue) as N'Ngày thuê' ,count(socmt) as N'Số lần thuê' 
+FROM thephongthue,Phong
+WHERE ThePhongThue.maphong = PHONG.maphong
+AND PHONG.trangthai = 'True'
+GROUP BY tenkhachhang,socmt
+HAVING DAY(GETDATE()) - DAY(MAX(ngaydukientra))>=0
+END
