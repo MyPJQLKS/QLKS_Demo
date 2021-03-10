@@ -39,12 +39,11 @@ namespace QuanLysKhachSan
             treeview_ItemList.Nodes["Services Manag"].Nodes.Add("Tạo/Thêm thẻ dịch vụ");
             treeview_ItemList.Nodes["Services Manag"].Nodes.Add("Thêm dịch vụ mới");
             treeview_ItemList.Nodes["Services Manag"].Nodes.Add("Thông tin dịch vụ");
+            treeview_ItemList.Nodes["Services Manag"].Nodes.Add("In hóa đơn");
 
             treeview_ItemList.Nodes.Add("Security", "Tài khoản và bảo mật");
             treeview_ItemList.Nodes["Security"].Nodes.Add("Thông tin nhân viên");
             treeview_ItemList.Nodes["Security"].Nodes.Add("Đổi mật khẩu tài khoản");
-
-            treeview_ItemList.Nodes.Add("Bill", "Thanh toán");
         }
 
         private void treeview_ItemList_AfterSelect(object sender, TreeViewEventArgs e)
@@ -125,7 +124,7 @@ namespace QuanLysKhachSan
                         picturebox_Display.Image = null;
                         break;
                     }
-                case "Thanh toán":                          //done
+                case "In hóa đơn":                          //done
                     {
                         richtextbox_Display.Text = File.ReadAllText(@"HelpResources\ThanhToan.txt");
                         picturebox_Display.Image = Image.FromFile(@"HelpResources\ThanhToan.jpg");
