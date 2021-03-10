@@ -1,0 +1,10 @@
+﻿
+Mã thẻ sẽ được hiển thị hết trong combo box
+
+Ban đầu thông tin tất cả khách hàng sẽ được hiển thị ở listview trong phần Chi tiết khác hàng
+
+Khi chọn 1 mã phòng rồi ấn nút Hiển thị khách hàng thì thông tin khách hàng sẽ được hiển thị dưới listview
+
+Khi ấn nút Tính tiền thì các thông tin trong mục Hóa đơn thanh toán sẽ được hiển thị ra
+
+Khi ấn nút Thoát thì sẽ hiển thị ra thông báo " Bạn có thực sự muốn thoát ". Có lựa chọn Yes/No hiện ra, chọn Yes để thoát còn chọn No nếu muốn ở lại chương trình

@@ -146,3 +146,4 @@ C:\Users\User\OneDrive\Desktop\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachS
 C:\Users\User\OneDrive\Desktop\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.csproj.CopyComplete
 C:\Users\User\OneDrive\Desktop\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.exe
 C:\Users\User\OneDrive\Desktop\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.pdb
+D:\TTNhom\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.frmthanhtoan.resources

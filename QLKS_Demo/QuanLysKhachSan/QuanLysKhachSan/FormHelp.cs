@@ -43,6 +43,8 @@ namespace QuanLysKhachSan
             treeview_ItemList.Nodes.Add("Security", "Tài khoản và bảo mật");
             treeview_ItemList.Nodes["Security"].Nodes.Add("Thông tin nhân viên");
             treeview_ItemList.Nodes["Security"].Nodes.Add("Đổi mật khẩu tài khoản");
+
+            treeview_ItemList.Nodes.Add("Bill", "Thanh toán");
         }
 
         private void treeview_ItemList_AfterSelect(object sender, TreeViewEventArgs e)
@@ -57,9 +59,10 @@ namespace QuanLysKhachSan
                         picturebox_Display.Image = Image.FromFile(@"HelpResources\DSPhong.jpg");
                         break;
                     }
-                case "Tạo thẻ phòng thuê":
+                case "Tạo thẻ phòng thuê":                  //done
                     {
-                        richtextbox_Display.Text = File.ReadAllText(@"");
+                        richtextbox_Display.Text = File.ReadAllText(@"HelpResources\DatPhong.txt");
+                        picturebox_Display.Image = Image.FromFile(@"HelpResources\DatPhong.jpg");
                         break;
                     }
                 case "Sửa đổi thông tin phòng thuê":        //done
@@ -74,9 +77,10 @@ namespace QuanLysKhachSan
                         picturebox_Display.Image = Image.FromFile(@"HelpResources\DSLoaiPhong.jpg");
                         break;
                     }
-                case "Thông tin thẻ phòng thuê":
+                case "Thông tin thẻ phòng thuê":            //done
                     {
-                        richtextbox_Display.Text = File.ReadAllText(@"");
+                        richtextbox_Display.Text = File.ReadAllText(@"HelpResources\DatPhong.txt");
+                        picturebox_Display.Image = Image.FromFile(@"HelpResources\DatPhong.jpg");
                         break;
                     }
                 case "Danh sách khách":                     //done
@@ -91,9 +95,10 @@ namespace QuanLysKhachSan
                         picturebox_Display.Image = Image.FromFile(@"HelpResources\DSDichVu.jpg");
                         break;
                     }
-                case "Tạo/Thêm thẻ dịch vụ":
+                case "Tạo/Thêm thẻ dịch vụ":                //done
                     {
-                        richtextbox_Display.Text = File.ReadAllText(@"HelpResources\");
+                        richtextbox_Display.Text = File.ReadAllText(@"HelpResources\DatPhong.txt");
+                        picturebox_Display.Image = Image.FromFile(@"HelpResources\DatPhong.jpg");
                         break;
                     }
                 case "Thêm dịch vụ mới":                    //done
@@ -108,17 +113,24 @@ namespace QuanLysKhachSan
                         picturebox_Display.Image = Image.FromFile(@"HelpResources\DSDichVu.jpg");
                         break;
                     }
-                case "Thông tin nhân viên":
+                case "Thông tin nhân viên":                 //done
                     {
-                        richtextbox_Display.Text = File.ReadAllText(@"");
+                        richtextbox_Display.Text = File.ReadAllText(@"HelpResources\Not_Exist.txt");
+                        picturebox_Display.Image = null;
                         break;
                     }
-                case "Đổi mật khẩu tài khoản":
+                case "Đổi mật khẩu tài khoản":              //done
                     {
-                        richtextbox_Display.Text = File.ReadAllText(@"");
+                        richtextbox_Display.Text = File.ReadAllText(@"HelpResources\Not_Exist.txt");
+                        picturebox_Display.Image = null;
                         break;
                     }
-
+                case "Thanh toán":                          //done
+                    {
+                        richtextbox_Display.Text = File.ReadAllText(@"HelpResources\ThanhToan.txt");
+                        picturebox_Display.Image = Image.FromFile(@"HelpResources\ThanhToan.jpg");
+                        break;
+                    }
             }
         }
     }
