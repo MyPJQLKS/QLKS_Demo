@@ -21,7 +21,8 @@ namespace QuanLysKhachSan
         }
 
         //đưa ra dữ liệu về các phòng đã/chưa được thuê
-        string ConnectionString =@"Data Source=localhost\SQLEXPRESS;Initial Catalog=QLKS_Demo;Integrated Security=True";
+        //string ConnectionString =@"Data Source=localhost\SQLEXPRESS;Initial Catalog=QLKS_Demo;Integrated Security=True";
+        string ConnectionString = SqlStringConnect.stringConnect;
         private void button_update_Click(object sender, EventArgs e)
         {
             using (SqlConnection sqlcon = new SqlConnection(ConnectionString))

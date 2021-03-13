@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -24,10 +25,38 @@ namespace QuanLysKhachSan
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            FormMain fm = new FormMain();
-            this.Hide();
-            fm.ShowDialog();
-            this.Show();
+
+            using(SqlConnection connec= new SqlConnection(SqlStringConnect.stringConnect))
+            {
+                try
+                {
+                    string tk = textBoxUserName.Text;
+                    string mk = textBoxPassWord.Text;
+                    connec.Open();
+                    
+                    string query = "select * from usertable where taikhoan = '"+tk+"' and matkhau = '"+mk+"'";
+                    textBoxPassWord.Clear();
+                    SqlCommand com = new SqlCommand(query, connec);
+                    SqlDataReader dta = com.ExecuteReader();
+                    if(dta.Read())
+                    {
+                        //thành công
+                        FormMain fm = new FormMain();
+                        this.Hide();
+                        fm.ShowDialog();
+                        this.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Tài khoản hoặc mật khảu không chính xác");
+                    }
+                    connec.Close();
+                } catch(Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+            }    
+            
 
         }
 

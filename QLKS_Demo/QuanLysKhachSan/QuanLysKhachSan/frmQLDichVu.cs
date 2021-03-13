@@ -13,7 +13,8 @@ namespace QuanLysKhachSan
 {
     public partial class frmQLDichVu : Form
     {
-        static string connstring = @"Data Source=DESKTOP-L67U4QK;Initial Catalog=QLKS_Demo;Integrated Security=True";
+        //static string connstring = @"Data Source=DESKTOP-L67U4QK;Initial Catalog=QLKS_Demo;Integrated Security=True";
+        static string connstring = SqlStringConnect.stringConnect;
         SqlConnection conn = new SqlConnection(connstring);
         public frmQLDichVu()
         {

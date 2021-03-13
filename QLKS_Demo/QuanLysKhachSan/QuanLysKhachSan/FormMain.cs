@@ -56,5 +56,67 @@ namespace QuanLysKhachSan
             FormCustomer formcustomer = new FormCustomer();
             formcustomer.ShowDialog();
         }
+
+        private void danhSáchDịchVụToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmQLDichVu formQLDV = new frmQLDichVu();
+            formQLDV.ShowDialog();
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmthanhtoan f = new frmthanhtoan();
+            f.ShowDialog();
+        }
+
+        private void thêmDịchVuMớiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void thêmDịchVụMớiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmQLDichVu formQLDV = new frmQLDichVu();
+            formQLDV.ShowDialog();
+        }
+
+        private void thôngTinDịchVụToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmQLDichVu formQLDV = new frmQLDichVu();
+            formQLDV.ShowDialog();
+        }
+
+        private void thôngTinNhânViênToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormDatphong d = new FormDatphong();
+            d.ShowDialog();
+        }
+
+        private void hướngDẫnSửDụngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormHelp h = new FormHelp();
+            h.ShowDialog();
+        }
+
+        private void câuHỏiThườngGặpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormHelp h = new FormHelp();
+            h.ShowDialog();
+        }
+
+        private void đổiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

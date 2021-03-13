@@ -14,7 +14,8 @@ namespace QuanLysKhachSan
     public partial class FormRoom : Form
     {
         public int a;
-        string connectionString = @"Data Source=localhost\SQLEXPRESS;Initial Catalog=QLKS_Demo;Integrated Security=True";
+        //string connectionString = @"Data Source=localhost\SQLEXPRESS;Initial Catalog=QLKS_Demo;Integrated Security=True";
+        string connectionString = SqlStringConnect.stringConnect;
         public FormRoom()
         {
             InitializeComponent();

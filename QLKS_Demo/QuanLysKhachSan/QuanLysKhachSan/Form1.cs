@@ -18,7 +18,8 @@ namespace QuanLysKhachSan
             InitializeComponent();
         }
         string sql;
-        string chuoiketnoi = @"Data Source=DESKTOP-53IQ0S1\SQLEXPRESS;Initial Catalog=QLKS;Integrated Security=True";
+        //string chuoiketnoi = @"Data Source=DESKTOP-53IQ0S1\SQLEXPRESS;Initial Catalog=QLKS;Integrated Security=True";
+        string chuoiketnoi = SqlStringConnect.stringConnect;
         SqlConnection ketnoi;
         SqlCommand thuchien;
         SqlDataReader docdulieu;
@@ -27,11 +28,29 @@ namespace QuanLysKhachSan
         private void Form1_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'dataSet1.ThePhongThue' table. You can move, or remove it, as needed.
-            this.thePhongThueTableAdapter.Fill(this.dataSet1.ThePhongThue);
+            //this.thePhongThueTableAdapter.Fill(this.dataSet1.ThePhongThue);
+            //lấy thông tin 
+
+            fix();
             ketnoi = new SqlConnection(chuoiketnoi);
             hienthi();
 
 
+        }
+        public void fix()
+        {
+            using(SqlConnection con = new SqlConnection(chuoiketnoi))
+            {
+                con.Open();
+                string que = "Select mathe from thephongthue";
+                SqlCommand coman = new SqlCommand(que, con);
+                DataTable data = new DataTable();
+                data.Load(coman.ExecuteReader());
+                data.Dispose();
+                cbmathe.DisplayMember = "mathe";
+                cbmathe.DataSource = data;
+                con.Close();
+            }    
         }
         public void hienthi()
         {
@@ -94,7 +113,7 @@ namespace QuanLysKhachSan
         private void btntinhtien_Click(object sender, EventArgs e)
         {
             ketnoi.Open();
-            sql = @"select mahd,ngayxuathoadon,tongtien,mathe from hoadon";
+            sql = @"select mahd,ngayxuathoadon,tongtien,hd.mathe from hoadon hd, ThePhongThue ttp where hd.mathe=ttp.mathe and ttp.mathe='" + cbmathe.Text+"'";
             thuchien = new SqlCommand(sql, ketnoi);
             docdulieu = thuchien.ExecuteReader();
             while (docdulieu.Read())
@@ -115,6 +134,13 @@ namespace QuanLysKhachSan
                 this.Close();
                 Application.Exit();
             }
+
+        }
+
+        private void buttonIn_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("In hóa đơn thành công");
+            //set lại phòng
 
         }
     }

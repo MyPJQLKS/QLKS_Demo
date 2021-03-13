@@ -13,7 +13,8 @@ namespace QuanLysKhachSan
 {
     public partial class FormCustomer : Form
     {
-        string connectionString = @"Data Source=localhost\SQLEXPRESS;Initial Catalog=QLKS_Demo;Integrated Security=True";
+        //string connectionString = @"Data Source=localhost\SQLEXPRESS;Initial Catalog=QLKS_Demo;Integrated Security=True";
+        string connectionString = SqlStringConnect.stringConnect;
         public FormCustomer()
         {
             InitializeComponent();
