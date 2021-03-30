@@ -9,7 +9,7 @@ namespace QuanLysKhachSan
 {
     class SqlStringConnect
     {
-        public static string stringConnect = @"Data Source=localhost\SQLEXPRESS;Initial Catalog=QLKS_Demo;Integrated Security=True";
-       // public static string stringConnect = @"Data Source=localhost;Initial Catalog=QLKS_Demo;Integrated Security=True";
+        //public static string stringConnect = @"Data Source=localhost\SQLEXPRESS;Initial Catalog=QLKS_Demo;Integrated Security=True";
+        public static string stringConnect = @"Data Source=localhost;Initial Catalog=QLKS_Demo;Integrated Security=True";
     }
 }
