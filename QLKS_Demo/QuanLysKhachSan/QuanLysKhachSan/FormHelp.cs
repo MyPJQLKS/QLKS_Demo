@@ -48,86 +48,136 @@ namespace QuanLysKhachSan
 
         private void treeview_ItemList_AfterSelect(object sender, TreeViewEventArgs e)
         {
-            //MessageBox.Show(e.Node.Text);
-            //DirectoryInfo dir = new DirectoryInfo(@"D:\TTNhom\QLKS_Demo\Mô tả chức năng và hình ảnh vào đây pls");
             switch(e.Node.Text)
             {
                 case "Danh sách phòng":                     //done
                     {
+                        richtextbox_Display.ReadOnly = false;
                         richtextbox_Display.Text = File.ReadAllText(@"HelpResources\DSPhong.txt");
-                        picturebox_Display.Image = Image.FromFile(@"HelpResources\DSPhong.jpg");
+                        Clipboard.SetImage(Image.FromFile(@"HelpResources\DSPhong.jpg"));
+                        richtextbox_Display.AppendText("\n");
+                        richtextbox_Display.Paste();
+                        richtextbox_Display.ReadOnly = true;
                         break;
                     }
                 case "Tạo thẻ phòng thuê":                  //done
                     {
+                        richtextbox_Display.ReadOnly = false;
                         richtextbox_Display.Text = File.ReadAllText(@"HelpResources\DatPhong.txt");
-                        picturebox_Display.Image = Image.FromFile(@"HelpResources\DatPhong.jpg");
+                        Clipboard.SetImage(Image.FromFile(@"HelpResources\DatPhong.jpg"));
+                        richtextbox_Display.AppendText("\n");
+                        richtextbox_Display.Paste();
+                        richtextbox_Display.ReadOnly = true;
                         break;
                     }
                 case "Sửa đổi thông tin phòng thuê":        //done
                     {
+                        richtextbox_Display.ReadOnly = false;
                         richtextbox_Display.Text = File.ReadAllText(@"HelpResources\DSPhong.txt");
-                        picturebox_Display.Image = Image.FromFile(@"HelpResources\DSPhong.jpg");
+                        Clipboard.SetImage(Image.FromFile(@"HelpResources\DSPhong.jpg"));
+                        richtextbox_Display.AppendText("\n");
+                        richtextbox_Display.Paste();
+                        richtextbox_Display.ReadOnly = true;
                         break;
                     }
                 case "Thông tin loại phòng":                //done
                     {
+                        richtextbox_Display.ReadOnly = false;
                         richtextbox_Display.Text = File.ReadAllText(@"HelpResources\DSLoaiPhong.txt");
-                        picturebox_Display.Image = Image.FromFile(@"HelpResources\DSLoaiPhong.jpg");
+                        Clipboard.SetImage(Image.FromFile(@"HelpResources\DSLoaiPhong.jpg"));
+                        richtextbox_Display.AppendText("\n");
+                        richtextbox_Display.Paste();
+                        richtextbox_Display.ReadOnly = true;
                         break;
                     }
                 case "Thông tin thẻ phòng thuê":            //done
                     {
+                        richtextbox_Display.ReadOnly = false;
                         richtextbox_Display.Text = File.ReadAllText(@"HelpResources\DatPhong.txt");
-                        picturebox_Display.Image = Image.FromFile(@"HelpResources\DatPhong.jpg");
+                        Clipboard.SetImage(Image.FromFile(@"HelpResources\DatPhong.jpg"));
+                        richtextbox_Display.AppendText("\n");
+                        richtextbox_Display.Paste();
+                        richtextbox_Display.ReadOnly = true;
                         break;
                     }
                 case "Danh sách khách":                     //done
                     {
+                        richtextbox_Display.ReadOnly = false;
                         richtextbox_Display.Text = File.ReadAllText(@"HelpResources\DSKhach.txt");
-                        picturebox_Display.Image = Image.FromFile(@"HelpResources\DSKhach.jpg");
+                        Clipboard.SetImage(Image.FromFile(@"HelpResources\DSKhach.jpg"));
+                        richtextbox_Display.AppendText("\n");
+                        richtextbox_Display.Paste();
+                        richtextbox_Display.ReadOnly = true;
                         break;
                     }
                 case "Danh sách dịch vụ":                   //done
                     {
+                        richtextbox_Display.ReadOnly = false;
                         richtextbox_Display.Text = File.ReadAllText(@"HelpResources\DSDichVu.txt");
-                        picturebox_Display.Image = Image.FromFile(@"HelpResources\DSDichVu.jpg");
+                        Clipboard.SetImage(Image.FromFile(@"HelpResources\DSDichVu.jpg"));
+                        richtextbox_Display.AppendText("\n");
+                        richtextbox_Display.Paste();
+                        richtextbox_Display.ReadOnly = true;
                         break;
                     }
                 case "Tạo/Thêm thẻ dịch vụ":                //done
                     {
+                        richtextbox_Display.ReadOnly = false;
                         richtextbox_Display.Text = File.ReadAllText(@"HelpResources\DatPhong.txt");
-                        picturebox_Display.Image = Image.FromFile(@"HelpResources\DatPhong.jpg");
+                        Clipboard.SetImage(Image.FromFile(@"HelpResources\DatPhong.jpg"));
+                        richtextbox_Display.AppendText("\n");
+                        richtextbox_Display.Paste();
+                        richtextbox_Display.ReadOnly = true;
                         break;
                     }
                 case "Thêm dịch vụ mới":                    //done
                     {
+                        richtextbox_Display.ReadOnly = false;
                         richtextbox_Display.Text = File.ReadAllText(@"HelpResources\DSDichVu.txt");
-                        picturebox_Display.Image = Image.FromFile(@"HelpResources\DSDichVu.jpg");
+                        Clipboard.SetImage(Image.FromFile(@"HelpResources\DSDichVu.jpg"));
+                        richtextbox_Display.AppendText("\n");
+                        richtextbox_Display.Paste();
+                        richtextbox_Display.ReadOnly = true;
                         break;
                     }
                 case "Thông tin dịch vụ":                   //done
                     {
+                        richtextbox_Display.ReadOnly = false;
                         richtextbox_Display.Text = File.ReadAllText(@"HelpResources\DSDichVu.txt");
-                        picturebox_Display.Image = Image.FromFile(@"HelpResources\DSDichVu.jpg");
+                        Clipboard.SetImage(Image.FromFile(@"HelpResources\DSDichVu.jpg"));
+                        richtextbox_Display.AppendText("\n");
+                        richtextbox_Display.Paste();
+                        richtextbox_Display.ReadOnly = true;
                         break;
                     }
                 case "Thông tin nhân viên":                 //done
                     {
+                        richtextbox_Display.ReadOnly = false;
                         richtextbox_Display.Text = File.ReadAllText(@"HelpResources\Not_Exist.txt");
-                        picturebox_Display.Image = null;
+                        //Clipboard.SetImage(Image.FromFile(@"HelpResources\Not_Exist.jpg"));
+                        //richtextbox_Display.AppendText("\n");
+                        //richtextbox_Display.Paste();
+                        richtextbox_Display.ReadOnly = true;
                         break;
                     }
                 case "Đổi mật khẩu tài khoản":              //done
                     {
+                        richtextbox_Display.ReadOnly = false;
                         richtextbox_Display.Text = File.ReadAllText(@"HelpResources\Not_Exist.txt");
-                        picturebox_Display.Image = null;
+                        //Clipboard.SetImage(Image.FromFile(@"HelpResources\Not_Exist.jpg"));
+                        //richtextbox_Display.AppendText("\n");
+                        //richtextbox_Display.Paste();
+                        richtextbox_Display.ReadOnly = true;
                         break;
                     }
                 case "In hóa đơn":                          //done
                     {
+                        richtextbox_Display.ReadOnly = false;
                         richtextbox_Display.Text = File.ReadAllText(@"HelpResources\ThanhToan.txt");
-                        picturebox_Display.Image = Image.FromFile(@"HelpResources\ThanhToan.jpg");
+                        Clipboard.SetImage(Image.FromFile(@"HelpResources\ThanhToan.jpg"));
+                        richtextbox_Display.AppendText("\n");
+                        richtextbox_Display.Paste();
+                        richtextbox_Display.ReadOnly = true;
                         break;
                     }
             }
