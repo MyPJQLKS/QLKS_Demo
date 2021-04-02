@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,6 +25,13 @@ namespace QuanLysKhachSan
             this.tenphong = "";
             this.maloaiphong = "";
             this.trangthai = false;
+        }
+        public Room(DataRow data )
+        {
+            this.maphong = data[0].ToString();
+            this.tenphong = data[1].ToString();
+            this.maloaiphong = data[2].ToString();
+            this.trangthai = Convert.ToBoolean(data[3].ToString().Trim());
         }
     }
 }

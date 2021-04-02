@@ -63,6 +63,26 @@ namespace QuanLysKhachSan.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_edit {
+            get {
+                object obj = ResourceManager.GetObject("icons8-edit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_edit_104 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-edit-104", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ong_lon_quan_ly_khach_san_do_bo_kich_hoat_du_lich_bai_kem1607007968 {
             get {
                 object obj = ResourceManager.GetObject("ong-lon-quan-ly-khach-san-do-bo-kich-hoat-du-lich-bai-kem1607007968", resourceCulture);

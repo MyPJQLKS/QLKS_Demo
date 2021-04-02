@@ -106,7 +106,8 @@ namespace QuanLysKhachSan
 
         private void đổiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            FormDoiMK f = new FormDoiMK();
+            f.Show();
         }
 
         private void FormMain_Load(object sender, EventArgs e)

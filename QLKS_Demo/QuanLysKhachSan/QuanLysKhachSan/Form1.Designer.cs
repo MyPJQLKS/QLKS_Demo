@@ -39,6 +39,7 @@
             this.dataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataSet1 = new QuanLysKhachSan.DataSet1();
             this.gbhoadonthanhtoan = new System.Windows.Forms.GroupBox();
+            this.buttonIn = new System.Windows.Forms.Button();
             this.lbmt = new System.Windows.Forms.Label();
             this.lbtinhtongtien = new System.Windows.Forms.Label();
             this.lbngayxuathd = new System.Windows.Forms.Label();
@@ -58,7 +59,6 @@
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lbTT = new System.Windows.Forms.Label();
             this.thePhongThueTableAdapter = new QuanLysKhachSan.DataSet1TableAdapters.ThePhongThueTableAdapter();
-            this.buttonIn = new System.Windows.Forms.Button();
             this.gbthanhtoan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.thePhongThueBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).BeginInit();
@@ -169,6 +169,16 @@
             this.gbhoadonthanhtoan.TabIndex = 1;
             this.gbhoadonthanhtoan.TabStop = false;
             this.gbhoadonthanhtoan.Text = "Hóa đơn thanh toán";
+            // 
+            // buttonIn
+            // 
+            this.buttonIn.Location = new System.Drawing.Point(514, 52);
+            this.buttonIn.Name = "buttonIn";
+            this.buttonIn.Size = new System.Drawing.Size(75, 23);
+            this.buttonIn.TabIndex = 8;
+            this.buttonIn.Text = "In hóa đơn";
+            this.buttonIn.UseVisualStyleBackColor = true;
+            this.buttonIn.Click += new System.EventHandler(this.buttonIn_Click);
             // 
             // lbmt
             // 
@@ -335,16 +345,6 @@
             // 
             this.thePhongThueTableAdapter.ClearBeforeFill = true;
             // 
-            // buttonIn
-            // 
-            this.buttonIn.Location = new System.Drawing.Point(514, 52);
-            this.buttonIn.Name = "buttonIn";
-            this.buttonIn.Size = new System.Drawing.Size(75, 23);
-            this.buttonIn.TabIndex = 8;
-            this.buttonIn.Text = "In hóa đơn";
-            this.buttonIn.UseVisualStyleBackColor = true;
-            this.buttonIn.Click += new System.EventHandler(this.buttonIn_Click);
-            // 
             // frmthanhtoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -356,6 +356,7 @@
             this.Controls.Add(this.gbthanhtoan);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmthanhtoan";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Formthanhtoan";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.gbthanhtoan.ResumeLayout(false);

@@ -27,24 +27,31 @@ namespace QuanLysKhachSan
                 {
                     try
                     {
-                        if(textBoxPassWord.Text==textBox1.Text)
+                        if(textBoxUserName.Text!="" && textBoxPassWord.Text!="" && textBox1.Text!="")
                         {
-                            connect.Open();
-                            string que = "Insert into UserTable(taikhoan, matkhau, manv) values('" + textBoxUserName.Text + "', '" + textBoxPassWord.Text + "',NULL)";
-                            SqlCommand com = new SqlCommand(que, connect);
-                            int rez = com.ExecuteNonQuery();
-                            if (rez > 0)
+                            if (textBoxPassWord.Text == textBox1.Text)
                             {
-                                //thành công
-                                MessageBox.Show("Thành công!\r\n Hãy nhập tài khoản và đăng nhập");
-                                panel4.Visible = false;
+                                connect.Open();
+                                string que = "Insert into UserTable(taikhoan, matkhau, manv) values('" + textBoxUserName.Text + "', '" + textBoxPassWord.Text + "','"+textBoxUserName.Text+"')";
+                                SqlCommand com = new SqlCommand(que, connect);
+                                int rez = com.ExecuteNonQuery();
+                                if (rez > 0)
+                                {
+                                    //thành công
+                                    MessageBox.Show("Thành công!\r\n Hãy nhập tài khoản và đăng nhập");
+                                    panel4.Visible = false;
+                                }
+                                connect.Close();
                             }
-                            connect.Close();
-                        }
-                        else
+                            else
+                            {
+                                MessageBox.Show("Mật khẩu không trùng nhau");
+                            }
+                        }    else
                         {
-                            MessageBox.Show("Mật khẩu không trùng nhau");
-                        }
+                            MessageBox.Show("Hãy nhập đầy đủ thông tin");
+                        }                            
+                        
                     }
                     catch (Exception ex)
                     {
@@ -54,7 +61,7 @@ namespace QuanLysKhachSan
             }
             else
             {
-                MessageBox.Show("A");
+                MessageBox.Show("Nhập tài khoản mật khẩu đăng ký");
                 panel4.Visible = true;
             } 
             
@@ -89,11 +96,24 @@ namespace QuanLysKhachSan
                         SqlDataReader dta = com.ExecuteReader();
                         if (dta.Read())
                         {
+
                             //thành công
-                            FormMain fm = new FormMain();
-                            this.Hide();
-                            fm.ShowDialog();
-                            this.Show();
+                            //if(nhanvien)
+                            {
+                                FormNV fNV = new FormNV(tk);
+                                this.Hide();
+                                fNV.ShowDialog();
+                                this.Show();
+
+                            } 
+                            //else
+                           /* {
+                                FormMain fm = new FormMain();
+                                this.Hide();
+                                fm.ShowDialog();
+                                this.Show();
+                            }*/
+                            
                         }
                         else
                         {
