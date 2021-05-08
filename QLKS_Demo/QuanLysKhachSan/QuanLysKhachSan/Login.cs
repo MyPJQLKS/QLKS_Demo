@@ -98,7 +98,7 @@ namespace QuanLysKhachSan
                         {
 
                             //thành công
-                            //if(nhanvien)
+                            if(textBoxUserName.Text.ToLower()!="admin" )
                             {
                                 FormNV fNV = new FormNV(tk);
                                 this.Hide();
@@ -106,13 +106,13 @@ namespace QuanLysKhachSan
                                 this.Show();
 
                             } 
-                            //else
-                           /* {
+                            else
+                            {
                                 FormMain fm = new FormMain();
                                 this.Hide();
                                 fm.ShowDialog();
                                 this.Show();
-                            }*/
+                            }
                             
                         }
                         else
