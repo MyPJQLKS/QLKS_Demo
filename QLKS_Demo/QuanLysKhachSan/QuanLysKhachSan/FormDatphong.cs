@@ -23,6 +23,7 @@ namespace QuanLysKhachSan
         //đưa ra dữ liệu về các phòng đã/chưa được thuê
         //string ConnectionString =@"Data Source=localhost\SQLEXPRESS;Initial Catalog=QLKS_Demo;Integrated Security=True";
         string ConnectionString = SqlStringConnect.stringConnect;
+        string macu, mapcu;
         private void button_update_Click(object sender, EventArgs e)
         {
             using (SqlConnection sqlcon = new SqlConnection(ConnectionString))
@@ -52,6 +53,7 @@ namespace QuanLysKhachSan
             {
                 DataGridViewRow row = this.dataGridView_check.Rows[e.RowIndex];
                 textBox_maphong.Text = row.Cells[0].Value.ToString();
+                mapcu= row.Cells[0].Value.ToString();
                 textBox_tenphong.Text = row.Cells[1].Value.ToString();
                 textBox_mlphong.Text = row.Cells[2].Value.ToString();
                 string tt = row.Cells[3].Value.ToString();
@@ -60,13 +62,16 @@ namespace QuanLysKhachSan
                 {
                     radioButton_chuathue.Checked = true;
                     radioButton_dathue.Checked = false;
+                    textBox_maphong_fk.Text = textBox_maphong.Text;
                 }
                 else if( tt == "True")
                 {
                     radioButton_dathue.Checked = true;
                     radioButton_chuathue.Checked = false;
+
                 }
-                textBox_maphong_fk.Text = textBox_maphong.Text;
+                //if()
+                
                 //using (SqlConnection sqlcon = new SqlConnection(ConnectionString))
                 //{
                 //    sqlcon.Open();
@@ -122,6 +127,9 @@ namespace QuanLysKhachSan
                 sqlData.Fill(table);
                 dataGridView_confirm.DataSource = table;
             }
+            comboBox2_Index();
+            comboBox1_Index();
+
         }
 
         //đưa dữ liệu từ cell trong data grid view lên các toolbox
@@ -131,6 +139,7 @@ namespace QuanLysKhachSan
             {
                 DataGridViewRow row = this.dataGridView_confirm.Rows[e.RowIndex];
                 textBox_mathe.Text= row.Cells[0].Value.ToString();
+                macu= row.Cells[0].Value.ToString();
                 textBox_maphong_fk.Text = row.Cells[1].Value.ToString();
                 textBox_manv.Text = row.Cells[2].Value.ToString();
                 textBox_tenkh.Text = row.Cells[3].Value.ToString();
@@ -158,8 +167,10 @@ namespace QuanLysKhachSan
                         sqlcon.Open();
                         SqlCommand command = new SqlCommand(
                             "execute nhapdulieu N'" + textBox_mathe.Text + "', N'" + textBox_maphong_fk.Text + "', N'" + textBox_manv.Text + "', N'" + textBox_tenkh.Text + "', N'" + textBox_cmt.Text + "', '" + dateTimePicker_ngaydat.Value.ToString() + "', '" + dateTimePicker_ngaytra.Value.ToString() + "'", sqlcon);
+                        sqlcon.InfoMessage += new SqlInfoMessageEventHandler(InfoMessageHandler);
                         command.ExecuteNonQuery();
                     }
+                    load();
                 }
             }
             catch (Exception ex)
@@ -195,9 +206,11 @@ namespace QuanLysKhachSan
                     using (SqlConnection sqlcon = new SqlConnection(ConnectionString))
                     { 
                     sqlcon.Open();
-                    SqlCommand sqlData = new SqlCommand("delete from ThePhongThue where mathe = '"+textBox_mathe.Text+"'", sqlcon);
-                    sqlData.ExecuteNonQuery();
+                    SqlCommand sqlData = new SqlCommand("execute xoathe '"+textBox_mathe.Text+"'", sqlcon);
+                        sqlcon.InfoMessage += new SqlInfoMessageEventHandler(InfoMessageHandler);
+                        sqlData.ExecuteNonQuery();
                     }
+                    load();
                 }    
             }    
         }
@@ -215,14 +228,69 @@ namespace QuanLysKhachSan
                 using (SqlConnection sqlcon = new SqlConnection(ConnectionString))
                 {
                     sqlcon.Open();
-                    SqlCommand sqlData = new SqlCommand("execute checktofix N'"+textBox_mathe.Text+"',N'"+textBox_maphong_fk.Text+"',N'"+textBox_manv.Text+"',N'"+textBox_tenkh.Text+"',N'"+textBox_cmt.Text+"','"+dateTimePicker_ngaydat.Value.ToString()+"','"+dateTimePicker_ngaytra.Value.ToString()+"'", sqlcon);
+                    SqlCommand sqlData = new SqlCommand("execute checktofix N'"+macu+"',N'" +mapcu+ "',N'" + textBox_mathe.Text+"',N'"+textBox_maphong_fk.Text+"',N'"+textBox_manv.Text+"',N'"+textBox_tenkh.Text+"',N'"+textBox_cmt.Text+"','"+dateTimePicker_ngaydat.Value.ToString()+"','"+dateTimePicker_ngaytra.Value.ToString()+"'", sqlcon);
+                    sqlcon.InfoMessage += new SqlInfoMessageEventHandler(InfoMessageHandler);
                     sqlData.ExecuteNonQuery();
-                }    
+                }
+                load();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+        public static void InfoMessageHandler(object mySender, SqlInfoMessageEventArgs myEvent)
+        {
+            MessageBox.Show(myEvent.Message);
+        }
+
+        private void comboBox1_Index()
+        {
+            textBox_maphong_fk.Items.Clear();
+            using (SqlConnection sqlcon = new SqlConnection(ConnectionString))
+            {
+                sqlcon.Open();
+                SqlCommand command = new SqlCommand("select maphong from phong where trangthai ='False'", sqlcon);
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    textBox_maphong_fk.Items.Add(reader["maphong"].ToString());
+                    textBox_maphong_fk.DisplayMember = (reader["maphong"].ToString());
+                    textBox_maphong_fk.ValueMember = (reader["maphong"].ToString());
+                }
+            }
+        }
+
+        private void comboBox2_Index()
+        {
+            textBox_manv.Items.Clear();
+            using (SqlConnection sqlcon = new SqlConnection(ConnectionString))
+            {
+                sqlcon.Open();
+                SqlCommand command = new SqlCommand("select manv from nhanvien ", sqlcon);
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    textBox_manv.Items.Add(reader["manv"].ToString());
+                    textBox_manv.DisplayMember = (reader["manv"].ToString());
+                    textBox_manv.ValueMember = (reader["manv"].ToString());
+                }
+            }
+        }
+
+
+        void load()
+        {
+            using (SqlConnection sqlcon = new SqlConnection(ConnectionString))
+            {
+                sqlcon.Open();
+                SqlDataAdapter sqlData = new SqlDataAdapter("Select * from ThePhongThue", sqlcon);
+                DataTable table = new DataTable();
+                sqlData.Fill(table);
+                dataGridView_confirm.DataSource = table;
+            }
+            comboBox2_Index();
+            comboBox1_Index();
         }
     }
 }

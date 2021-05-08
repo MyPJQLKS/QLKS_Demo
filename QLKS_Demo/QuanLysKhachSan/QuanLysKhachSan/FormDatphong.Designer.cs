@@ -53,8 +53,6 @@ namespace QuanLysKhachSan
             this.dateTimePicker_ngaytra = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker_ngaydat = new System.Windows.Forms.DateTimePicker();
             this.textBox_cmt = new System.Windows.Forms.TextBox();
-            this.textBox_maphong_fk = new System.Windows.Forms.TextBox();
-            this.textBox_manv = new System.Windows.Forms.TextBox();
             this.textBox_mathe = new System.Windows.Forms.TextBox();
             this.textBox_tenkh = new System.Windows.Forms.TextBox();
             this.tabPage_check = new System.Windows.Forms.TabPage();
@@ -74,6 +72,8 @@ namespace QuanLysKhachSan
             this.radioButton_dathue = new System.Windows.Forms.RadioButton();
             this.button_update = new System.Windows.Forms.Button();
             this.dataGridView_check = new System.Windows.Forms.DataGridView();
+            this.textBox_maphong_fk = new System.Windows.Forms.ComboBox();
+            this.textBox_manv = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPage_confirm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_confirm)).BeginInit();
@@ -87,7 +87,7 @@ namespace QuanLysKhachSan
             this.tabControl1.Controls.Add(this.tabPage_confirm);
             this.tabControl1.Controls.Add(this.tabPage_check);
             this.tabControl1.Location = new System.Drawing.Point(10, 11);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(794, 425);
@@ -95,6 +95,8 @@ namespace QuanLysKhachSan
             // 
             // tabPage_confirm
             // 
+            this.tabPage_confirm.Controls.Add(this.textBox_manv);
+            this.tabPage_confirm.Controls.Add(this.textBox_maphong_fk);
             this.tabPage_confirm.Controls.Add(this.button4);
             this.tabPage_confirm.Controls.Add(this.label19);
             this.tabPage_confirm.Controls.Add(this.label18);
@@ -117,14 +119,12 @@ namespace QuanLysKhachSan
             this.tabPage_confirm.Controls.Add(this.dateTimePicker_ngaytra);
             this.tabPage_confirm.Controls.Add(this.dateTimePicker_ngaydat);
             this.tabPage_confirm.Controls.Add(this.textBox_cmt);
-            this.tabPage_confirm.Controls.Add(this.textBox_maphong_fk);
-            this.tabPage_confirm.Controls.Add(this.textBox_manv);
             this.tabPage_confirm.Controls.Add(this.textBox_mathe);
             this.tabPage_confirm.Controls.Add(this.textBox_tenkh);
             this.tabPage_confirm.Location = new System.Drawing.Point(4, 22);
-            this.tabPage_confirm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage_confirm.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage_confirm.Name = "tabPage_confirm";
-            this.tabPage_confirm.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage_confirm.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage_confirm.Size = new System.Drawing.Size(786, 399);
             this.tabPage_confirm.TabIndex = 1;
             this.tabPage_confirm.Text = "Đặt phòng";
@@ -135,7 +135,7 @@ namespace QuanLysKhachSan
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(31, 149);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(105, 26);
             this.button4.TabIndex = 25;
@@ -217,7 +217,7 @@ namespace QuanLysKhachSan
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(441, 149);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(106, 26);
             this.button3.TabIndex = 17;
@@ -229,7 +229,7 @@ namespace QuanLysKhachSan
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(308, 149);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(106, 26);
             this.button2.TabIndex = 16;
@@ -241,7 +241,7 @@ namespace QuanLysKhachSan
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(176, 149);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(105, 26);
             this.button1.TabIndex = 15;
@@ -254,7 +254,7 @@ namespace QuanLysKhachSan
             this.dataGridView_confirm.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView_confirm.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_confirm.Location = new System.Drawing.Point(5, 190);
-            this.dataGridView_confirm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView_confirm.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView_confirm.Name = "dataGridView_confirm";
             this.dataGridView_confirm.RowHeadersWidth = 51;
             this.dataGridView_confirm.RowTemplate.Height = 24;
@@ -331,7 +331,7 @@ namespace QuanLysKhachSan
             this.dateTimePicker_ngaytra.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker_ngaytra.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker_ngaytra.Location = new System.Drawing.Point(506, 45);
-            this.dateTimePicker_ngaytra.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePicker_ngaytra.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker_ngaytra.Name = "dateTimePicker_ngaytra";
             this.dateTimePicker_ngaytra.Size = new System.Drawing.Size(98, 23);
             this.dateTimePicker_ngaytra.TabIndex = 6;
@@ -342,7 +342,7 @@ namespace QuanLysKhachSan
             this.dateTimePicker_ngaydat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker_ngaydat.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker_ngaydat.Location = new System.Drawing.Point(506, 18);
-            this.dateTimePicker_ngaydat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePicker_ngaydat.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker_ngaydat.Name = "dateTimePicker_ngaydat";
             this.dateTimePicker_ngaydat.Size = new System.Drawing.Size(98, 23);
             this.dateTimePicker_ngaydat.TabIndex = 5;
@@ -350,31 +350,15 @@ namespace QuanLysKhachSan
             // textBox_cmt
             // 
             this.textBox_cmt.Location = new System.Drawing.Point(204, 64);
-            this.textBox_cmt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox_cmt.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_cmt.Name = "textBox_cmt";
             this.textBox_cmt.Size = new System.Drawing.Size(150, 20);
             this.textBox_cmt.TabIndex = 4;
             // 
-            // textBox_maphong_fk
-            // 
-            this.textBox_maphong_fk.Location = new System.Drawing.Point(204, 100);
-            this.textBox_maphong_fk.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox_maphong_fk.Name = "textBox_maphong_fk";
-            this.textBox_maphong_fk.Size = new System.Drawing.Size(150, 20);
-            this.textBox_maphong_fk.TabIndex = 3;
-            // 
-            // textBox_manv
-            // 
-            this.textBox_manv.Location = new System.Drawing.Point(467, 79);
-            this.textBox_manv.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox_manv.Name = "textBox_manv";
-            this.textBox_manv.Size = new System.Drawing.Size(150, 20);
-            this.textBox_manv.TabIndex = 2;
-            // 
             // textBox_mathe
             // 
             this.textBox_mathe.Location = new System.Drawing.Point(467, 113);
-            this.textBox_mathe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox_mathe.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_mathe.Name = "textBox_mathe";
             this.textBox_mathe.Size = new System.Drawing.Size(150, 20);
             this.textBox_mathe.TabIndex = 1;
@@ -382,7 +366,7 @@ namespace QuanLysKhachSan
             // textBox_tenkh
             // 
             this.textBox_tenkh.Location = new System.Drawing.Point(204, 32);
-            this.textBox_tenkh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox_tenkh.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_tenkh.Name = "textBox_tenkh";
             this.textBox_tenkh.Size = new System.Drawing.Size(150, 20);
             this.textBox_tenkh.TabIndex = 0;
@@ -403,9 +387,9 @@ namespace QuanLysKhachSan
             this.tabPage_check.Controls.Add(this.button_update);
             this.tabPage_check.Controls.Add(this.dataGridView_check);
             this.tabPage_check.Location = new System.Drawing.Point(4, 22);
-            this.tabPage_check.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage_check.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage_check.Name = "tabPage_check";
-            this.tabPage_check.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage_check.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage_check.Size = new System.Drawing.Size(786, 399);
             this.tabPage_check.TabIndex = 2;
             this.tabPage_check.Text = "Kiểm tra phòng";
@@ -419,7 +403,7 @@ namespace QuanLysKhachSan
             this.panel1.Controls.Add(this.radioButton_searchchuathue);
             this.panel1.Controls.Add(this.radioButton_searchdathue);
             this.panel1.Location = new System.Drawing.Point(410, 101);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(194, 44);
             this.panel1.TabIndex = 37;
@@ -439,7 +423,7 @@ namespace QuanLysKhachSan
             this.radioButton_searchchuathue.AutoSize = true;
             this.radioButton_searchchuathue.Checked = true;
             this.radioButton_searchchuathue.Location = new System.Drawing.Point(14, 23);
-            this.radioButton_searchchuathue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton_searchchuathue.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton_searchchuathue.Name = "radioButton_searchchuathue";
             this.radioButton_searchchuathue.Size = new System.Drawing.Size(74, 17);
             this.radioButton_searchchuathue.TabIndex = 27;
@@ -451,7 +435,7 @@ namespace QuanLysKhachSan
             // 
             this.radioButton_searchdathue.AutoSize = true;
             this.radioButton_searchdathue.Location = new System.Drawing.Point(116, 23);
-            this.radioButton_searchdathue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton_searchdathue.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton_searchdathue.Name = "radioButton_searchdathue";
             this.radioButton_searchdathue.Size = new System.Drawing.Size(63, 17);
             this.radioButton_searchdathue.TabIndex = 26;
@@ -462,7 +446,7 @@ namespace QuanLysKhachSan
             // 
             this.button_datphong_check.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_datphong_check.Location = new System.Drawing.Point(568, 55);
-            this.button_datphong_check.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_datphong_check.Margin = new System.Windows.Forms.Padding(2);
             this.button_datphong_check.Name = "button_datphong_check";
             this.button_datphong_check.Size = new System.Drawing.Size(80, 32);
             this.button_datphong_check.TabIndex = 36;
@@ -513,7 +497,7 @@ namespace QuanLysKhachSan
             // textBox_mlphong
             // 
             this.textBox_mlphong.Location = new System.Drawing.Point(200, 98);
-            this.textBox_mlphong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox_mlphong.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_mlphong.Name = "textBox_mlphong";
             this.textBox_mlphong.Size = new System.Drawing.Size(175, 20);
             this.textBox_mlphong.TabIndex = 31;
@@ -521,7 +505,7 @@ namespace QuanLysKhachSan
             // textBox_tenphong
             // 
             this.textBox_tenphong.Location = new System.Drawing.Point(200, 63);
-            this.textBox_tenphong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox_tenphong.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_tenphong.Name = "textBox_tenphong";
             this.textBox_tenphong.Size = new System.Drawing.Size(175, 20);
             this.textBox_tenphong.TabIndex = 30;
@@ -529,7 +513,7 @@ namespace QuanLysKhachSan
             // textBox_maphong
             // 
             this.textBox_maphong.Location = new System.Drawing.Point(200, 24);
-            this.textBox_maphong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox_maphong.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_maphong.Name = "textBox_maphong";
             this.textBox_maphong.Size = new System.Drawing.Size(175, 20);
             this.textBox_maphong.TabIndex = 29;
@@ -538,7 +522,7 @@ namespace QuanLysKhachSan
             // 
             this.radioButton_chuathue.AutoSize = true;
             this.radioButton_chuathue.Location = new System.Drawing.Point(458, 55);
-            this.radioButton_chuathue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton_chuathue.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton_chuathue.Name = "radioButton_chuathue";
             this.radioButton_chuathue.Size = new System.Drawing.Size(74, 17);
             this.radioButton_chuathue.TabIndex = 28;
@@ -550,7 +534,7 @@ namespace QuanLysKhachSan
             // 
             this.radioButton_dathue.AutoSize = true;
             this.radioButton_dathue.Location = new System.Drawing.Point(458, 23);
-            this.radioButton_dathue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton_dathue.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton_dathue.Name = "radioButton_dathue";
             this.radioButton_dathue.Size = new System.Drawing.Size(63, 17);
             this.radioButton_dathue.TabIndex = 27;
@@ -562,7 +546,7 @@ namespace QuanLysKhachSan
             // 
             this.button_update.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_update.Location = new System.Drawing.Point(568, 16);
-            this.button_update.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_update.Margin = new System.Windows.Forms.Padding(2);
             this.button_update.Name = "button_update";
             this.button_update.Size = new System.Drawing.Size(80, 32);
             this.button_update.TabIndex = 26;
@@ -572,9 +556,10 @@ namespace QuanLysKhachSan
             // 
             // dataGridView_check
             // 
+            this.dataGridView_check.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView_check.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_check.Location = new System.Drawing.Point(4, 173);
-            this.dataGridView_check.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView_check.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView_check.Name = "dataGridView_check";
             this.dataGridView_check.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridView_check.RowHeadersWidth = 51;
@@ -584,13 +569,29 @@ namespace QuanLysKhachSan
             this.dataGridView_check.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_datphong_CellContentClick);
             this.dataGridView_check.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_datphong_CellContentClick);
             // 
+            // textBox_maphong_fk
+            // 
+            this.textBox_maphong_fk.FormattingEnabled = true;
+            this.textBox_maphong_fk.Location = new System.Drawing.Point(201, 99);
+            this.textBox_maphong_fk.Name = "textBox_maphong_fk";
+            this.textBox_maphong_fk.Size = new System.Drawing.Size(153, 21);
+            this.textBox_maphong_fk.TabIndex = 26;
+            // 
+            // textBox_manv
+            // 
+            this.textBox_manv.FormattingEnabled = true;
+            this.textBox_manv.Location = new System.Drawing.Point(469, 81);
+            this.textBox_manv.Name = "textBox_manv";
+            this.textBox_manv.Size = new System.Drawing.Size(148, 21);
+            this.textBox_manv.TabIndex = 27;
+            // 
             // FormDatphong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(812, 445);
             this.Controls.Add(this.tabControl1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormDatphong";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đặt phòng khách sạn";
@@ -626,8 +627,6 @@ namespace QuanLysKhachSan
         private System.Windows.Forms.DateTimePicker dateTimePicker_ngaytra;
         private System.Windows.Forms.DateTimePicker dateTimePicker_ngaydat;
         private System.Windows.Forms.TextBox textBox_cmt;
-        private System.Windows.Forms.TextBox textBox_maphong_fk;
-        private System.Windows.Forms.TextBox textBox_manv;
         private System.Windows.Forms.TextBox textBox_mathe;
         private System.Windows.Forms.TextBox textBox_tenkh;
         private System.Windows.Forms.TabPage tabPage_check;
@@ -655,5 +654,7 @@ namespace QuanLysKhachSan
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.ComboBox textBox_maphong_fk;
+        private System.Windows.Forms.ComboBox textBox_manv;
     }
 }
