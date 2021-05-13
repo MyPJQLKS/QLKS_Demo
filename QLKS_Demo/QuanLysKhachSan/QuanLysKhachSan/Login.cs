@@ -17,6 +17,16 @@ namespace QuanLysKhachSan
         {
             InitializeComponent();
             panel4.Visible = false;
+           // loadMoment();
+        }
+        void loadMoment()
+        {
+            DateTime date = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
+            //MessageBox.Show(date.ToShortDateString());
+            string que = "Update phong set trangthai = 'false' where maphong in (select t.maphong from phong p, ThePhongThue t where p.maphong = t.maphong and t.ngaydukientra < '"+ date.ToShortDateString() + "')";
+            DataExcute.Instance.ExecuteNonQuery(que);
+            que = "Update phong set trangthai = 1 where maphong in (select p.maphong from phong p, ThePhongThue t where p.maphong = t.maphong and('"+date.ToShortDateString()+"' between t.ngaythue and t.ngaydukientra))";
+            DataExcute.Instance.ExecuteNonQuery(que);
         }
 
         private void buttonExit_Click(object sender, EventArgs e)
