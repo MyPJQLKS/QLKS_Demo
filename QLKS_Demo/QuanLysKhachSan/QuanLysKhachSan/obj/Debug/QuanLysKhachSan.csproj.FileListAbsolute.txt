@@ -236,3 +236,5 @@ D:\Kì 2 năm 3\Thức tập nhóm\QLKS_De\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\Q
 D:\Kì 2 năm 3\Thức tập nhóm\QLKS_De\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.csproj.CopyComplete
 D:\Kì 2 năm 3\Thức tập nhóm\QLKS_De\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.exe
 D:\Kì 2 năm 3\Thức tập nhóm\QLKS_De\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.pdb
+D:\Kì 2 năm 3\Thức tập nhóm\QLKS_De\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.FormSuDungDV.resources
+D:\Kì 2 năm 3\Thức tập nhóm\QLKS_De\QLKS_Demo\QLKS_Demo\QuanLysKhachSan\QuanLysKhachSan\obj\Debug\QuanLysKhachSan.FormNhanVien.resources

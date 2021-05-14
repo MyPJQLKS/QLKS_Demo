@@ -17,7 +17,7 @@ namespace QuanLysKhachSan
         {
             InitializeComponent();
             panel4.Visible = false;
-           // loadMoment();
+            loadMoment();
         }
         void loadMoment()
         {
@@ -108,22 +108,10 @@ namespace QuanLysKhachSan
                         {
 
                             //thành công
-                            if(textBoxUserName.Text.ToLower()!="admin" )
-                            {
-                                FormNV fNV = new FormNV(tk);
-                                this.Hide();
-                                fNV.ShowDialog();
-                                this.Show();
-
-                            } 
-                            else
-                            {
-                                FormMain fm = new FormMain();
-                                this.Hide();
-                                fm.ShowDialog();
-                                this.Show();
-                            }
-                            
+                            FormMain fm = new FormMain();
+                            this.Hide();
+                            fm.ShowDialog();
+                            this.Show();
                         }
                         else
                         {

@@ -70,7 +70,13 @@ namespace QuanLysKhachSan
             }
             foreach(Room item in listR)
             {
-                Button bt = new Button() {Height=80, Width=80,Text=item.Tenphong };
+                string detail = item.Tenphong ;
+                DataTable dat = DataExcute.Instance.ExecuteQuery("Select dongia, mota from loaiphong lp, phong p where lp.maloaiphong=p.maloaiphong and p.maphong='" + item.Maphong + "'");
+                foreach (DataRow it in dat.Rows)
+                {
+                    detail += "\r\n" + it["dongia"].ToString();
+                }
+                Button bt = new Button() {Height=80, Width=80,Text=detail };
                 bt.Click += btn_Click;
                 bt.Tag = item;
                 flowLayoutPanel1.Controls.Add(bt);
@@ -135,18 +141,19 @@ namespace QuanLysKhachSan
         void loadComboBox()
         {
             DataTable data = new DataTable();
-            data = DataExcute.Instance.ExecuteQuery("Select tenphong from phong");
+           /* data = DataExcute.Instance.ExecuteQuery("Select tenphong from phong");
             foreach (DataRow item in data.Rows)
             {
                 string cb = item[0].ToString();
                 comboBoxTenPhong.Items.Add(cb);
-            }
+            }*/
             data.Clear();
             data = DataExcute.Instance.ExecuteQuery("Select tendv from dichvu");
             foreach  (DataRow item in data.Rows)
             {
                 comboBoxDV.Items.Add(item[0].ToString());
             }
+            comboBoxDV.SelectedIndex = 0;
         }
         #endregion
 
@@ -164,17 +171,32 @@ namespace QuanLysKhachSan
         }
         private void btn_Click(object sender, EventArgs e)
         {
+            //chon 1 phong
             string mphong = ((sender as Button).Tag as Room).Maphong;
-            showDetail(mphong);
-            label7.Text = mphong;
-            DataTable data = DataExcute.Instance.ExecuteQuery("Select mathe from thephongthue where maphong='" + mphong + "'");
-            int dem = 0;
-            foreach (DataRow item in data.Rows)
+            DataTable dataTable = DataExcute.Instance.ExecuteQuery("Select trangthai from phong where maphong='" + mphong + "'");
+            string trangThai = "";
+            foreach (DataRow item in dataTable.Rows)
             {
-                label9.Text = item["mathe"].ToString();
-                dem++;
+                trangThai = item["trangthai"].ToString();
             }
-            if (dem == 0) label9.Text = "_____";
+            if(trangThai=="True")
+            {
+                showDetail(mphong);
+                label7.Text = mphong;
+                DataTable data = DataExcute.Instance.ExecuteQuery("Select mathe from thephongthue where maphong='" + mphong + "'");
+                //int dem = 0;
+                foreach (DataRow item in data.Rows)
+                {
+                    label9.Text = item["mathe"].ToString();
+                    //dem++;
+                }
+                //if (dem == 0) label9.Text = "_____";
+            }
+            else
+            {
+                //tạo thẻ mới
+            }
+            
         }
 
         private void buttonAdd_Click(object sender, EventArgs e)
@@ -316,8 +338,12 @@ namespace QuanLysKhachSan
         {
 
         }
+
         #endregion
 
-       
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

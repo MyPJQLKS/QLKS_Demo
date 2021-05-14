@@ -71,7 +71,8 @@ namespace QuanLysKhachSan
 
         private void thêmDịchVuMớiToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            FormSuDungDV f = new FormSuDungDV();
+            f.ShowDialog();
         }
 
         private void thêmDịchVụMớiToolStripMenuItem_Click(object sender, EventArgs e)
@@ -118,6 +119,12 @@ namespace QuanLysKhachSan
         private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void thôngTinNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormNhanVien f = new FormNhanVien();
+            f.ShowDialog();
         }
     }
 }

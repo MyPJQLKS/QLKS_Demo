@@ -50,6 +50,7 @@
             this.hướngDẫnSửDụngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.câuHỏiThườngGặpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.liênHệToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.thôngTinNhânViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -79,7 +80,8 @@
             this.toolStripMenuItem1,
             this.thêmDịchVuMớiToolStripMenuItem,
             this.thêmDịchVụMớiToolStripMenuItem,
-            this.sửaĐổiThôngTinToolStripMenuItem});
+            this.sửaĐổiThôngTinToolStripMenuItem,
+            this.thôngTinNhânViênToolStripMenuItem});
             this.hệThốngToolStripMenuItem.Name = "hệThốngToolStripMenuItem";
             this.hệThốngToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
             this.hệThốngToolStripMenuItem.Text = "Hệ thống";
@@ -225,6 +227,13 @@
             this.liênHệToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.liênHệToolStripMenuItem.Text = "Liên hệ";
             // 
+            // thôngTinNhânViênToolStripMenuItem
+            // 
+            this.thôngTinNhânViênToolStripMenuItem.Name = "thôngTinNhânViênToolStripMenuItem";
+            this.thôngTinNhânViênToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.thôngTinNhânViênToolStripMenuItem.Text = "Thông tin nhân viên";
+            this.thôngTinNhânViênToolStripMenuItem.Click += new System.EventHandler(this.thôngTinNhânViênToolStripMenuItem_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::QuanLysKhachSan.Properties.Resources.ong_lon_quan_ly_khach_san_do_bo_kich_hoat_du_lich_bai_kem1607007968;
@@ -279,5 +288,6 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem đăngXuấtToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStripMenuItem thôngTinNhânViênToolStripMenuItem;
     }
 }
